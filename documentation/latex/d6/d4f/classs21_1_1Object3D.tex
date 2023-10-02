@@ -1,0 +1,430 @@
+\hypertarget{classs21_1_1Object3D}{}\doxysection{s21\+::Object3D Class Reference}
+\label{classs21_1_1Object3D}\index{s21::Object3D@{s21::Object3D}}
+
+
+The \mbox{\hyperlink{classs21_1_1Object3D}{Object3D}} class represents a 3D object and provides methods for manipulating it.  
+
+
+
+
+{\ttfamily \#include $<$object\+\_\+3d.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \mbox{\hyperlink{classs21_1_1Object3D_aa8c317beb149cd42613de8bc8f11941d}{Get\+Points\+Amount}} ()
+\begin{DoxyCompactList}\small\item\em Get the number of points in the object. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classs21_1_1Object3D_ad697c870b67a3ad4b64fe5d4a3228be1}{Get\+Polygon\+Amount}} ()
+\begin{DoxyCompactList}\small\item\em Get the number of polygons in the object. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classs21_1_1Object3D_a5de0735e8081e16e418f44ff62bf7177}{Get\+Edges\+Amount}} ()
+\begin{DoxyCompactList}\small\item\em Get the number of edges in the object. \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \& \mbox{\hyperlink{classs21_1_1Object3D_a017ecf4add0d69bbd5ca5b963528ab4f}{Points}} ()
+\begin{DoxyCompactList}\small\item\em Get a reference to the points of the object. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \& \mbox{\hyperlink{classs21_1_1Object3D_a83b49584a7dbda0d9e4db5a99524a8be}{Indices}} ()
+\begin{DoxyCompactList}\small\item\em Get a reference to the indices of the object. \end{DoxyCompactList}\item 
+std\+::vector$<$ long int $>$ \& \mbox{\hyperlink{classs21_1_1Object3D_a2c658ff48c47b2edd6c4d0b9ae338798}{Edges}} ()
+\begin{DoxyCompactList}\small\item\em Get a reference to the edges of the object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1Object3D_a90f5be19814a98c003e8a2d194928f55}{Reset\+Model\+To\+Default\+State}} (std\+::vector$<$ float $>$ \&default\+Points)
+\begin{DoxyCompactList}\small\item\em Reset the model to its default state using the provided default points. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1Object3D_ac20cd4d8397b68ee5b7325b791cb47c2}{Add\+Point}} (float value)
+\begin{DoxyCompactList}\small\item\em Considers the coordinates of a point, determining the minimum and maximum, then writes the point to an array of points. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1Object3D_ab9a457e811e9b061037ecac6edc75bf5}{Add\+Polygon\+Unit}} (int value)
+\begin{DoxyCompactList}\small\item\em Add a polygon unit to the object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1Object3D_a083ad5d293d23b9c2598587d99f67db6}{Add\+Edge}} (int value1, int value2)
+\begin{DoxyCompactList}\small\item\em Add an edge to the object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1Object3D_a9cc5b81d3ef60c6b3d66ab21c5a5f837}{Set\+Path}} (std\+::string path)
+\begin{DoxyCompactList}\small\item\em Set the file path of the object. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classs21_1_1Object3D_a3723fbc35b28ea06f971817afd68aa56}{Get\+Path}} ()
+\begin{DoxyCompactList}\small\item\em Get the file path of the object. \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \& \mbox{\hyperlink{classs21_1_1Object3D_ae6516934939e80f91210e3c6b6026eea}{Get\+Minimum\+Point\+Values}} ()
+\begin{DoxyCompactList}\small\item\em Get a reference to the minimum point values of the object. \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \& \mbox{\hyperlink{classs21_1_1Object3D_a72d6decefd698fd069a73853418ca751}{Get\+Maximum\+Point\+Values}} ()
+\begin{DoxyCompactList}\small\item\em Get a reference to the minimum point values of the object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1Object3D_a7e7d35423312511b5bc818ff507ddd16}{Scale}} (float value)
+\begin{DoxyCompactList}\small\item\em Scale the object by a given value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1Object3D_a002bba2b658d89c86e15f19fd3646405}{Move}} (float valueX, float valueY, float valueZ)
+\begin{DoxyCompactList}\small\item\em Move the object by specified values in each dimension. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1Object3D_a910eef92a3f92be36adbb31951e26fd7}{Rotate}} (float valueX, float valueY, float valueZ)
+\begin{DoxyCompactList}\small\item\em Rotate the object by specified values in each dimension. \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \& \mbox{\hyperlink{classs21_1_1Object3D_a38bbac5f69f7e9242df04b47e8a2b4e5}{Get\+Minimum\+Point}} ()
+\begin{DoxyCompactList}\small\item\em Get minimum coordinates value in object points. \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \& \mbox{\hyperlink{classs21_1_1Object3D_aa20dc2a2c9bb9d3028df3ce433a7ff6e}{Get\+Maximum\+Point}} ()
+\begin{DoxyCompactList}\small\item\em Get maximum coordinates value in object points. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classs21_1_1Object3D_a66ad0a5b96d1739a54aabb6f3ee85f76}\label{classs21_1_1Object3D_a66ad0a5b96d1739a54aabb6f3ee85f76}} 
+void \mbox{\hyperlink{classs21_1_1Object3D_a66ad0a5b96d1739a54aabb6f3ee85f76}{Normalize}} ()
+\begin{DoxyCompactList}\small\item\em Casts all coordinate values ​​to the range -\/1 to 1. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classs21_1_1Object3D_a7bbf0ee4ffb3e798f1cbab5a0d310a64}\label{classs21_1_1Object3D_a7bbf0ee4ffb3e798f1cbab5a0d310a64}} 
+void \mbox{\hyperlink{classs21_1_1Object3D_a7bbf0ee4ffb3e798f1cbab5a0d310a64}{Model\+Alignment\+Center}} ()
+\begin{DoxyCompactList}\small\item\em Centers the model based on the minimum and maximum points. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classs21_1_1Object3D}{Object3D}} \& \mbox{\hyperlink{classs21_1_1Object3D_a2a96ddff1494c4ffa721ae918643200b}{Instance}} ()
+\begin{DoxyCompactList}\small\item\em Get a reference to the singleton instance of \mbox{\hyperlink{classs21_1_1Object3D}{Object3D}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classs21_1_1Object3D}{Object3D}} class represents a 3D object and provides methods for manipulating it. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classs21_1_1Object3D_a083ad5d293d23b9c2598587d99f67db6}\label{classs21_1_1Object3D_a083ad5d293d23b9c2598587d99f67db6}} 
+\index{s21::Object3D@{s21::Object3D}!AddEdge@{AddEdge}}
+\index{AddEdge@{AddEdge}!s21::Object3D@{s21::Object3D}}
+\doxysubsubsection{\texorpdfstring{AddEdge()}{AddEdge()}}
+{\footnotesize\ttfamily void s21\+::\+Object3\+D\+::\+Add\+Edge (\begin{DoxyParamCaption}\item[{int}]{value1,  }\item[{int}]{value2 }\end{DoxyParamCaption})}
+
+
+
+Add an edge to the object. 
+
+Add a new edge to the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value1} & The first value of the edge. \\
+\hline
+{\em value2} & The second value of the edge.\\
+\hline
+{\em value1} & The first vertex of the edge. \\
+\hline
+{\em value2} & The second vertex of the edge. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1Object3D_ac20cd4d8397b68ee5b7325b791cb47c2}\label{classs21_1_1Object3D_ac20cd4d8397b68ee5b7325b791cb47c2}} 
+\index{s21::Object3D@{s21::Object3D}!AddPoint@{AddPoint}}
+\index{AddPoint@{AddPoint}!s21::Object3D@{s21::Object3D}}
+\doxysubsubsection{\texorpdfstring{AddPoint()}{AddPoint()}}
+{\footnotesize\ttfamily void s21\+::\+Object3\+D\+::\+Add\+Point (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})}
+
+
+
+Considers the coordinates of a point, determining the minimum and maximum, then writes the point to an array of points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value of the new point. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1Object3D_ab9a457e811e9b061037ecac6edc75bf5}\label{classs21_1_1Object3D_ab9a457e811e9b061037ecac6edc75bf5}} 
+\index{s21::Object3D@{s21::Object3D}!AddPolygonUnit@{AddPolygonUnit}}
+\index{AddPolygonUnit@{AddPolygonUnit}!s21::Object3D@{s21::Object3D}}
+\doxysubsubsection{\texorpdfstring{AddPolygonUnit()}{AddPolygonUnit()}}
+{\footnotesize\ttfamily void s21\+::\+Object3\+D\+::\+Add\+Polygon\+Unit (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+Add a polygon unit to the object. 
+
+Add a new polygon index to the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value of the polygon unit to add.\\
+\hline
+{\em value} & The index of the new polygon. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1Object3D_a2c658ff48c47b2edd6c4d0b9ae338798}\label{classs21_1_1Object3D_a2c658ff48c47b2edd6c4d0b9ae338798}} 
+\index{s21::Object3D@{s21::Object3D}!Edges@{Edges}}
+\index{Edges@{Edges}!s21::Object3D@{s21::Object3D}}
+\doxysubsubsection{\texorpdfstring{Edges()}{Edges()}}
+{\footnotesize\ttfamily std\+::vector$<$ long int $>$ \& s21\+::\+Object3\+D\+::\+Edges (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get a reference to the edges of the object. 
+
+Get the vector of object edges.
+
+\begin{DoxyReturn}{Returns}
+A reference to the vector of edges.
+
+Vector of object edges. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Object3D_a5de0735e8081e16e418f44ff62bf7177}\label{classs21_1_1Object3D_a5de0735e8081e16e418f44ff62bf7177}} 
+\index{s21::Object3D@{s21::Object3D}!GetEdgesAmount@{GetEdgesAmount}}
+\index{GetEdgesAmount@{GetEdgesAmount}!s21::Object3D@{s21::Object3D}}
+\doxysubsubsection{\texorpdfstring{GetEdgesAmount()}{GetEdgesAmount()}}
+{\footnotesize\ttfamily size\+\_\+t s21\+::\+Object3\+D\+::\+Get\+Edges\+Amount (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the number of edges in the object. 
+
+Get the number of unique edges in the object.
+
+\begin{DoxyReturn}{Returns}
+The number of edges.
+
+Number of unique edges. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Object3D_aa20dc2a2c9bb9d3028df3ce433a7ff6e}\label{classs21_1_1Object3D_aa20dc2a2c9bb9d3028df3ce433a7ff6e}} 
+\index{s21::Object3D@{s21::Object3D}!GetMaximumPoint@{GetMaximumPoint}}
+\index{GetMaximumPoint@{GetMaximumPoint}!s21::Object3D@{s21::Object3D}}
+\doxysubsubsection{\texorpdfstring{GetMaximumPoint()}{GetMaximumPoint()}}
+{\footnotesize\ttfamily std\+::vector$<$ float $>$ \& s21\+::\+Object3\+D\+::\+Get\+Maximum\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get maximum coordinates value in object points. 
+
+\begin{DoxyReturn}{Returns}
+maximum point coordinate value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Object3D_a72d6decefd698fd069a73853418ca751}\label{classs21_1_1Object3D_a72d6decefd698fd069a73853418ca751}} 
+\index{s21::Object3D@{s21::Object3D}!GetMaximumPointValues@{GetMaximumPointValues}}
+\index{GetMaximumPointValues@{GetMaximumPointValues}!s21::Object3D@{s21::Object3D}}
+\doxysubsubsection{\texorpdfstring{GetMaximumPointValues()}{GetMaximumPointValues()}}
+{\footnotesize\ttfamily std\+::vector$<$ float $>$ \& s21\+::\+Object3\+D\+::\+Get\+Maximum\+Point\+Values (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get a reference to the minimum point values of the object. 
+
+\begin{DoxyReturn}{Returns}
+A reference to the vector of minimum points. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Object3D_a38bbac5f69f7e9242df04b47e8a2b4e5}\label{classs21_1_1Object3D_a38bbac5f69f7e9242df04b47e8a2b4e5}} 
+\index{s21::Object3D@{s21::Object3D}!GetMinimumPoint@{GetMinimumPoint}}
+\index{GetMinimumPoint@{GetMinimumPoint}!s21::Object3D@{s21::Object3D}}
+\doxysubsubsection{\texorpdfstring{GetMinimumPoint()}{GetMinimumPoint()}}
+{\footnotesize\ttfamily std\+::vector$<$ float $>$ \& s21\+::\+Object3\+D\+::\+Get\+Minimum\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get minimum coordinates value in object points. 
+
+\begin{DoxyReturn}{Returns}
+minimum point coordinate value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Object3D_ae6516934939e80f91210e3c6b6026eea}\label{classs21_1_1Object3D_ae6516934939e80f91210e3c6b6026eea}} 
+\index{s21::Object3D@{s21::Object3D}!GetMinimumPointValues@{GetMinimumPointValues}}
+\index{GetMinimumPointValues@{GetMinimumPointValues}!s21::Object3D@{s21::Object3D}}
+\doxysubsubsection{\texorpdfstring{GetMinimumPointValues()}{GetMinimumPointValues()}}
+{\footnotesize\ttfamily std\+::vector$<$ float $>$ \& s21\+::\+Object3\+D\+::\+Get\+Minimum\+Point\+Values (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get a reference to the minimum point values of the object. 
+
+\begin{DoxyReturn}{Returns}
+A reference to the vector of minimum points. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Object3D_a3723fbc35b28ea06f971817afd68aa56}\label{classs21_1_1Object3D_a3723fbc35b28ea06f971817afd68aa56}} 
+\index{s21::Object3D@{s21::Object3D}!GetPath@{GetPath}}
+\index{GetPath@{GetPath}!s21::Object3D@{s21::Object3D}}
+\doxysubsubsection{\texorpdfstring{GetPath()}{GetPath()}}
+{\footnotesize\ttfamily std\+::string s21\+::\+Object3\+D\+::\+Get\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the file path of the object. 
+
+Get the path to the object.
+
+\begin{DoxyReturn}{Returns}
+The file path of the object.
+
+Path to the object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Object3D_aa8c317beb149cd42613de8bc8f11941d}\label{classs21_1_1Object3D_aa8c317beb149cd42613de8bc8f11941d}} 
+\index{s21::Object3D@{s21::Object3D}!GetPointsAmount@{GetPointsAmount}}
+\index{GetPointsAmount@{GetPointsAmount}!s21::Object3D@{s21::Object3D}}
+\doxysubsubsection{\texorpdfstring{GetPointsAmount()}{GetPointsAmount()}}
+{\footnotesize\ttfamily size\+\_\+t s21\+::\+Object3\+D\+::\+Get\+Points\+Amount (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the number of points in the object. 
+
+\begin{DoxyReturn}{Returns}
+The number of points.
+
+Number of points. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Object3D_ad697c870b67a3ad4b64fe5d4a3228be1}\label{classs21_1_1Object3D_ad697c870b67a3ad4b64fe5d4a3228be1}} 
+\index{s21::Object3D@{s21::Object3D}!GetPolygonAmount@{GetPolygonAmount}}
+\index{GetPolygonAmount@{GetPolygonAmount}!s21::Object3D@{s21::Object3D}}
+\doxysubsubsection{\texorpdfstring{GetPolygonAmount()}{GetPolygonAmount()}}
+{\footnotesize\ttfamily size\+\_\+t s21\+::\+Object3\+D\+::\+Get\+Polygon\+Amount (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the number of polygons in the object. 
+
+\begin{DoxyReturn}{Returns}
+The number of polygons.
+
+Number of polygons. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Object3D_a83b49584a7dbda0d9e4db5a99524a8be}\label{classs21_1_1Object3D_a83b49584a7dbda0d9e4db5a99524a8be}} 
+\index{s21::Object3D@{s21::Object3D}!Indices@{Indices}}
+\index{Indices@{Indices}!s21::Object3D@{s21::Object3D}}
+\doxysubsubsection{\texorpdfstring{Indices()}{Indices()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ \& s21\+::\+Object3\+D\+::\+Indices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get a reference to the indices of the object. 
+
+Get the vector of object polygon indices.
+
+\begin{DoxyReturn}{Returns}
+A reference to the vector of indices.
+
+Vector of object polygon indices. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Object3D_a2a96ddff1494c4ffa721ae918643200b}\label{classs21_1_1Object3D_a2a96ddff1494c4ffa721ae918643200b}} 
+\index{s21::Object3D@{s21::Object3D}!Instance@{Instance}}
+\index{Instance@{Instance}!s21::Object3D@{s21::Object3D}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classs21_1_1Object3D}{Object3D}} \& s21\+::\+Object3\+D\+::\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get a reference to the singleton instance of \mbox{\hyperlink{classs21_1_1Object3D}{Object3D}}. 
+
+Get an instance of the \mbox{\hyperlink{classs21_1_1Object3D}{Object3D}} class.
+
+\begin{DoxyReturn}{Returns}
+A reference to the \mbox{\hyperlink{classs21_1_1Object3D}{Object3D}} instance.
+\end{DoxyReturn}
+This method creates and returns a static instance of the \mbox{\hyperlink{classs21_1_1Object3D}{Object3D}} class, which is used to manage the 3D object.
+
+\begin{DoxyReturn}{Returns}
+Reference to an instance of the \mbox{\hyperlink{classs21_1_1Object3D}{Object3D}} class. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Object3D_a002bba2b658d89c86e15f19fd3646405}\label{classs21_1_1Object3D_a002bba2b658d89c86e15f19fd3646405}} 
+\index{s21::Object3D@{s21::Object3D}!Move@{Move}}
+\index{Move@{Move}!s21::Object3D@{s21::Object3D}}
+\doxysubsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily void s21\+::\+Object3\+D\+::\+Move (\begin{DoxyParamCaption}\item[{float}]{dx,  }\item[{float}]{dy,  }\item[{float}]{dz }\end{DoxyParamCaption})}
+
+
+
+Move the object by specified values in each dimension. 
+
+Apply translation to the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em valueX} & The value to move the object in the X dimension. \\
+\hline
+{\em valueY} & The value to move the object in the Y dimension. \\
+\hline
+{\em valueZ} & The value to move the object in the Z dimension.\\
+\hline
+{\em dx} & Translation along the X-\/axis. \\
+\hline
+{\em dy} & Translation along the Y-\/axis. \\
+\hline
+{\em dz} & Translation along the Z-\/axis. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1Object3D_a017ecf4add0d69bbd5ca5b963528ab4f}\label{classs21_1_1Object3D_a017ecf4add0d69bbd5ca5b963528ab4f}} 
+\index{s21::Object3D@{s21::Object3D}!Points@{Points}}
+\index{Points@{Points}!s21::Object3D@{s21::Object3D}}
+\doxysubsubsection{\texorpdfstring{Points()}{Points()}}
+{\footnotesize\ttfamily std\+::vector$<$ float $>$ \& s21\+::\+Object3\+D\+::\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get a reference to the points of the object. 
+
+Get the vector of object points.
+
+\begin{DoxyReturn}{Returns}
+A reference to the vector of points.
+
+Vector of object points. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Object3D_a90f5be19814a98c003e8a2d194928f55}\label{classs21_1_1Object3D_a90f5be19814a98c003e8a2d194928f55}} 
+\index{s21::Object3D@{s21::Object3D}!ResetModelToDefaultState@{ResetModelToDefaultState}}
+\index{ResetModelToDefaultState@{ResetModelToDefaultState}!s21::Object3D@{s21::Object3D}}
+\doxysubsubsection{\texorpdfstring{ResetModelToDefaultState()}{ResetModelToDefaultState()}}
+{\footnotesize\ttfamily void s21\+::\+Object3\+D\+::\+Reset\+Model\+To\+Default\+State (\begin{DoxyParamCaption}\item[{std\+::vector$<$ float $>$ \&}]{default\+Points }\end{DoxyParamCaption})}
+
+
+
+Reset the model to its default state using the provided default points. 
+
+Reset the model to its default state.
+
+
+\begin{DoxyParams}{Parameters}
+{\em default\+Points} & The default points to set the model to.\\
+\hline
+{\em default\+Points} & Vector of points to reset the model. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1Object3D_a910eef92a3f92be36adbb31951e26fd7}\label{classs21_1_1Object3D_a910eef92a3f92be36adbb31951e26fd7}} 
+\index{s21::Object3D@{s21::Object3D}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!s21::Object3D@{s21::Object3D}}
+\doxysubsubsection{\texorpdfstring{Rotate()}{Rotate()}}
+{\footnotesize\ttfamily void s21\+::\+Object3\+D\+::\+Rotate (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
+
+
+
+Rotate the object by specified values in each dimension. 
+
+Apply rotation to the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em valueX} & The value to rotate the object around the X axis. \\
+\hline
+{\em valueY} & The value to rotate the object around the Y axis. \\
+\hline
+{\em valueZ} & The value to rotate the object around the Z axis.\\
+\hline
+{\em x} & Rotation angle around the X-\/axis. \\
+\hline
+{\em y} & Rotation angle around the Y-\/axis. \\
+\hline
+{\em z} & Rotation angle around the Z-\/axis. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1Object3D_a7e7d35423312511b5bc818ff507ddd16}\label{classs21_1_1Object3D_a7e7d35423312511b5bc818ff507ddd16}} 
+\index{s21::Object3D@{s21::Object3D}!Scale@{Scale}}
+\index{Scale@{Scale}!s21::Object3D@{s21::Object3D}}
+\doxysubsubsection{\texorpdfstring{Scale()}{Scale()}}
+{\footnotesize\ttfamily void s21\+::\+Object3\+D\+::\+Scale (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})}
+
+
+
+Scale the object by a given value. 
+
+Apply scaling to the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The scale value.\\
+\hline
+{\em value} & Scaling factor. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1Object3D_a9cc5b81d3ef60c6b3d66ab21c5a5f837}\label{classs21_1_1Object3D_a9cc5b81d3ef60c6b3d66ab21c5a5f837}} 
+\index{s21::Object3D@{s21::Object3D}!SetPath@{SetPath}}
+\index{SetPath@{SetPath}!s21::Object3D@{s21::Object3D}}
+\doxysubsubsection{\texorpdfstring{SetPath()}{SetPath()}}
+{\footnotesize\ttfamily void s21\+::\+Object3\+D\+::\+Set\+Path (\begin{DoxyParamCaption}\item[{std\+::string}]{path }\end{DoxyParamCaption})}
+
+
+
+Set the file path of the object. 
+
+Set the path to the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The file path to set.\\
+\hline
+{\em path} & Path to the object. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+3d\+\_\+viewer\+\_\+v2/model/object\+\_\+3d.\+h\item 
+3d\+\_\+viewer\+\_\+v2/model/object\+\_\+3d.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,57 @@
+\hypertarget{glcanvas_8h_source}{}\doxysection{glcanvas.\+h}
+\label{glcanvas_8h_source}\index{3d\_viewer\_v2/core/glcanvas.h@{3d\_viewer\_v2/core/glcanvas.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef GLCANVAS\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define GLCANVAS\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#ifdef \_\_APPLE\_\_  }\textcolor{comment}{// Для macOS}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <GL/glew.h>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <GL/glut.h>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#else  }\textcolor{comment}{// Для Linux и остальных платформ}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <GL/glu.h>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <QOpenGLWidget>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <QtOpenGL>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <QVector3D>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}settings.h"{}}}
+\DoxyCodeLine{15 \textcolor{keyword}{namespace }s21 \{}
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{classs21_1_1GlCanvas}{GlCanvas}} : \textcolor{keyword}{public} QOpenGLWidget \{}
+\DoxyCodeLine{17  \textcolor{keyword}{public}:}
+\DoxyCodeLine{18   \textcolor{keyword}{explicit} \mbox{\hyperlink{classs21_1_1GlCanvas}{GlCanvas}}(QOpenGLWidget* parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{19   \textcolor{keywordtype}{void} initializeArrays(\textcolor{keywordtype}{float}* vertexes, \textcolor{keywordtype}{int}* indicies);}
+\DoxyCodeLine{20   \textcolor{keywordtype}{void} setArraysSize(\textcolor{keywordtype}{size\_t} vertexSize, \textcolor{keywordtype}{size\_t} indiciesSize);}
+\DoxyCodeLine{21   \textcolor{keywordtype}{void} setColor(QColor color, QString\& mode);}
+\DoxyCodeLine{22   \textcolor{keywordtype}{void} setVertexSize(\textcolor{keywordtype}{float} size);}
+\DoxyCodeLine{23   \textcolor{keywordtype}{float} getVertexSize() \textcolor{keyword}{const};}
+\DoxyCodeLine{24   \textcolor{keywordtype}{void} setRibsWidth(\textcolor{keywordtype}{float} width);}
+\DoxyCodeLine{25   \textcolor{keywordtype}{float} getRibsWidth() \textcolor{keyword}{const};}
+\DoxyCodeLine{26   \textcolor{keywordtype}{void} setVertexType(VertexTypes type);}
+\DoxyCodeLine{27   VertexTypes getVertexType() \textcolor{keyword}{const};}
+\DoxyCodeLine{28   \textcolor{keywordtype}{void} setRibsType(RibsTypes type);}
+\DoxyCodeLine{29   RibsTypes getRibsType() \textcolor{keyword}{const};}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31  \textcolor{keyword}{protected}:}
+\DoxyCodeLine{32   \textcolor{keywordtype}{void} initializeGL() \textcolor{keyword}{override};}
+\DoxyCodeLine{33   \textcolor{keywordtype}{void} resizeGL(\textcolor{keywordtype}{int} width, \textcolor{keywordtype}{int} height) \textcolor{keyword}{override};}
+\DoxyCodeLine{34   \textcolor{keywordtype}{void} paintGL() \textcolor{keyword}{override};}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36  \textcolor{keyword}{private}:}
+\DoxyCodeLine{37   \textcolor{keywordtype}{void} initProjectionParametrs();}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39   QSettings* settings\_ = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{40   \mbox{\hyperlink{classs21_1_1Settings}{Settings}}* settingsList\_ = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42   \textcolor{keywordtype}{float}* vertexArray\_ = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{43   \textcolor{keywordtype}{int}* indiciesArray\_ = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{44   \textcolor{keywordtype}{size\_t} numberOfVertexes\_ = 0;}
+\DoxyCodeLine{45   \textcolor{keywordtype}{size\_t} numberOfIndicies\_ = 0;}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47   GLfloat ratio\_, width\_, height\_;}
+\DoxyCodeLine{48   \textcolor{keywordtype}{float} xOffset, yOffset = 0, zOffset = 0, orthoCoeff = 2.5f, zScale = 1;}
+\DoxyCodeLine{49 \};}
+\DoxyCodeLine{50 \}  \textcolor{comment}{// namespace s21}}
+\DoxyCodeLine{51 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// GLCANVAS\_H}}
+
+\end{DoxyCode}

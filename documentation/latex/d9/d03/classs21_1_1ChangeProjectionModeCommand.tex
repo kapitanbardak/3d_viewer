@@ -1,0 +1,82 @@
+\hypertarget{classs21_1_1ChangeProjectionModeCommand}{}\doxysection{s21\+::Change\+Projection\+Mode\+Command Class Reference}
+\label{classs21_1_1ChangeProjectionModeCommand}\index{s21::ChangeProjectionModeCommand@{s21::ChangeProjectionModeCommand}}
+
+
+Command for changing the projection mode of an item on the canvas.  
+
+
+
+
+{\ttfamily \#include $<$change\+\_\+projection\+\_\+mode\+\_\+command.\+h$>$}
+
+
+
+Inheritance diagram for s21\+::Change\+Projection\+Mode\+Command\+:
+% FIG 0
+
+
+Collaboration diagram for s21\+::Change\+Projection\+Mode\+Command\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classs21_1_1ChangeProjectionModeCommand_a7b5c28c7b76d5212b3390fe57a9afb5e}{Change\+Projection\+Mode\+Command}} (\mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} $\ast$canvas, const Projection\+Type mode, \mbox{\hyperlink{classs21_1_1ItemsPropertyController}{Items\+Property\+Controller}} $\ast$view\+\_\+controller)
+\begin{DoxyCompactList}\small\item\em Constructor for creating a command to change the projection mode of an item. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1ChangeProjectionModeCommand_a4018746c7a2ec3a8a10743a3f52649c5}{execute}} () override
+\begin{DoxyCompactList}\small\item\em Executes the command to change the projection mode of an item. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Command for changing the projection mode of an item on the canvas. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classs21_1_1ChangeProjectionModeCommand_a7b5c28c7b76d5212b3390fe57a9afb5e}\label{classs21_1_1ChangeProjectionModeCommand_a7b5c28c7b76d5212b3390fe57a9afb5e}} 
+\index{s21::ChangeProjectionModeCommand@{s21::ChangeProjectionModeCommand}!ChangeProjectionModeCommand@{ChangeProjectionModeCommand}}
+\index{ChangeProjectionModeCommand@{ChangeProjectionModeCommand}!s21::ChangeProjectionModeCommand@{s21::ChangeProjectionModeCommand}}
+\doxysubsubsection{\texorpdfstring{ChangeProjectionModeCommand()}{ChangeProjectionModeCommand()}}
+{\footnotesize\ttfamily s21\+::\+Change\+Projection\+Mode\+Command\+::\+Change\+Projection\+Mode\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} $\ast$}]{canvas,  }\item[{const Projection\+Type}]{mode,  }\item[{\mbox{\hyperlink{classs21_1_1ItemsPropertyController}{Items\+Property\+Controller}} $\ast$}]{view\+\_\+controller }\end{DoxyParamCaption})}
+
+
+
+Constructor for creating a command to change the projection mode of an item. 
+
+Constructor for the \mbox{\hyperlink{classs21_1_1ChangeProjectionModeCommand}{Change\+Projection\+Mode\+Command}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em canvas} & A pointer to the \mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} object. \\
+\hline
+{\em mode} & The mode of projection change. \\
+\hline
+{\em view\+\_\+controller} & The controller of the UI.\\
+\hline
+{\em canvas} & Pointer to the \mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} object. \\
+\hline
+{\em mode} & The mode in which to change the projection. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classs21_1_1ChangeProjectionModeCommand_a4018746c7a2ec3a8a10743a3f52649c5}\label{classs21_1_1ChangeProjectionModeCommand_a4018746c7a2ec3a8a10743a3f52649c5}} 
+\index{s21::ChangeProjectionModeCommand@{s21::ChangeProjectionModeCommand}!execute@{execute}}
+\index{execute@{execute}!s21::ChangeProjectionModeCommand@{s21::ChangeProjectionModeCommand}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void s21\+::\+Change\+Projection\+Mode\+Command\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Executes the command to change the projection mode of an item. 
+
+Execute the projection mode change command.
+
+This method applies the new projection mode to the \mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} object and triggers a repaint. 
+
+Implements \mbox{\hyperlink{classICommand_ace81beb0beea968f876f292446bf1120}{ICommand}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+3d\+\_\+viewer\+\_\+v2/controller/commands/change\+\_\+projection\+\_\+mode\+\_\+command.\+h\item 
+3d\+\_\+viewer\+\_\+v2/controller/commands/change\+\_\+projection\+\_\+mode\+\_\+command.\+cc\end{DoxyCompactItemize}

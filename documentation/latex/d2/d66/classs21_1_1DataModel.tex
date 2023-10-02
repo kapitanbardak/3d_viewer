@@ -1,0 +1,326 @@
+\hypertarget{classs21_1_1DataModel}{}\doxysection{s21\+::Data\+Model Class Reference}
+\label{classs21_1_1DataModel}\index{s21::DataModel@{s21::DataModel}}
+
+
+The \mbox{\hyperlink{classs21_1_1DataModel}{Data\+Model}} class represents the data model of the application.  
+
+
+
+
+{\ttfamily \#include $<$data\+\_\+model.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classs21_1_1DataModel_a543b62c65095e0d7aab05edaf1bf582e}{Data\+Model}} ()
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classs21_1_1DataModel}{Data\+Model}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classs21_1_1DataModel_af74f4d3307fe2d350d84bc731a52b952}{$\sim$\+Data\+Model}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \mbox{\hyperlink{classs21_1_1DataModel}{Data\+Model}}. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classs21_1_1DataModel_a33e003bfa7921050551a4b4f4b7e3fb5}{Get\+Number\+Of\+Vertexes}} () const
+\begin{DoxyCompactList}\small\item\em Get the number of vertices in the model. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classs21_1_1DataModel_a79faac111a5beefa94e8bd712b456cd5}{Get\+Number\+Of\+Indices}} () const
+\begin{DoxyCompactList}\small\item\em Get the number of indices in the model. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classs21_1_1DataModel_ae18e148815cec571c1df2187e6b51976}{Get\+Number\+Of\+Ribs}} () const
+\begin{DoxyCompactList}\small\item\em Get the number of ribs in the model. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classs21_1_1Object3D}{Object3D}} \& \mbox{\hyperlink{classs21_1_1DataModel_abc1ef7ce335cbad1e551a0c448e462be}{Get\+Object\+Model}} () const
+\begin{DoxyCompactList}\small\item\em Get a reference to the \mbox{\hyperlink{classs21_1_1Object3D}{Object3D}} representing the model. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1DataModel_a9d9b4a22f75052b4d0b220481fee70c6}{Load\+Model}} (const std\+::string \&file\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Load a 3D model from a file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1DataModel_ab2f81ec8ee2bf9c8fbdf649a2f17189e}{Reset\+Model\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Reset the position of the model to its default state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1DataModel_a142dd98520f52f1be976961178ceacac}{Move\+Model}} (float dx, float dy, float dz)
+\begin{DoxyCompactList}\small\item\em Move the position of the model. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1DataModel_a7a1b14f0a3c928a382a879624e35f2cf}{Rotate\+Model}} (float dx, float dy, float dz)
+\begin{DoxyCompactList}\small\item\em Rotate the position of the model. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1DataModel_aa256cf1916be9e006169b94a9ae128c8}{Scale\+Model}} (float scale\+\_\+value)
+\begin{DoxyCompactList}\small\item\em Scale the size of the model. \end{DoxyCompactList}\item 
+float $\ast$ \mbox{\hyperlink{classs21_1_1DataModel_a12b791c05f33ad645eac30eceed920b4}{Get\+Vertex\+Array}} () const
+\begin{DoxyCompactList}\small\item\em Get the vertex array of the model. \end{DoxyCompactList}\item 
+int $\ast$ \mbox{\hyperlink{classs21_1_1DataModel_a40e1f72ce696045ffc86a573339a9c75}{Get\+Indices\+Array}} () const
+\begin{DoxyCompactList}\small\item\em Get the indices array of the model. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classs21_1_1DataModel_a0b23ae2993982e3e6e0de233784d9b4b}{Get\+File\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Get the filename of the loaded model. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classs21_1_1DataModel_aceafd2e0aa86e0eefd17eed3e9ceb987}{Get\+File\+Path}} () const
+\begin{DoxyCompactList}\small\item\em Get the file path of the loaded model. \end{DoxyCompactList}\item 
+float $\ast$ \mbox{\hyperlink{classs21_1_1DataModel_a87f1ddc35f78adcd8ce07d493f979f4f}{Get\+Maximum\+Point}} () const
+\begin{DoxyCompactList}\small\item\em Get the value of the coordinates of the farthest point. \end{DoxyCompactList}\item 
+float $\ast$ \mbox{\hyperlink{classs21_1_1DataModel_a9a5cf3d11e577a2292a2ff5fbb0ba6a3}{Get\+Minimum\+Point}} () const
+\begin{DoxyCompactList}\small\item\em Get the value of the coordinates of the closest point. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classs21_1_1DataModel_af9c7ef18699ddbab534927061100fb61}\label{classs21_1_1DataModel_af9c7ef18699ddbab534927061100fb61}} 
+void \mbox{\hyperlink{classs21_1_1DataModel_af9c7ef18699ddbab534927061100fb61}{Normalize}} ()
+\begin{DoxyCompactList}\small\item\em Casts all coordinate values ​​to the range -\/1 to 1. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classs21_1_1DataModel_aa0ca474211fa2b4e0840e19845b2d924}\label{classs21_1_1DataModel_aa0ca474211fa2b4e0840e19845b2d924}} 
+void \mbox{\hyperlink{classs21_1_1DataModel_aa0ca474211fa2b4e0840e19845b2d924}{Model\+Alignment\+Center}} ()
+\begin{DoxyCompactList}\small\item\em Centers the model based on the minimum and maximum points. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classs21_1_1DataModel_aca1750baf7db3c2f5d142b43959077b9}\label{classs21_1_1DataModel_aca1750baf7db3c2f5d142b43959077b9}} 
+void \mbox{\hyperlink{classs21_1_1DataModel_aca1750baf7db3c2f5d142b43959077b9}{Set\+Default\+Model\+State}} ()
+\begin{DoxyCompactList}\small\item\em Set default state of the model. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classs21_1_1DataModel}{Data\+Model}} class represents the data model of the application. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classs21_1_1DataModel_a543b62c65095e0d7aab05edaf1bf582e}\label{classs21_1_1DataModel_a543b62c65095e0d7aab05edaf1bf582e}} 
+\index{s21::DataModel@{s21::DataModel}!DataModel@{DataModel}}
+\index{DataModel@{DataModel}!s21::DataModel@{s21::DataModel}}
+\doxysubsubsection{\texorpdfstring{DataModel()}{DataModel()}}
+{\footnotesize\ttfamily s21\+::\+Data\+Model\+::\+Data\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classs21_1_1DataModel}{Data\+Model}} object. 
+
+Constructor for the \mbox{\hyperlink{classs21_1_1DataModel}{Data\+Model}} class. \mbox{\Hypertarget{classs21_1_1DataModel_af74f4d3307fe2d350d84bc731a52b952}\label{classs21_1_1DataModel_af74f4d3307fe2d350d84bc731a52b952}} 
+\index{s21::DataModel@{s21::DataModel}!````~DataModel@{$\sim$DataModel}}
+\index{````~DataModel@{$\sim$DataModel}!s21::DataModel@{s21::DataModel}}
+\doxysubsubsection{\texorpdfstring{$\sim$DataModel()}{~DataModel()}}
+{\footnotesize\ttfamily s21\+::\+Data\+Model\+::$\sim$\+Data\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for \mbox{\hyperlink{classs21_1_1DataModel}{Data\+Model}}. 
+
+Destructor for the \mbox{\hyperlink{classs21_1_1DataModel}{Data\+Model}} class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classs21_1_1DataModel_a0b23ae2993982e3e6e0de233784d9b4b}\label{classs21_1_1DataModel_a0b23ae2993982e3e6e0de233784d9b4b}} 
+\index{s21::DataModel@{s21::DataModel}!GetFileName@{GetFileName}}
+\index{GetFileName@{GetFileName}!s21::DataModel@{s21::DataModel}}
+\doxysubsubsection{\texorpdfstring{GetFileName()}{GetFileName()}}
+{\footnotesize\ttfamily std\+::string s21\+::\+Data\+Model\+::\+Get\+File\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the filename of the loaded model. 
+
+Get the file name from the loaded model\textquotesingle{}s path.
+
+\begin{DoxyReturn}{Returns}
+The filename of the loaded model.
+
+The file name of the loaded model. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1DataModel_aceafd2e0aa86e0eefd17eed3e9ceb987}\label{classs21_1_1DataModel_aceafd2e0aa86e0eefd17eed3e9ceb987}} 
+\index{s21::DataModel@{s21::DataModel}!GetFilePath@{GetFilePath}}
+\index{GetFilePath@{GetFilePath}!s21::DataModel@{s21::DataModel}}
+\doxysubsubsection{\texorpdfstring{GetFilePath()}{GetFilePath()}}
+{\footnotesize\ttfamily std\+::string s21\+::\+Data\+Model\+::\+Get\+File\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the file path of the loaded model. 
+
+Get the file path from the loaded model\textquotesingle{}s path.
+
+\begin{DoxyReturn}{Returns}
+The file path of the loaded model. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1DataModel_a40e1f72ce696045ffc86a573339a9c75}\label{classs21_1_1DataModel_a40e1f72ce696045ffc86a573339a9c75}} 
+\index{s21::DataModel@{s21::DataModel}!GetIndicesArray@{GetIndicesArray}}
+\index{GetIndicesArray@{GetIndicesArray}!s21::DataModel@{s21::DataModel}}
+\doxysubsubsection{\texorpdfstring{GetIndicesArray()}{GetIndicesArray()}}
+{\footnotesize\ttfamily int $\ast$ s21\+::\+Data\+Model\+::\+Get\+Indices\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the indices array of the model. 
+
+Get the indices array (polygons) of the loaded model.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the indices array. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1DataModel_a87f1ddc35f78adcd8ce07d493f979f4f}\label{classs21_1_1DataModel_a87f1ddc35f78adcd8ce07d493f979f4f}} 
+\index{s21::DataModel@{s21::DataModel}!GetMaximumPoint@{GetMaximumPoint}}
+\index{GetMaximumPoint@{GetMaximumPoint}!s21::DataModel@{s21::DataModel}}
+\doxysubsubsection{\texorpdfstring{GetMaximumPoint()}{GetMaximumPoint()}}
+{\footnotesize\ttfamily float $\ast$ s21\+::\+Data\+Model\+::\+Get\+Maximum\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the value of the coordinates of the farthest point. 
+
+\begin{DoxyReturn}{Returns}
+value of the coordinates of the farthest point. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1DataModel_a9a5cf3d11e577a2292a2ff5fbb0ba6a3}\label{classs21_1_1DataModel_a9a5cf3d11e577a2292a2ff5fbb0ba6a3}} 
+\index{s21::DataModel@{s21::DataModel}!GetMinimumPoint@{GetMinimumPoint}}
+\index{GetMinimumPoint@{GetMinimumPoint}!s21::DataModel@{s21::DataModel}}
+\doxysubsubsection{\texorpdfstring{GetMinimumPoint()}{GetMinimumPoint()}}
+{\footnotesize\ttfamily float $\ast$ s21\+::\+Data\+Model\+::\+Get\+Minimum\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the value of the coordinates of the closest point. 
+
+\begin{DoxyReturn}{Returns}
+value of the coordinates of the closest point. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1DataModel_a79faac111a5beefa94e8bd712b456cd5}\label{classs21_1_1DataModel_a79faac111a5beefa94e8bd712b456cd5}} 
+\index{s21::DataModel@{s21::DataModel}!GetNumberOfIndices@{GetNumberOfIndices}}
+\index{GetNumberOfIndices@{GetNumberOfIndices}!s21::DataModel@{s21::DataModel}}
+\doxysubsubsection{\texorpdfstring{GetNumberOfIndices()}{GetNumberOfIndices()}}
+{\footnotesize\ttfamily size\+\_\+t s21\+::\+Data\+Model\+::\+Get\+Number\+Of\+Indices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the number of indices in the model. 
+
+Get the number of indices (polygons) in the loaded model.
+
+\begin{DoxyReturn}{Returns}
+The number of indices.
+
+The number of indices (polygons). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1DataModel_ae18e148815cec571c1df2187e6b51976}\label{classs21_1_1DataModel_ae18e148815cec571c1df2187e6b51976}} 
+\index{s21::DataModel@{s21::DataModel}!GetNumberOfRibs@{GetNumberOfRibs}}
+\index{GetNumberOfRibs@{GetNumberOfRibs}!s21::DataModel@{s21::DataModel}}
+\doxysubsubsection{\texorpdfstring{GetNumberOfRibs()}{GetNumberOfRibs()}}
+{\footnotesize\ttfamily size\+\_\+t s21\+::\+Data\+Model\+::\+Get\+Number\+Of\+Ribs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the number of ribs in the model. 
+
+Get the number of unique edges in the loaded model.
+
+\begin{DoxyReturn}{Returns}
+The number of ribs.
+
+The number of unique edges. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1DataModel_a33e003bfa7921050551a4b4f4b7e3fb5}\label{classs21_1_1DataModel_a33e003bfa7921050551a4b4f4b7e3fb5}} 
+\index{s21::DataModel@{s21::DataModel}!GetNumberOfVertexes@{GetNumberOfVertexes}}
+\index{GetNumberOfVertexes@{GetNumberOfVertexes}!s21::DataModel@{s21::DataModel}}
+\doxysubsubsection{\texorpdfstring{GetNumberOfVertexes()}{GetNumberOfVertexes()}}
+{\footnotesize\ttfamily size\+\_\+t s21\+::\+Data\+Model\+::\+Get\+Number\+Of\+Vertexes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the number of vertices in the model. 
+
+Get the number of vertices in the loaded model.
+
+\begin{DoxyReturn}{Returns}
+The number of vertices. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1DataModel_abc1ef7ce335cbad1e551a0c448e462be}\label{classs21_1_1DataModel_abc1ef7ce335cbad1e551a0c448e462be}} 
+\index{s21::DataModel@{s21::DataModel}!GetObjectModel@{GetObjectModel}}
+\index{GetObjectModel@{GetObjectModel}!s21::DataModel@{s21::DataModel}}
+\doxysubsubsection{\texorpdfstring{GetObjectModel()}{GetObjectModel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classs21_1_1Object3D}{Object3D}} \& s21\+::\+Data\+Model\+::\+Get\+Object\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get a reference to the \mbox{\hyperlink{classs21_1_1Object3D}{Object3D}} representing the model. 
+
+Get a reference to the loaded 3D object model.
+
+\begin{DoxyReturn}{Returns}
+A reference to the \mbox{\hyperlink{classs21_1_1Object3D}{Object3D}}.
+
+A reference to the 3D object model. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1DataModel_a12b791c05f33ad645eac30eceed920b4}\label{classs21_1_1DataModel_a12b791c05f33ad645eac30eceed920b4}} 
+\index{s21::DataModel@{s21::DataModel}!GetVertexArray@{GetVertexArray}}
+\index{GetVertexArray@{GetVertexArray}!s21::DataModel@{s21::DataModel}}
+\doxysubsubsection{\texorpdfstring{GetVertexArray()}{GetVertexArray()}}
+{\footnotesize\ttfamily float $\ast$ s21\+::\+Data\+Model\+::\+Get\+Vertex\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the vertex array of the model. 
+
+Get the vertex array of the loaded model.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the vertex array. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1DataModel_a9d9b4a22f75052b4d0b220481fee70c6}\label{classs21_1_1DataModel_a9d9b4a22f75052b4d0b220481fee70c6}} 
+\index{s21::DataModel@{s21::DataModel}!LoadModel@{LoadModel}}
+\index{LoadModel@{LoadModel}!s21::DataModel@{s21::DataModel}}
+\doxysubsubsection{\texorpdfstring{LoadModel()}{LoadModel()}}
+{\footnotesize\ttfamily void s21\+::\+Data\+Model\+::\+Load\+Model (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+Load a 3D model from a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+name} & The name of the 3D model file to load.\\
+\hline
+{\em file\+\_\+name} & The path to the 3D model file. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1DataModel_a142dd98520f52f1be976961178ceacac}\label{classs21_1_1DataModel_a142dd98520f52f1be976961178ceacac}} 
+\index{s21::DataModel@{s21::DataModel}!MoveModel@{MoveModel}}
+\index{MoveModel@{MoveModel}!s21::DataModel@{s21::DataModel}}
+\doxysubsubsection{\texorpdfstring{MoveModel()}{MoveModel()}}
+{\footnotesize\ttfamily void s21\+::\+Data\+Model\+::\+Move\+Model (\begin{DoxyParamCaption}\item[{float}]{dx,  }\item[{float}]{dy,  }\item[{float}]{dz }\end{DoxyParamCaption})}
+
+
+
+Move the position of the model. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dx} & The Ox vector of the movement. \\
+\hline
+{\em dy} & The Oy vector of the movement. \\
+\hline
+{\em dz} & The Oz vector of the movement. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1DataModel_ab2f81ec8ee2bf9c8fbdf649a2f17189e}\label{classs21_1_1DataModel_ab2f81ec8ee2bf9c8fbdf649a2f17189e}} 
+\index{s21::DataModel@{s21::DataModel}!ResetModelPosition@{ResetModelPosition}}
+\index{ResetModelPosition@{ResetModelPosition}!s21::DataModel@{s21::DataModel}}
+\doxysubsubsection{\texorpdfstring{ResetModelPosition()}{ResetModelPosition()}}
+{\footnotesize\ttfamily void s21\+::\+Data\+Model\+::\+Reset\+Model\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reset the position of the model to its default state. 
+
+Reset the model\textquotesingle{}s position to its default state. \mbox{\Hypertarget{classs21_1_1DataModel_a7a1b14f0a3c928a382a879624e35f2cf}\label{classs21_1_1DataModel_a7a1b14f0a3c928a382a879624e35f2cf}} 
+\index{s21::DataModel@{s21::DataModel}!RotateModel@{RotateModel}}
+\index{RotateModel@{RotateModel}!s21::DataModel@{s21::DataModel}}
+\doxysubsubsection{\texorpdfstring{RotateModel()}{RotateModel()}}
+{\footnotesize\ttfamily void s21\+::\+Data\+Model\+::\+Rotate\+Model (\begin{DoxyParamCaption}\item[{float}]{dx,  }\item[{float}]{dy,  }\item[{float}]{dz }\end{DoxyParamCaption})}
+
+
+
+Rotate the position of the model. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dx} & The Ox angle of the rotation (degrees). \\
+\hline
+{\em dy} & The Oy angle of the rotation (degrees). \\
+\hline
+{\em dz} & The Oz angle of the rotation (degrees). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1DataModel_aa256cf1916be9e006169b94a9ae128c8}\label{classs21_1_1DataModel_aa256cf1916be9e006169b94a9ae128c8}} 
+\index{s21::DataModel@{s21::DataModel}!ScaleModel@{ScaleModel}}
+\index{ScaleModel@{ScaleModel}!s21::DataModel@{s21::DataModel}}
+\doxysubsubsection{\texorpdfstring{ScaleModel()}{ScaleModel()}}
+{\footnotesize\ttfamily void s21\+::\+Data\+Model\+::\+Scale\+Model (\begin{DoxyParamCaption}\item[{float}]{scale\+\_\+value }\end{DoxyParamCaption})}
+
+
+
+Scale the size of the model. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scale\+\_\+value} & The factor of the scaling. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+3d\+\_\+viewer\+\_\+v2/model/interface/data\+\_\+model.\+h\item 
+3d\+\_\+viewer\+\_\+v2/model/interface/data\+\_\+model.\+cc\end{DoxyCompactItemize}

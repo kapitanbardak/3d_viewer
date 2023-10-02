@@ -1,0 +1,68 @@
+\hypertarget{controller_8h_source}{}\doxysection{controller.\+h}
+\label{controller_8h_source}\index{3d\_viewer\_v2/controller/controller.h@{3d\_viewer\_v2/controller/controller.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CONTROLLER\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CONTROLLER\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <QFileDialog>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QMainWindow>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QMouseEvent>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <QPushButton>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <QDebug>}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}../core/glcanvas.h"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}../model/interface/data\_model.h"{}}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}QColorDialog"{}}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}QGridLayout"{}}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}commands/commands\_list.h"{}}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}ui\_mainwindow.h"{}}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}cursorchecker.h"{}}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}commands/change\_item\_color\_command.h"{}}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include "{}commands/change\_model\_command.h"{}}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include "{}commands/open\_file\_command.h"{}}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include "{}commands/save\_img\_command.h"{}}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#include "{}commands/save\_gif\_command.h"{}}}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{keyword}{namespace }s21 \{}
+\DoxyCodeLine{23 \textcolor{keyword}{class }\mbox{\hyperlink{classs21_1_1Controller}{Controller}} : QObject \{}
+\DoxyCodeLine{24  \textcolor{keyword}{public}:}
+\DoxyCodeLine{25   \mbox{\hyperlink{classs21_1_1Controller}{Controller}}(Ui\_MainWindow *mainWindow);}
+\DoxyCodeLine{26   \mbox{\hyperlink{classs21_1_1Controller}{\string~Controller}}();}
+\DoxyCodeLine{27   \textcolor{keywordtype}{void} ButtonHandler(QPushButton *button);}
+\DoxyCodeLine{28   \textcolor{keywordtype}{void} BoxHandler(QDoubleSpinBox *box);}
+\DoxyCodeLine{29   \textcolor{keywordtype}{void} MouseHandler(QMouseEvent *event);}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31  \textcolor{keyword}{private}:}
+\DoxyCodeLine{32   \textcolor{keywordtype}{void} makeObjectsEnabled(\textcolor{keywordtype}{bool} mode);}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34   \mbox{\hyperlink{classs21_1_1GlCanvas}{GlCanvas}} *canvas\_ = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{35   \mbox{\hyperlink{classs21_1_1DataModel}{DataModel}} *object\_ = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{36   \mbox{\hyperlink{classICommand}{ICommand}} *command\_ = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{37   Ui\_MainWindow *main\_window\_ = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{38   \mbox{\hyperlink{classs21_1_1CursorChecker}{CursorChecker}}* cursorChecker\_ = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{39   \textcolor{keywordtype}{float}* defaultModelState\_ = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41   QString background\_color\_btn\_object\_name\_;}
+\DoxyCodeLine{42   QString ribs\_color\_btn\_object\_name\_;}
+\DoxyCodeLine{43   QString vertex\_color\_btn\_object\_name\_;}
+\DoxyCodeLine{44   QString reset\_pos\_btn\_name\_;}
+\DoxyCodeLine{45   QString load\_object\_btn\_name\_;}
+\DoxyCodeLine{46   QString x\_offset\_box\_name\_;}
+\DoxyCodeLine{47   QString y\_offset\_box\_name\_;}
+\DoxyCodeLine{48   QString z\_offset\_box\_name\_;}
+\DoxyCodeLine{49   QString x\_rotation\_box\_name\_;}
+\DoxyCodeLine{50   QString y\_rotation\_box\_name\_;}
+\DoxyCodeLine{51   QString z\_rotation\_box\_name\_;}
+\DoxyCodeLine{52   QString scale\_box\_name\_;}
+\DoxyCodeLine{53   QString save\_img\_box\_name\_;}
+\DoxyCodeLine{54   QString save\_gif\_box\_name\_;}
+\DoxyCodeLine{55   QString vertex\_size\_box\_name\_;}
+\DoxyCodeLine{56   QString ribs\_width\_box\_name\_;}
+\DoxyCodeLine{57   QString ribs\_type\_btn\_name;}
+\DoxyCodeLine{58   QString vertex\_type\_btn\_name;}
+\DoxyCodeLine{59 \};}
+\DoxyCodeLine{60 \}  \textcolor{comment}{// namespace s21}}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// CONTROLLER\_H}}
+
+\end{DoxyCode}

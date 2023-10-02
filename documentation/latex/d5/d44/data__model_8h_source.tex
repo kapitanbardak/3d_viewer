@@ -1,0 +1,51 @@
+\hypertarget{data__model_8h_source}{}\doxysection{data\+\_\+model.\+h}
+\label{data__model_8h_source}\index{3d\_viewer\_v2/model/interface/data\_model.h@{3d\_viewer\_v2/model/interface/data\_model.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef IDATAMODEL\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define IDATAMODEL\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}../object\_3d.h"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}../parser.h"{}}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{keyword}{namespace }s21 \{}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{15     \textcolor{keyword}{class }\mbox{\hyperlink{classs21_1_1DataModel}{DataModel}} \{}
+\DoxyCodeLine{16     \textcolor{keyword}{public}:}
+\DoxyCodeLine{20         \mbox{\hyperlink{classs21_1_1DataModel_a543b62c65095e0d7aab05edaf1bf582e}{DataModel}}();}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{25         \mbox{\hyperlink{classs21_1_1DataModel_af74f4d3307fe2d350d84bc731a52b952}{\string~DataModel}}();}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{31         \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{classs21_1_1DataModel_a33e003bfa7921050551a4b4f4b7e3fb5}{GetNumberOfVertexes}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{37         \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{classs21_1_1DataModel_a79faac111a5beefa94e8bd712b456cd5}{GetNumberOfIndices}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{43         \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{classs21_1_1DataModel_ae18e148815cec571c1df2187e6b51976}{GetNumberOfRibs}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{49         \mbox{\hyperlink{classs21_1_1Object3D}{Object3D}} \&\mbox{\hyperlink{classs21_1_1DataModel_a30b376d5b2677170886f59f13714a89a}{GetObjectModel}}();}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{55         \textcolor{keywordtype}{void} \mbox{\hyperlink{classs21_1_1DataModel_a9d9b4a22f75052b4d0b220481fee70c6}{LoadModel}}(\textcolor{keyword}{const} std::string \&file\_name);}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{60         \textcolor{keywordtype}{void} \mbox{\hyperlink{classs21_1_1DataModel_ab2f81ec8ee2bf9c8fbdf649a2f17189e}{ResetModelPosition}}();}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{66         \textcolor{keywordtype}{float} *\mbox{\hyperlink{classs21_1_1DataModel_a12b791c05f33ad645eac30eceed920b4}{GetVertexArray}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{72         \textcolor{keywordtype}{int} *\mbox{\hyperlink{classs21_1_1DataModel_a40e1f72ce696045ffc86a573339a9c75}{GetIndicesArray}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{78         std::string \mbox{\hyperlink{classs21_1_1DataModel_a0b23ae2993982e3e6e0de233784d9b4b}{GetFileName}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{84         std::string \mbox{\hyperlink{classs21_1_1DataModel_aceafd2e0aa86e0eefd17eed3e9ceb987}{GetFilePath}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{86     \textcolor{keyword}{private}:}
+\DoxyCodeLine{87         \mbox{\hyperlink{classs21_1_1Parser}{Parser}} *parser\_ = \textcolor{keyword}{nullptr}; }
+\DoxyCodeLine{88         std::vector<float> defaultModelState\_; }
+\DoxyCodeLine{89     \};}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{91 \}  \textcolor{comment}{// namespace s21}}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// IDATAMODEL\_H}}
+
+\end{DoxyCode}

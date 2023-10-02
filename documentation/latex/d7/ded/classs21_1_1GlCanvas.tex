@@ -1,0 +1,326 @@
+\hypertarget{classs21_1_1GlCanvas}{}\doxysection{s21\+::Gl\+Canvas Class Reference}
+\label{classs21_1_1GlCanvas}\index{s21::GlCanvas@{s21::GlCanvas}}
+
+
+The \mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} class describes the Open\+Gl window in which the loaded model is drawn.  
+
+
+
+
+{\ttfamily \#include $<$glcanvas.\+h$>$}
+
+
+
+Inheritance diagram for s21\+::Gl\+Canvas\+:
+% FIG 0
+
+
+Collaboration diagram for s21\+::Gl\+Canvas\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classs21_1_1GlCanvas_a516ebc907853c0942b69bb36d8b83d8a}{Gl\+Canvas}} (QOpen\+GLWidget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} object constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classs21_1_1GlCanvas_ac218a0ed0061e34e8895e0928eedfc89}\label{classs21_1_1GlCanvas_ac218a0ed0061e34e8895e0928eedfc89}} 
+void \mbox{\hyperlink{classs21_1_1GlCanvas_ac218a0ed0061e34e8895e0928eedfc89}{Init\+Projection\+Parameters}} (Projection\+Type)
+\begin{DoxyCompactList}\small\item\em Sets projection type parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1GlCanvas_a1a4b72e2b2dda2f35b4ced23dd9036b3}{Initialize\+Arrays}} (float $\ast$vertexes, int $\ast$indicies)
+\begin{DoxyCompactList}\small\item\em Initializing vertex and index arrays. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1GlCanvas_a4e210ea3c4120d23fa28ce40747be06c}{Set\+Arrays\+Size}} (size\+\_\+t vertex\+Size, size\+\_\+t indicies\+Size)
+\begin{DoxyCompactList}\small\item\em Set\+Arrays\+Size sets the size of vertex and index arrays. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1GlCanvas_a5433ed1fe8c067987fc3e7c1a49bd120}{Set\+Color}} (QColor color, Functions\+Mode mode)
+\begin{DoxyCompactList}\small\item\em Sets color of ribs/vertex/background/grid based on mode. \end{DoxyCompactList}\item 
+QColor \mbox{\hyperlink{classs21_1_1GlCanvas_ae0c75f1bbf91aba6f4745b31f7ec4dc2}{Get\+Item\+Color}} (Functions\+Mode mode)
+\begin{DoxyCompactList}\small\item\em Returns the color value of edges/vertices/background/grid based on mode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1GlCanvas_a841ef7fc9cdef86d4327981dc958a353}{Set\+Vertex\+Size}} (float size)
+\begin{DoxyCompactList}\small\item\em Sets the size of vertices. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classs21_1_1GlCanvas_ac67101b556cfcb790d2e5b634bb5e195}{Get\+Vertex\+Size}} () const
+\begin{DoxyCompactList}\small\item\em Returns the size of vertices. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1GlCanvas_af4cb68ae7991c754f11f3988a8603709}{Set\+Ribs\+Width}} (float width)
+\begin{DoxyCompactList}\small\item\em Sets the width of ribs. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classs21_1_1GlCanvas_a8890d79f3e3a5e74b181825f47a19c03}{Get\+Ribs\+Width}} () const
+\begin{DoxyCompactList}\small\item\em Returns the width of ribs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1GlCanvas_a43a18ee7cdbef928815ab6cc9aee7388}{Set\+Vertex\+Type}} (Vertex\+Type type)
+\begin{DoxyCompactList}\small\item\em Sets the type of vertices (hard/smooth/none) based on type enum value. \end{DoxyCompactList}\item 
+Vertex\+Type \mbox{\hyperlink{classs21_1_1GlCanvas_a9d3c0d305b537a85258f37029431e2d6}{Get\+Vertex\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Returns the current type of vertices. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1GlCanvas_a03a9285f832a24aa7f1fb0e200423195}{Set\+Ribs\+Type}} (Ribs\+Type type)
+\begin{DoxyCompactList}\small\item\em Sets the type of ribs (line/dotted) based on type enum value. \end{DoxyCompactList}\item 
+Ribs\+Type \mbox{\hyperlink{classs21_1_1GlCanvas_a1fd1c63b7b2ef791b387f10c8e078ebe}{Get\+Ribs\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Returns the current type of ribs. \end{DoxyCompactList}\item 
+Projection\+Type \mbox{\hyperlink{classs21_1_1GlCanvas_a6bd34f25be69e657212250bb284d1e38}{Get\+Projection\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Returns the current projection type. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1GlCanvas_a4bf7744c2f4971a9a9e2d57f05a84cc4}{Set\+Projection\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Sets the type of the projection (central/ parralel) based on current type. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1GlCanvas_aa42c77f5b062d11e197846ad1620ef64}{Change\+Painting\+Area}} (const float scale)
+\begin{DoxyCompactList}\small\item\em Sets the edges of the rendering field depending on the scale of the model. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classs21_1_1GlCanvas_a307324519dc68eb87afc529c482a3c75}\label{classs21_1_1GlCanvas_a307324519dc68eb87afc529c482a3c75}} 
+void {\bfseries initialize\+GL} () override
+\item 
+\mbox{\Hypertarget{classs21_1_1GlCanvas_a03e93faff0b8231875ef957ccbbd644f}\label{classs21_1_1GlCanvas_a03e93faff0b8231875ef957ccbbd644f}} 
+void \mbox{\hyperlink{classs21_1_1GlCanvas_a03e93faff0b8231875ef957ccbbd644f}{resize\+GL}} (int width, int height) override
+\begin{DoxyCompactList}\small\item\em Calculates the aspect ratio when resizing the window in order to subsequently maintain the proportions of the rendering windo. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classs21_1_1GlCanvas_a2fdc1bf8cccd39354f7e1043c1fe6bba}\label{classs21_1_1GlCanvas_a2fdc1bf8cccd39354f7e1043c1fe6bba}} 
+void \mbox{\hyperlink{classs21_1_1GlCanvas_a2fdc1bf8cccd39354f7e1043c1fe6bba}{paint\+GL}} () override
+\begin{DoxyCompactList}\small\item\em Draws vertices and edges based on the passed arrays of vertices and indices. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} class describes the Open\+Gl window in which the loaded model is drawn. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classs21_1_1GlCanvas_a516ebc907853c0942b69bb36d8b83d8a}\label{classs21_1_1GlCanvas_a516ebc907853c0942b69bb36d8b83d8a}} 
+\index{s21::GlCanvas@{s21::GlCanvas}!GlCanvas@{GlCanvas}}
+\index{GlCanvas@{GlCanvas}!s21::GlCanvas@{s21::GlCanvas}}
+\doxysubsubsection{\texorpdfstring{GlCanvas()}{GlCanvas()}}
+{\footnotesize\ttfamily s21\+::\+Gl\+Canvas\+::\+Gl\+Canvas (\begin{DoxyParamCaption}\item[{QOpen\+GLWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} object constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Pointer to parental object. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classs21_1_1GlCanvas_aa42c77f5b062d11e197846ad1620ef64}\label{classs21_1_1GlCanvas_aa42c77f5b062d11e197846ad1620ef64}} 
+\index{s21::GlCanvas@{s21::GlCanvas}!ChangePaintingArea@{ChangePaintingArea}}
+\index{ChangePaintingArea@{ChangePaintingArea}!s21::GlCanvas@{s21::GlCanvas}}
+\doxysubsubsection{\texorpdfstring{ChangePaintingArea()}{ChangePaintingArea()}}
+{\footnotesize\ttfamily void s21\+::\+Gl\+Canvas\+::\+Change\+Painting\+Area (\begin{DoxyParamCaption}\item[{const float}]{scale }\end{DoxyParamCaption})}
+
+
+
+Sets the edges of the rendering field depending on the scale of the model. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scale} & Model scale value.\\
+\hline
+\end{DoxyParams}
+If the scale is less than one, then the border remains default. Otherwise it is multiplied by the scale. \mbox{\Hypertarget{classs21_1_1GlCanvas_ae0c75f1bbf91aba6f4745b31f7ec4dc2}\label{classs21_1_1GlCanvas_ae0c75f1bbf91aba6f4745b31f7ec4dc2}} 
+\index{s21::GlCanvas@{s21::GlCanvas}!GetItemColor@{GetItemColor}}
+\index{GetItemColor@{GetItemColor}!s21::GlCanvas@{s21::GlCanvas}}
+\doxysubsubsection{\texorpdfstring{GetItemColor()}{GetItemColor()}}
+{\footnotesize\ttfamily QColor s21\+::\+Gl\+Canvas\+::\+Get\+Item\+Color (\begin{DoxyParamCaption}\item[{Functions\+Mode}]{mode }\end{DoxyParamCaption})}
+
+
+
+Returns the color value of edges/vertices/background/grid based on mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+QColor value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1GlCanvas_a6bd34f25be69e657212250bb284d1e38}\label{classs21_1_1GlCanvas_a6bd34f25be69e657212250bb284d1e38}} 
+\index{s21::GlCanvas@{s21::GlCanvas}!GetProjectionType@{GetProjectionType}}
+\index{GetProjectionType@{GetProjectionType}!s21::GlCanvas@{s21::GlCanvas}}
+\doxysubsubsection{\texorpdfstring{GetProjectionType()}{GetProjectionType()}}
+{\footnotesize\ttfamily Projection\+Type s21\+::\+Gl\+Canvas\+::\+Get\+Projection\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the current projection type. 
+
+\begin{DoxyReturn}{Returns}
+projection type enum value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1GlCanvas_a1fd1c63b7b2ef791b387f10c8e078ebe}\label{classs21_1_1GlCanvas_a1fd1c63b7b2ef791b387f10c8e078ebe}} 
+\index{s21::GlCanvas@{s21::GlCanvas}!GetRibsType@{GetRibsType}}
+\index{GetRibsType@{GetRibsType}!s21::GlCanvas@{s21::GlCanvas}}
+\doxysubsubsection{\texorpdfstring{GetRibsType()}{GetRibsType()}}
+{\footnotesize\ttfamily Ribs\+Type s21\+::\+Gl\+Canvas\+::\+Get\+Ribs\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the current type of ribs. 
+
+\begin{DoxyReturn}{Returns}
+ribs type enum value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1GlCanvas_a8890d79f3e3a5e74b181825f47a19c03}\label{classs21_1_1GlCanvas_a8890d79f3e3a5e74b181825f47a19c03}} 
+\index{s21::GlCanvas@{s21::GlCanvas}!GetRibsWidth@{GetRibsWidth}}
+\index{GetRibsWidth@{GetRibsWidth}!s21::GlCanvas@{s21::GlCanvas}}
+\doxysubsubsection{\texorpdfstring{GetRibsWidth()}{GetRibsWidth()}}
+{\footnotesize\ttfamily float s21\+::\+Gl\+Canvas\+::\+Get\+Ribs\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the width of ribs. 
+
+\begin{DoxyReturn}{Returns}
+width float value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1GlCanvas_ac67101b556cfcb790d2e5b634bb5e195}\label{classs21_1_1GlCanvas_ac67101b556cfcb790d2e5b634bb5e195}} 
+\index{s21::GlCanvas@{s21::GlCanvas}!GetVertexSize@{GetVertexSize}}
+\index{GetVertexSize@{GetVertexSize}!s21::GlCanvas@{s21::GlCanvas}}
+\doxysubsubsection{\texorpdfstring{GetVertexSize()}{GetVertexSize()}}
+{\footnotesize\ttfamily float s21\+::\+Gl\+Canvas\+::\+Get\+Vertex\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the size of vertices. 
+
+\begin{DoxyReturn}{Returns}
+size float value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1GlCanvas_a9d3c0d305b537a85258f37029431e2d6}\label{classs21_1_1GlCanvas_a9d3c0d305b537a85258f37029431e2d6}} 
+\index{s21::GlCanvas@{s21::GlCanvas}!GetVertexType@{GetVertexType}}
+\index{GetVertexType@{GetVertexType}!s21::GlCanvas@{s21::GlCanvas}}
+\doxysubsubsection{\texorpdfstring{GetVertexType()}{GetVertexType()}}
+{\footnotesize\ttfamily Vertex\+Type s21\+::\+Gl\+Canvas\+::\+Get\+Vertex\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the current type of vertices. 
+
+\begin{DoxyReturn}{Returns}
+vertex type enum value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1GlCanvas_a1a4b72e2b2dda2f35b4ced23dd9036b3}\label{classs21_1_1GlCanvas_a1a4b72e2b2dda2f35b4ced23dd9036b3}} 
+\index{s21::GlCanvas@{s21::GlCanvas}!InitializeArrays@{InitializeArrays}}
+\index{InitializeArrays@{InitializeArrays}!s21::GlCanvas@{s21::GlCanvas}}
+\doxysubsubsection{\texorpdfstring{InitializeArrays()}{InitializeArrays()}}
+{\footnotesize\ttfamily void s21\+::\+Gl\+Canvas\+::\+Initialize\+Arrays (\begin{DoxyParamCaption}\item[{float $\ast$}]{vertexes,  }\item[{int $\ast$}]{indicies }\end{DoxyParamCaption})}
+
+
+
+Initializing vertex and index arrays. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertexes} & Pointer to vertex array. \\
+\hline
+{\em indicies} & Pointer to index array. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1GlCanvas_a4e210ea3c4120d23fa28ce40747be06c}\label{classs21_1_1GlCanvas_a4e210ea3c4120d23fa28ce40747be06c}} 
+\index{s21::GlCanvas@{s21::GlCanvas}!SetArraysSize@{SetArraysSize}}
+\index{SetArraysSize@{SetArraysSize}!s21::GlCanvas@{s21::GlCanvas}}
+\doxysubsubsection{\texorpdfstring{SetArraysSize()}{SetArraysSize()}}
+{\footnotesize\ttfamily void s21\+::\+Gl\+Canvas\+::\+Set\+Arrays\+Size (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{vertex\+Size,  }\item[{size\+\_\+t}]{indicies\+Size }\end{DoxyParamCaption})}
+
+
+
+Set\+Arrays\+Size sets the size of vertex and index arrays. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex\+Size} & Size of vertex array. \\
+\hline
+{\em indicies\+Size} & Size of index array. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1GlCanvas_a5433ed1fe8c067987fc3e7c1a49bd120}\label{classs21_1_1GlCanvas_a5433ed1fe8c067987fc3e7c1a49bd120}} 
+\index{s21::GlCanvas@{s21::GlCanvas}!SetColor@{SetColor}}
+\index{SetColor@{SetColor}!s21::GlCanvas@{s21::GlCanvas}}
+\doxysubsubsection{\texorpdfstring{SetColor()}{SetColor()}}
+{\footnotesize\ttfamily void s21\+::\+Gl\+Canvas\+::\+Set\+Color (\begin{DoxyParamCaption}\item[{QColor}]{color,  }\item[{Functions\+Mode}]{mode }\end{DoxyParamCaption})}
+
+
+
+Sets color of ribs/vertex/background/grid based on mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & \\
+\hline
+{\em mode} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The default parameter in switch explicitly specifies to skip the remaining types in the enumeration. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classs21_1_1GlCanvas_a4bf7744c2f4971a9a9e2d57f05a84cc4}\label{classs21_1_1GlCanvas_a4bf7744c2f4971a9a9e2d57f05a84cc4}} 
+\index{s21::GlCanvas@{s21::GlCanvas}!SetProjectionType@{SetProjectionType}}
+\index{SetProjectionType@{SetProjectionType}!s21::GlCanvas@{s21::GlCanvas}}
+\doxysubsubsection{\texorpdfstring{SetProjectionType()}{SetProjectionType()}}
+{\footnotesize\ttfamily void s21\+::\+Gl\+Canvas\+::\+Set\+Projection\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets the type of the projection (central/ parralel) based on current type. 
+
+Set the projection type for the Open\+GL canvas.
+
+This function sets the projection type of the Open\+GL canvas based on the current settings. If the projection type is set to CENTRAL, it uses a perspective projection (gl\+Frustum). Otherwise, it uses an orthographic projection (gl\+Ortho). \begin{DoxySeeAlso}{See also}
+Projection\+Type 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classs21_1_1GlCanvas_a03a9285f832a24aa7f1fb0e200423195}\label{classs21_1_1GlCanvas_a03a9285f832a24aa7f1fb0e200423195}} 
+\index{s21::GlCanvas@{s21::GlCanvas}!SetRibsType@{SetRibsType}}
+\index{SetRibsType@{SetRibsType}!s21::GlCanvas@{s21::GlCanvas}}
+\doxysubsubsection{\texorpdfstring{SetRibsType()}{SetRibsType()}}
+{\footnotesize\ttfamily void s21\+::\+Gl\+Canvas\+::\+Set\+Ribs\+Type (\begin{DoxyParamCaption}\item[{Ribs\+Type}]{type }\end{DoxyParamCaption})}
+
+
+
+Sets the type of ribs (line/dotted) based on type enum value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1GlCanvas_af4cb68ae7991c754f11f3988a8603709}\label{classs21_1_1GlCanvas_af4cb68ae7991c754f11f3988a8603709}} 
+\index{s21::GlCanvas@{s21::GlCanvas}!SetRibsWidth@{SetRibsWidth}}
+\index{SetRibsWidth@{SetRibsWidth}!s21::GlCanvas@{s21::GlCanvas}}
+\doxysubsubsection{\texorpdfstring{SetRibsWidth()}{SetRibsWidth()}}
+{\footnotesize\ttfamily void s21\+::\+Gl\+Canvas\+::\+Set\+Ribs\+Width (\begin{DoxyParamCaption}\item[{float}]{width }\end{DoxyParamCaption})}
+
+
+
+Sets the width of ribs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1GlCanvas_a841ef7fc9cdef86d4327981dc958a353}\label{classs21_1_1GlCanvas_a841ef7fc9cdef86d4327981dc958a353}} 
+\index{s21::GlCanvas@{s21::GlCanvas}!SetVertexSize@{SetVertexSize}}
+\index{SetVertexSize@{SetVertexSize}!s21::GlCanvas@{s21::GlCanvas}}
+\doxysubsubsection{\texorpdfstring{SetVertexSize()}{SetVertexSize()}}
+{\footnotesize\ttfamily void s21\+::\+Gl\+Canvas\+::\+Set\+Vertex\+Size (\begin{DoxyParamCaption}\item[{float}]{size }\end{DoxyParamCaption})}
+
+
+
+Sets the size of vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1GlCanvas_a43a18ee7cdbef928815ab6cc9aee7388}\label{classs21_1_1GlCanvas_a43a18ee7cdbef928815ab6cc9aee7388}} 
+\index{s21::GlCanvas@{s21::GlCanvas}!SetVertexType@{SetVertexType}}
+\index{SetVertexType@{SetVertexType}!s21::GlCanvas@{s21::GlCanvas}}
+\doxysubsubsection{\texorpdfstring{SetVertexType()}{SetVertexType()}}
+{\footnotesize\ttfamily void s21\+::\+Gl\+Canvas\+::\+Set\+Vertex\+Type (\begin{DoxyParamCaption}\item[{Vertex\+Type}]{type }\end{DoxyParamCaption})}
+
+
+
+Sets the type of vertices (hard/smooth/none) based on type enum value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+3d\+\_\+viewer\+\_\+v2/core/glcanvas.\+h\item 
+3d\+\_\+viewer\+\_\+v2/core/glcanvas.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,13 @@
+digraph "s21::IObjectTransformationStrategy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="s21::IObjectTransformation\lStrategy",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="The IObjectTransformationStrategy class is an interface for object transformation strategies."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="s21::MoveStrategy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/dc6/classs21_1_1MoveStrategy.html",tooltip="The MoveStrategy class represents a strategy for moving an object."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="s21::RotateStrategy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/d23/classs21_1_1RotateStrategy.html",tooltip="The RotateStrategy class represents a strategy for rotating an object."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="s21::ScaleStrategy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/d71/classs21_1_1ScaleStrategy.html",tooltip="The ScaleStrategy class represents a strategy for scaling an object."];
+}

@@ -1,0 +1,59 @@
+\hypertarget{classs21_1_1MoveStrategy}{}\doxysection{s21\+::Move\+Strategy Class Reference}
+\label{classs21_1_1MoveStrategy}\index{s21::MoveStrategy@{s21::MoveStrategy}}
+
+
+The \mbox{\hyperlink{classs21_1_1MoveStrategy}{Move\+Strategy}} class represents a strategy for moving an object.  
+
+
+
+
+{\ttfamily \#include $<$move\+\_\+strategy.\+h$>$}
+
+
+
+Inheritance diagram for s21\+::Move\+Strategy\+:
+% FIG 0
+
+
+Collaboration diagram for s21\+::Move\+Strategy\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classs21_1_1MoveStrategy_adc7f9bcdfe9942c6aaaef216b62e98bb}{transform}} (const std\+::array$<$ float, 3 $>$ \&args) override
+\begin{DoxyCompactList}\small\item\em Transform the object by moving it using the provided parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classs21_1_1MoveStrategy}{Move\+Strategy}} class represents a strategy for moving an object. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classs21_1_1MoveStrategy_adc7f9bcdfe9942c6aaaef216b62e98bb}\label{classs21_1_1MoveStrategy_adc7f9bcdfe9942c6aaaef216b62e98bb}} 
+\index{s21::MoveStrategy@{s21::MoveStrategy}!transform@{transform}}
+\index{transform@{transform}!s21::MoveStrategy@{s21::MoveStrategy}}
+\doxysubsubsection{\texorpdfstring{transform()}{transform()}}
+{\footnotesize\ttfamily void s21\+::\+Move\+Strategy\+::transform (\begin{DoxyParamCaption}\item[{const std\+::array$<$ float, 3 $>$ \&}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Transform the object by moving it using the provided parameters. 
+
+Apply a translation transformation to the 3D object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & An array of three float values (dx, dy, dz) representing the movement in each axis.\\
+\hline
+{\em args} & An array containing the translation values along the X, Y, and Z axes. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classs21_1_1IObjectTransformationStrategy_ac66bf05a9804759db196279a7c20e6bb}{s21\+::\+IObject\+Transformation\+Strategy}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+3d\+\_\+viewer\+\_\+v2/model/strategy/move\+\_\+strategy.\+h\item 
+3d\+\_\+viewer\+\_\+v2/model/strategy/move\+\_\+strategy.\+cc\end{DoxyCompactItemize}

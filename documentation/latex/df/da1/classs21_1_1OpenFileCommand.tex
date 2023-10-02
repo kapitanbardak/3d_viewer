@@ -1,0 +1,87 @@
+\hypertarget{classs21_1_1OpenFileCommand}{}\doxysection{s21\+::Open\+File\+Command Class Reference}
+\label{classs21_1_1OpenFileCommand}\index{s21::OpenFileCommand@{s21::OpenFileCommand}}
+
+
+A command for opening a 3D model file.  
+
+
+
+
+{\ttfamily \#include $<$open\+\_\+file\+\_\+command.\+h$>$}
+
+
+
+Inheritance diagram for s21\+::Open\+File\+Command\+:
+% FIG 0
+
+
+Collaboration diagram for s21\+::Open\+File\+Command\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classs21_1_1OpenFileCommand_a60e4c6459bb39579373257e8ef08d2e4}{Open\+File\+Command}} (\mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} $\ast$canvas, \mbox{\hyperlink{classs21_1_1DataModel}{Data\+Model}} $\ast$object, \mbox{\hyperlink{classs21_1_1ItemsPropertyController}{Items\+Property\+Controller}} $\ast$item\+\_\+controller)
+\begin{DoxyCompactList}\small\item\em Constructs an \mbox{\hyperlink{classs21_1_1OpenFileCommand}{Open\+File\+Command}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1OpenFileCommand_ad1fad51bd82391ea4bba485b7a1df107}{execute}} () override
+\begin{DoxyCompactList}\small\item\em Executes the command, loading the specified 3D model file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A command for opening a 3D model file. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classs21_1_1OpenFileCommand_a60e4c6459bb39579373257e8ef08d2e4}\label{classs21_1_1OpenFileCommand_a60e4c6459bb39579373257e8ef08d2e4}} 
+\index{s21::OpenFileCommand@{s21::OpenFileCommand}!OpenFileCommand@{OpenFileCommand}}
+\index{OpenFileCommand@{OpenFileCommand}!s21::OpenFileCommand@{s21::OpenFileCommand}}
+\doxysubsubsection{\texorpdfstring{OpenFileCommand()}{OpenFileCommand()}}
+{\footnotesize\ttfamily s21\+::\+Open\+File\+Command\+::\+Open\+File\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} $\ast$}]{canvas,  }\item[{\mbox{\hyperlink{classs21_1_1DataModel}{Data\+Model}} $\ast$}]{object,  }\item[{\mbox{\hyperlink{classs21_1_1ItemsPropertyController}{Items\+Property\+Controller}} $\ast$}]{item\+\_\+controller }\end{DoxyParamCaption})}
+
+
+
+Constructs an \mbox{\hyperlink{classs21_1_1OpenFileCommand}{Open\+File\+Command}}. 
+
+Constructor for the \mbox{\hyperlink{classs21_1_1OpenFileCommand}{Open\+File\+Command}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em canvas} & A pointer to the \mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}}. \\
+\hline
+{\em object} & A pointer to the \mbox{\hyperlink{classs21_1_1DataModel}{Data\+Model}}. \\
+\hline
+{\em item\+\_\+controller} & A pointer to the \mbox{\hyperlink{classs21_1_1ItemsPropertyController}{Items\+Property\+Controller}}.\\
+\hline
+\end{DoxyParams}
+Constructs an \mbox{\hyperlink{classs21_1_1OpenFileCommand}{Open\+File\+Command}}. 
+\begin{DoxyParams}{Parameters}
+{\em canvas} & A pointer to the \mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}}. \\
+\hline
+{\em object} & A pointer to the \mbox{\hyperlink{classs21_1_1DataModel}{Data\+Model}}. \\
+\hline
+{\em item\+\_\+controller} & A pointer to the \mbox{\hyperlink{classs21_1_1ItemsPropertyController}{Items\+Property\+Controller}}. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classs21_1_1OpenFileCommand_ad1fad51bd82391ea4bba485b7a1df107}\label{classs21_1_1OpenFileCommand_ad1fad51bd82391ea4bba485b7a1df107}} 
+\index{s21::OpenFileCommand@{s21::OpenFileCommand}!execute@{execute}}
+\index{execute@{execute}!s21::OpenFileCommand@{s21::OpenFileCommand}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void s21\+::\+Open\+File\+Command\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Executes the command, loading the specified 3D model file. 
+
+Execute the open file command.
+
+This method opens and loads a 3D model file, initializes the \mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} with the model data, updates the GUI elements, and displays model information in the main window. 
+
+Implements \mbox{\hyperlink{classICommand_ace81beb0beea968f876f292446bf1120}{ICommand}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+3d\+\_\+viewer\+\_\+v2/controller/commands/open\+\_\+file\+\_\+command.\+h\item 
+3d\+\_\+viewer\+\_\+v2/controller/commands/open\+\_\+file\+\_\+command.\+cc\end{DoxyCompactItemize}

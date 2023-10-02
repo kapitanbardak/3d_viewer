@@ -1,0 +1,33 @@
+\hypertarget{cursorchecker_8h_source}{}\doxysection{cursorchecker.\+h}
+\label{cursorchecker_8h_source}\index{3d\_viewer\_v2/controller/cursorchecker.h@{3d\_viewer\_v2/controller/cursorchecker.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CURSORCHECKER\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CURSORCHECKER\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include<QVector4D>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include<QOpenGLWidget>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{namespace }s21 \{}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{classs21_1_1CursorChecker}{CursorChecker}}}
+\DoxyCodeLine{10 \{}
+\DoxyCodeLine{11 \textcolor{keyword}{public}:}
+\DoxyCodeLine{12     \mbox{\hyperlink{classs21_1_1CursorChecker}{CursorChecker}}();}
+\DoxyCodeLine{13     \textcolor{keywordtype}{bool} isCanvasArea(QOpenGLWidget\& canvas,\textcolor{keyword}{const} \textcolor{keywordtype}{double} xPressPoint, \textcolor{keyword}{const} \textcolor{keywordtype}{double} yPressPoint);}
+\DoxyCodeLine{14     \textcolor{keywordtype}{void} calculateModelRotation(QVector4D\& coords);}
+\DoxyCodeLine{15     \textcolor{keywordtype}{double} x() \textcolor{keyword}{const};}
+\DoxyCodeLine{16     \textcolor{keywordtype}{double} y() \textcolor{keyword}{const};}
+\DoxyCodeLine{17 \textcolor{keyword}{private}:}
+\DoxyCodeLine{18     \textcolor{keywordtype}{float} x\_previous\_mouse\_ = 0;}
+\DoxyCodeLine{19     \textcolor{keywordtype}{float} y\_previous\_mouse\_ = 0;}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21     \textcolor{keywordtype}{double} xValue\_ = 0,}
+\DoxyCodeLine{22            yValue\_ = 0,}
+\DoxyCodeLine{23            xSens\_ = 0.1,}
+\DoxyCodeLine{24            ySens\_ = 0.1;}
+\DoxyCodeLine{25 \};}
+\DoxyCodeLine{26 \}  \textcolor{comment}{// namespase s21}}
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// CURSORCHECKER\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,300 @@
+\hypertarget{classs21_1_1Object3D}{}\doxysection{s21\+::Object3D Class Reference}
+\label{classs21_1_1Object3D}\index{s21::Object3D@{s21::Object3D}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classs21_1_1Object3D_a9e320d75f0dbb76f1b5aabce146acf1e}{$\sim$\+Object3D}} ()
+\begin{DoxyCompactList}\small\item\em Деструктор класса \mbox{\hyperlink{classs21_1_1Object3D}{Object3D}}. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classs21_1_1Object3D_aa8c317beb149cd42613de8bc8f11941d}{Get\+Points\+Amount}} ()
+\begin{DoxyCompactList}\small\item\em Получить количество точек в объекте. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classs21_1_1Object3D_ad697c870b67a3ad4b64fe5d4a3228be1}{Get\+Polygon\+Amount}} ()
+\begin{DoxyCompactList}\small\item\em Получить количество полигонов в объекте. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classs21_1_1Object3D_a5de0735e8081e16e418f44ff62bf7177}{Get\+Edges\+Amount}} ()
+\begin{DoxyCompactList}\small\item\em Получить количество уникальных рёбер в объекте. \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \& \mbox{\hyperlink{classs21_1_1Object3D_a017ecf4add0d69bbd5ca5b963528ab4f}{Points}} ()
+\begin{DoxyCompactList}\small\item\em Получить вектор точек объекта. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \& \mbox{\hyperlink{classs21_1_1Object3D_a83b49584a7dbda0d9e4db5a99524a8be}{Indices}} ()
+\begin{DoxyCompactList}\small\item\em Получить вектор индексов полигонов объекта. \end{DoxyCompactList}\item 
+std\+::vector$<$ long int $>$ \& \mbox{\hyperlink{classs21_1_1Object3D_a2c658ff48c47b2edd6c4d0b9ae338798}{Edges}} ()
+\begin{DoxyCompactList}\small\item\em Получить вектор рёбер объекта. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1Object3D_a5ffa4431694d0fb3d64fd0da01563638}{reset\+Model\+To\+Default\+State}} (std\+::vector$<$ float $>$ \&default\+Points)
+\begin{DoxyCompactList}\small\item\em Сбросить модель к состоянию по умолчанию. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1Object3D_ac20cd4d8397b68ee5b7325b791cb47c2}{Add\+Point}} (float value)
+\begin{DoxyCompactList}\small\item\em Добавить новую точку в объект. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1Object3D_ab9a457e811e9b061037ecac6edc75bf5}{Add\+Polygon\+Unit}} (int value)
+\begin{DoxyCompactList}\small\item\em Добавить новый индекс полигона в объект. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1Object3D_a083ad5d293d23b9c2598587d99f67db6}{Add\+Edge}} (int value1, int value2)
+\begin{DoxyCompactList}\small\item\em Добавить новое ребро в объект. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1Object3D_ac80aa13c22036314cf61871ae3d3d8aa}{Set\+Path}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Установить путь к объекту. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classs21_1_1Object3D_a3723fbc35b28ea06f971817afd68aa56}{Get\+Path}} ()
+\begin{DoxyCompactList}\small\item\em Получить путь к объекту. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1Object3D_a7e7d35423312511b5bc818ff507ddd16}{Scale}} (float value)
+\begin{DoxyCompactList}\small\item\em Применить масштабирование к объекту. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1Object3D_a002bba2b658d89c86e15f19fd3646405}{Move}} (float valueX, float valueY, float valueZ)
+\begin{DoxyCompactList}\small\item\em Применить перемещение к объекту. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1Object3D_a910eef92a3f92be36adbb31951e26fd7}{Rotate}} (float valueX, float valueY, float valueZ)
+\begin{DoxyCompactList}\small\item\em Применить поворот к объекту. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classs21_1_1Object3D}{Object3D}} \& \mbox{\hyperlink{classs21_1_1Object3D_a2a96ddff1494c4ffa721ae918643200b}{Instance}} ()
+\begin{DoxyCompactList}\small\item\em Получить экземпляр класса \mbox{\hyperlink{classs21_1_1Object3D}{Object3D}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classs21_1_1Object3D_a9e320d75f0dbb76f1b5aabce146acf1e}\label{classs21_1_1Object3D_a9e320d75f0dbb76f1b5aabce146acf1e}} 
+\index{s21::Object3D@{s21::Object3D}!````~Object3D@{$\sim$Object3D}}
+\index{````~Object3D@{$\sim$Object3D}!s21::Object3D@{s21::Object3D}}
+\doxysubsubsection{\texorpdfstring{$\sim$Object3D()}{~Object3D()}}
+{\footnotesize\ttfamily s21\+::\+Object3\+D\+::$\sim$\+Object3D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Деструктор класса \mbox{\hyperlink{classs21_1_1Object3D}{Object3D}}. 
+
+В деструкторе освобождаются ресурсы, выделенные под стратегии трансформаций. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classs21_1_1Object3D_a083ad5d293d23b9c2598587d99f67db6}\label{classs21_1_1Object3D_a083ad5d293d23b9c2598587d99f67db6}} 
+\index{s21::Object3D@{s21::Object3D}!AddEdge@{AddEdge}}
+\index{AddEdge@{AddEdge}!s21::Object3D@{s21::Object3D}}
+\doxysubsubsection{\texorpdfstring{AddEdge()}{AddEdge()}}
+{\footnotesize\ttfamily void s21\+::\+Object3\+D\+::\+Add\+Edge (\begin{DoxyParamCaption}\item[{int}]{value1,  }\item[{int}]{value2 }\end{DoxyParamCaption})}
+
+
+
+Добавить новое ребро в объект. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value1} & Первая вершина ребра. \\
+\hline
+{\em value2} & Вторая вершина ребра. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1Object3D_ac20cd4d8397b68ee5b7325b791cb47c2}\label{classs21_1_1Object3D_ac20cd4d8397b68ee5b7325b791cb47c2}} 
+\index{s21::Object3D@{s21::Object3D}!AddPoint@{AddPoint}}
+\index{AddPoint@{AddPoint}!s21::Object3D@{s21::Object3D}}
+\doxysubsubsection{\texorpdfstring{AddPoint()}{AddPoint()}}
+{\footnotesize\ttfamily void s21\+::\+Object3\+D\+::\+Add\+Point (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})}
+
+
+
+Добавить новую точку в объект. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Значение новой точки. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1Object3D_ab9a457e811e9b061037ecac6edc75bf5}\label{classs21_1_1Object3D_ab9a457e811e9b061037ecac6edc75bf5}} 
+\index{s21::Object3D@{s21::Object3D}!AddPolygonUnit@{AddPolygonUnit}}
+\index{AddPolygonUnit@{AddPolygonUnit}!s21::Object3D@{s21::Object3D}}
+\doxysubsubsection{\texorpdfstring{AddPolygonUnit()}{AddPolygonUnit()}}
+{\footnotesize\ttfamily void s21\+::\+Object3\+D\+::\+Add\+Polygon\+Unit (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+Добавить новый индекс полигона в объект. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Индекс нового полигона. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1Object3D_a2c658ff48c47b2edd6c4d0b9ae338798}\label{classs21_1_1Object3D_a2c658ff48c47b2edd6c4d0b9ae338798}} 
+\index{s21::Object3D@{s21::Object3D}!Edges@{Edges}}
+\index{Edges@{Edges}!s21::Object3D@{s21::Object3D}}
+\doxysubsubsection{\texorpdfstring{Edges()}{Edges()}}
+{\footnotesize\ttfamily std\+::vector$<$ long int $>$ \& s21\+::\+Object3\+D\+::\+Edges (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Получить вектор рёбер объекта. 
+
+\begin{DoxyReturn}{Returns}
+Вектор рёбер объекта. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Object3D_a5de0735e8081e16e418f44ff62bf7177}\label{classs21_1_1Object3D_a5de0735e8081e16e418f44ff62bf7177}} 
+\index{s21::Object3D@{s21::Object3D}!GetEdgesAmount@{GetEdgesAmount}}
+\index{GetEdgesAmount@{GetEdgesAmount}!s21::Object3D@{s21::Object3D}}
+\doxysubsubsection{\texorpdfstring{GetEdgesAmount()}{GetEdgesAmount()}}
+{\footnotesize\ttfamily size\+\_\+t s21\+::\+Object3\+D\+::\+Get\+Edges\+Amount (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Получить количество уникальных рёбер в объекте. 
+
+\begin{DoxyReturn}{Returns}
+Количество уникальных рёбер. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Object3D_a3723fbc35b28ea06f971817afd68aa56}\label{classs21_1_1Object3D_a3723fbc35b28ea06f971817afd68aa56}} 
+\index{s21::Object3D@{s21::Object3D}!GetPath@{GetPath}}
+\index{GetPath@{GetPath}!s21::Object3D@{s21::Object3D}}
+\doxysubsubsection{\texorpdfstring{GetPath()}{GetPath()}}
+{\footnotesize\ttfamily std\+::string s21\+::\+Object3\+D\+::\+Get\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Получить путь к объекту. 
+
+\begin{DoxyReturn}{Returns}
+Путь к объекту. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Object3D_aa8c317beb149cd42613de8bc8f11941d}\label{classs21_1_1Object3D_aa8c317beb149cd42613de8bc8f11941d}} 
+\index{s21::Object3D@{s21::Object3D}!GetPointsAmount@{GetPointsAmount}}
+\index{GetPointsAmount@{GetPointsAmount}!s21::Object3D@{s21::Object3D}}
+\doxysubsubsection{\texorpdfstring{GetPointsAmount()}{GetPointsAmount()}}
+{\footnotesize\ttfamily size\+\_\+t s21\+::\+Object3\+D\+::\+Get\+Points\+Amount (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Получить количество точек в объекте. 
+
+\begin{DoxyReturn}{Returns}
+Количество точек. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Object3D_ad697c870b67a3ad4b64fe5d4a3228be1}\label{classs21_1_1Object3D_ad697c870b67a3ad4b64fe5d4a3228be1}} 
+\index{s21::Object3D@{s21::Object3D}!GetPolygonAmount@{GetPolygonAmount}}
+\index{GetPolygonAmount@{GetPolygonAmount}!s21::Object3D@{s21::Object3D}}
+\doxysubsubsection{\texorpdfstring{GetPolygonAmount()}{GetPolygonAmount()}}
+{\footnotesize\ttfamily size\+\_\+t s21\+::\+Object3\+D\+::\+Get\+Polygon\+Amount (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Получить количество полигонов в объекте. 
+
+\begin{DoxyReturn}{Returns}
+Количество полигонов. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Object3D_a83b49584a7dbda0d9e4db5a99524a8be}\label{classs21_1_1Object3D_a83b49584a7dbda0d9e4db5a99524a8be}} 
+\index{s21::Object3D@{s21::Object3D}!Indices@{Indices}}
+\index{Indices@{Indices}!s21::Object3D@{s21::Object3D}}
+\doxysubsubsection{\texorpdfstring{Indices()}{Indices()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ \& s21\+::\+Object3\+D\+::\+Indices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Получить вектор индексов полигонов объекта. 
+
+\begin{DoxyReturn}{Returns}
+Вектор индексов полигонов объекта. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Object3D_a2a96ddff1494c4ffa721ae918643200b}\label{classs21_1_1Object3D_a2a96ddff1494c4ffa721ae918643200b}} 
+\index{s21::Object3D@{s21::Object3D}!Instance@{Instance}}
+\index{Instance@{Instance}!s21::Object3D@{s21::Object3D}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classs21_1_1Object3D}{Object3D}} \& s21\+::\+Object3\+D\+::\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Получить экземпляр класса \mbox{\hyperlink{classs21_1_1Object3D}{Object3D}}. 
+
+Метод создает и возвращает статический экземпляр класса \mbox{\hyperlink{classs21_1_1Object3D}{Object3D}}, который используется для управления 3D-\/объектом.
+
+\begin{DoxyReturn}{Returns}
+Ссылка на экземпляр класса \mbox{\hyperlink{classs21_1_1Object3D}{Object3D}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Object3D_a002bba2b658d89c86e15f19fd3646405}\label{classs21_1_1Object3D_a002bba2b658d89c86e15f19fd3646405}} 
+\index{s21::Object3D@{s21::Object3D}!Move@{Move}}
+\index{Move@{Move}!s21::Object3D@{s21::Object3D}}
+\doxysubsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily void s21\+::\+Object3\+D\+::\+Move (\begin{DoxyParamCaption}\item[{float}]{dx,  }\item[{float}]{dy,  }\item[{float}]{dz }\end{DoxyParamCaption})}
+
+
+
+Применить перемещение к объекту. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dx} & Смещение по оси X. \\
+\hline
+{\em dy} & Смещение по оси Y. \\
+\hline
+{\em dz} & Смещение по оси Z. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1Object3D_a017ecf4add0d69bbd5ca5b963528ab4f}\label{classs21_1_1Object3D_a017ecf4add0d69bbd5ca5b963528ab4f}} 
+\index{s21::Object3D@{s21::Object3D}!Points@{Points}}
+\index{Points@{Points}!s21::Object3D@{s21::Object3D}}
+\doxysubsubsection{\texorpdfstring{Points()}{Points()}}
+{\footnotesize\ttfamily std\+::vector$<$ float $>$ \& s21\+::\+Object3\+D\+::\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Получить вектор точек объекта. 
+
+\begin{DoxyReturn}{Returns}
+Вектор точек объекта. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Object3D_a5ffa4431694d0fb3d64fd0da01563638}\label{classs21_1_1Object3D_a5ffa4431694d0fb3d64fd0da01563638}} 
+\index{s21::Object3D@{s21::Object3D}!resetModelToDefaultState@{resetModelToDefaultState}}
+\index{resetModelToDefaultState@{resetModelToDefaultState}!s21::Object3D@{s21::Object3D}}
+\doxysubsubsection{\texorpdfstring{resetModelToDefaultState()}{resetModelToDefaultState()}}
+{\footnotesize\ttfamily void s21\+::\+Object3\+D\+::reset\+Model\+To\+Default\+State (\begin{DoxyParamCaption}\item[{std\+::vector$<$ float $>$ \&}]{default\+Points }\end{DoxyParamCaption})}
+
+
+
+Сбросить модель к состоянию по умолчанию. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em default\+Points} & Вектор точек для сброса модели. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1Object3D_a910eef92a3f92be36adbb31951e26fd7}\label{classs21_1_1Object3D_a910eef92a3f92be36adbb31951e26fd7}} 
+\index{s21::Object3D@{s21::Object3D}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!s21::Object3D@{s21::Object3D}}
+\doxysubsubsection{\texorpdfstring{Rotate()}{Rotate()}}
+{\footnotesize\ttfamily void s21\+::\+Object3\+D\+::\+Rotate (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
+
+
+
+Применить поворот к объекту. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Угол поворота по оси X. \\
+\hline
+{\em y} & Угол поворота по оси Y. \\
+\hline
+{\em z} & Угол поворота по оси Z. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1Object3D_a7e7d35423312511b5bc818ff507ddd16}\label{classs21_1_1Object3D_a7e7d35423312511b5bc818ff507ddd16}} 
+\index{s21::Object3D@{s21::Object3D}!Scale@{Scale}}
+\index{Scale@{Scale}!s21::Object3D@{s21::Object3D}}
+\doxysubsubsection{\texorpdfstring{Scale()}{Scale()}}
+{\footnotesize\ttfamily void s21\+::\+Object3\+D\+::\+Scale (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})}
+
+
+
+Применить масштабирование к объекту. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Масштабный коэффициент. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1Object3D_ac80aa13c22036314cf61871ae3d3d8aa}\label{classs21_1_1Object3D_ac80aa13c22036314cf61871ae3d3d8aa}} 
+\index{s21::Object3D@{s21::Object3D}!SetPath@{SetPath}}
+\index{SetPath@{SetPath}!s21::Object3D@{s21::Object3D}}
+\doxysubsubsection{\texorpdfstring{SetPath()}{SetPath()}}
+{\footnotesize\ttfamily void s21\+::\+Object3\+D\+::\+Set\+Path (\begin{DoxyParamCaption}\item[{std\+::string}]{path }\end{DoxyParamCaption})}
+
+
+
+Установить путь к объекту. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Путь к объекту. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+3d\+\_\+viewer\+\_\+v2/model/object\+\_\+3d.\+h\item 
+3d\+\_\+viewer\+\_\+v2/model/object\+\_\+3d.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,39 @@
+\hypertarget{open__file__command_8h_source}{}\doxysection{open\+\_\+file\+\_\+command.\+h}
+\label{open__file__command_8h_source}\index{3d\_viewer\_v2/controller/commands/open\_file\_command.h@{3d\_viewer\_v2/controller/commands/open\_file\_command.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef OPEN\_FILE\_COMMAND\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define OPEN\_FILE\_COMMAND\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <sstream>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}../../core/glcanvas.h"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}../../model/interface/data\_model.h"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}ui\_mainwindow.h"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}interface\_controller\_command.h"{}}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{namespace }s21 \{}
+\DoxyCodeLine{16     \textcolor{keyword}{class }\mbox{\hyperlink{classs21_1_1OpenFileCommand}{OpenFileCommand}} : \textcolor{keyword}{public} \mbox{\hyperlink{classICommand}{ICommand}} \{}
+\DoxyCodeLine{17     \textcolor{keyword}{public}:}
+\DoxyCodeLine{25         \mbox{\hyperlink{classs21_1_1OpenFileCommand}{OpenFileCommand}}(Ui\_MainWindow* window, \mbox{\hyperlink{classs21_1_1GlCanvas}{GlCanvas}}* canvas, \mbox{\hyperlink{classs21_1_1DataModel}{DataModel}}* \textcolor{keywordtype}{object}, std::string path);}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{30         \textcolor{keywordtype}{void} \mbox{\hyperlink{classs21_1_1OpenFileCommand_ad1fad51bd82391ea4bba485b7a1df107}{execute}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32     \textcolor{keyword}{private}:}
+\DoxyCodeLine{33         Ui\_MainWindow* window\_; }
+\DoxyCodeLine{34         \mbox{\hyperlink{classs21_1_1GlCanvas}{GlCanvas}}* canvas\_ = \textcolor{keyword}{nullptr}; }
+\DoxyCodeLine{35         \mbox{\hyperlink{classs21_1_1DataModel}{DataModel}}* object\_ = \textcolor{keyword}{nullptr}; }
+\DoxyCodeLine{36         std::string path\_; }
+\DoxyCodeLine{37     \};}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39 \}  \textcolor{comment}{// namespace s21}}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// OPEN\_FILE\_COMMAND\_H}}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 }
+
+\end{DoxyCode}

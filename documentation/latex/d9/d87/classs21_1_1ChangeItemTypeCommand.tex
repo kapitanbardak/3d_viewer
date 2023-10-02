@@ -1,0 +1,82 @@
+\hypertarget{classs21_1_1ChangeItemTypeCommand}{}\doxysection{s21\+::Change\+Item\+Type\+Command Class Reference}
+\label{classs21_1_1ChangeItemTypeCommand}\index{s21::ChangeItemTypeCommand@{s21::ChangeItemTypeCommand}}
+
+
+Command for changing the type of an item (e.\+g., vertex or ribs) on the canvas.  
+
+
+
+
+{\ttfamily \#include $<$change\+\_\+item\+\_\+type\+\_\+command.\+h$>$}
+
+
+
+Inheritance diagram for s21\+::Change\+Item\+Type\+Command\+:
+% FIG 0
+
+
+Collaboration diagram for s21\+::Change\+Item\+Type\+Command\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classs21_1_1ChangeItemTypeCommand_ad469545ba476259a14fbe3780343a399}{Change\+Item\+Type\+Command}} (\mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} $\ast$canvas, \mbox{\hyperlink{classs21_1_1ItemsPropertyController}{Items\+Property\+Controller}} $\ast$controller, Functions\+Mode mode)
+\begin{DoxyCompactList}\small\item\em Constructor for creating a command to change the type of an item. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1ChangeItemTypeCommand_a3fd8f33edb69452e86aca9fce29496a8}{execute}} () override
+\begin{DoxyCompactList}\small\item\em Executes the command to change the type of an item. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Command for changing the type of an item (e.\+g., vertex or ribs) on the canvas. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classs21_1_1ChangeItemTypeCommand_ad469545ba476259a14fbe3780343a399}\label{classs21_1_1ChangeItemTypeCommand_ad469545ba476259a14fbe3780343a399}} 
+\index{s21::ChangeItemTypeCommand@{s21::ChangeItemTypeCommand}!ChangeItemTypeCommand@{ChangeItemTypeCommand}}
+\index{ChangeItemTypeCommand@{ChangeItemTypeCommand}!s21::ChangeItemTypeCommand@{s21::ChangeItemTypeCommand}}
+\doxysubsubsection{\texorpdfstring{ChangeItemTypeCommand()}{ChangeItemTypeCommand()}}
+{\footnotesize\ttfamily s21\+::\+Change\+Item\+Type\+Command\+::\+Change\+Item\+Type\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} $\ast$}]{canvas,  }\item[{\mbox{\hyperlink{classs21_1_1ItemsPropertyController}{Items\+Property\+Controller}} $\ast$}]{controller,  }\item[{Functions\+Mode}]{mode }\end{DoxyParamCaption})}
+
+
+
+Constructor for creating a command to change the type of an item. 
+
+Constructor for the \mbox{\hyperlink{classs21_1_1ChangeItemTypeCommand}{Change\+Item\+Type\+Command}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em canvas} & A pointer to the \mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} object. \\
+\hline
+{\em controller} & A pointer to the \mbox{\hyperlink{classs21_1_1ItemsPropertyController}{Items\+Property\+Controller}} object. \\
+\hline
+{\em mode} & The mode of item type change (e.\+g., k\+Vertex or k\+Ribs).\\
+\hline
+{\em canvas} & Pointer to the \mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} object. \\
+\hline
+{\em mode} & The mode in which to change the item type. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classs21_1_1ChangeItemTypeCommand_a3fd8f33edb69452e86aca9fce29496a8}\label{classs21_1_1ChangeItemTypeCommand_a3fd8f33edb69452e86aca9fce29496a8}} 
+\index{s21::ChangeItemTypeCommand@{s21::ChangeItemTypeCommand}!execute@{execute}}
+\index{execute@{execute}!s21::ChangeItemTypeCommand@{s21::ChangeItemTypeCommand}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void s21\+::\+Change\+Item\+Type\+Command\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Executes the command to change the type of an item. 
+
+Execute the item type change command.
+
+This method changes the type of items (vertex or ribs) in the \mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} object and triggers a repaint. 
+
+Implements \mbox{\hyperlink{classICommand_ace81beb0beea968f876f292446bf1120}{ICommand}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+3d\+\_\+viewer\+\_\+v2/controller/commands/change\+\_\+item\+\_\+type\+\_\+command.\+h\item 
+3d\+\_\+viewer\+\_\+v2/controller/commands/change\+\_\+item\+\_\+type\+\_\+command.\+cc\end{DoxyCompactItemize}

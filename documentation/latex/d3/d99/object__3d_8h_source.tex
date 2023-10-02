@@ -1,0 +1,79 @@
+\hypertarget{object__3d_8h_source}{}\doxysection{object\+\_\+3d.\+h}
+\label{object__3d_8h_source}\index{3d\_viewer\_v2/model/object\_3d.h@{3d\_viewer\_v2/model/object\_3d.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef INC\_3DVIEWER\_V2\_0\_SRC\_DATA\_3D\_H\_}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define INC\_3DVIEWER\_V2\_0\_SRC\_DATA\_3D\_H\_}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <cmath>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <set>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <utility>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <algorithm>}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}strategy/move\_strategy.h"{}}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}strategy/rotate\_strategy.h"{}}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}strategy/scale\_strategy.h"{}}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}strategy/interface\_object\_transformation\_strategy.h"{}}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{namespace }s21 \{}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{21     \textcolor{keyword}{class }\mbox{\hyperlink{classs21_1_1Object3D}{Object3D}} \{}
+\DoxyCodeLine{22     \textcolor{keyword}{public}:}
+\DoxyCodeLine{27         \textcolor{keyword}{static} \mbox{\hyperlink{classs21_1_1Object3D}{Object3D}}\& \mbox{\hyperlink{classs21_1_1Object3D_a2a96ddff1494c4ffa721ae918643200b}{Instance}}();}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{32         \mbox{\hyperlink{classs21_1_1Object3D_a9e320d75f0dbb76f1b5aabce146acf1e}{\string~Object3D}}();}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{38         \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{classs21_1_1Object3D_aa8c317beb149cd42613de8bc8f11941d}{GetPointsAmount}}();}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{44         \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{classs21_1_1Object3D_ad697c870b67a3ad4b64fe5d4a3228be1}{GetPolygonAmount}}();}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{50         \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{classs21_1_1Object3D_a5de0735e8081e16e418f44ff62bf7177}{GetEdgesAmount}}();}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{56         std::vector<float>\& \mbox{\hyperlink{classs21_1_1Object3D_a017ecf4add0d69bbd5ca5b963528ab4f}{Points}}();}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{62         std::vector<int>\& \mbox{\hyperlink{classs21_1_1Object3D_a83b49584a7dbda0d9e4db5a99524a8be}{Indices}}();}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{68         std::vector<long int>\& \mbox{\hyperlink{classs21_1_1Object3D_a2c658ff48c47b2edd6c4d0b9ae338798}{Edges}}();}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{74         \textcolor{keywordtype}{void} \mbox{\hyperlink{classs21_1_1Object3D_a90f5be19814a98c003e8a2d194928f55}{ResetModelToDefaultState}}(std::vector<float>\& defaultPoints);}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{80         \textcolor{keywordtype}{void} \mbox{\hyperlink{classs21_1_1Object3D_ac20cd4d8397b68ee5b7325b791cb47c2}{AddPoint}}(\textcolor{keywordtype}{float} value);}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{86         \textcolor{keywordtype}{void} \mbox{\hyperlink{classs21_1_1Object3D_ab9a457e811e9b061037ecac6edc75bf5}{AddPolygonUnit}}(\textcolor{keywordtype}{int} value);}
+\DoxyCodeLine{87 }
+\DoxyCodeLine{93         \textcolor{keywordtype}{void} \mbox{\hyperlink{classs21_1_1Object3D_a083ad5d293d23b9c2598587d99f67db6}{AddEdge}}(\textcolor{keywordtype}{int} value1, \textcolor{keywordtype}{int} value2);}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{99         \textcolor{keywordtype}{void} \mbox{\hyperlink{classs21_1_1Object3D_a9cc5b81d3ef60c6b3d66ab21c5a5f837}{SetPath}}(std::string path);}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{105         std::string \mbox{\hyperlink{classs21_1_1Object3D_a3723fbc35b28ea06f971817afd68aa56}{GetPath}}();}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{111         \textcolor{keywordtype}{void} \mbox{\hyperlink{classs21_1_1Object3D_a7e7d35423312511b5bc818ff507ddd16}{Scale}}(\textcolor{keywordtype}{float} value);}
+\DoxyCodeLine{112 }
+\DoxyCodeLine{119         \textcolor{keywordtype}{void} \mbox{\hyperlink{classs21_1_1Object3D_a002bba2b658d89c86e15f19fd3646405}{Move}}(\textcolor{keywordtype}{float} valueX, \textcolor{keywordtype}{float} valueY, \textcolor{keywordtype}{float} valueZ);}
+\DoxyCodeLine{120 }
+\DoxyCodeLine{127         \textcolor{keywordtype}{void} \mbox{\hyperlink{classs21_1_1Object3D_a910eef92a3f92be36adbb31951e26fd7}{Rotate}}(\textcolor{keywordtype}{float} valueX, \textcolor{keywordtype}{float} valueY, \textcolor{keywordtype}{float} valueZ);}
+\DoxyCodeLine{128 }
+\DoxyCodeLine{129     \textcolor{keyword}{private}:}
+\DoxyCodeLine{133         \mbox{\hyperlink{classs21_1_1Object3D}{Object3D}}();}
+\DoxyCodeLine{134 }
+\DoxyCodeLine{138         \mbox{\hyperlink{classs21_1_1Object3D}{Object3D}}(\mbox{\hyperlink{classs21_1_1Object3D}{Object3D}} \textcolor{keyword}{const}\&);}
+\DoxyCodeLine{139 }
+\DoxyCodeLine{143         \mbox{\hyperlink{classs21_1_1Object3D}{Object3D}}\& operator=(\mbox{\hyperlink{classs21_1_1Object3D}{Object3D}} \textcolor{keyword}{const}\&);}
+\DoxyCodeLine{144 }
+\DoxyCodeLine{145         std::string path\_;                 }
+\DoxyCodeLine{146         std::vector<float> points\_;        }
+\DoxyCodeLine{147         std::vector<float> default\_points\_;}
+\DoxyCodeLine{148         std::vector<int> polygons\_;        }
+\DoxyCodeLine{149         std::vector<long int> edges\_;      }
+\DoxyCodeLine{150         \mbox{\hyperlink{classs21_1_1IObjectTransformationStrategy}{IObjectTransformationStrategy}}* scale\_strategy\_;}
+\DoxyCodeLine{151         \mbox{\hyperlink{classs21_1_1IObjectTransformationStrategy}{IObjectTransformationStrategy}}* move\_strategy\_; }
+\DoxyCodeLine{152         \mbox{\hyperlink{classs21_1_1IObjectTransformationStrategy}{IObjectTransformationStrategy}}* rotate\_strategy\_; }
+\DoxyCodeLine{153     \};}
+\DoxyCodeLine{154 }
+\DoxyCodeLine{155 \}  \textcolor{comment}{// namespace s21}}
+\DoxyCodeLine{156 }
+\DoxyCodeLine{157 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// INC\_3DVIEWER\_V2\_0\_SRC\_DATA\_3D\_H\_}}
+
+\end{DoxyCode}

@@ -1,0 +1,23 @@
+\hypertarget{change__item__type__command_8h_source}{}\doxysection{change\+\_\+item\+\_\+type\+\_\+command.\+h}
+\label{change__item__type__command_8h_source}\index{3d\_viewer\_v2/controller/commands/change\_item\_type\_command.h@{3d\_viewer\_v2/controller/commands/change\_item\_type\_command.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CHANGE\_ITEM\_TYPE\_COMMAND\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CHANGE\_ITEM\_TYPE\_COMMAND\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}interface\_controller\_command.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}../../core/glcanvas.h"{}}}
+\DoxyCodeLine{6 \textcolor{keyword}{namespace }s21\{}
+\DoxyCodeLine{7 \textcolor{keyword}{class }\mbox{\hyperlink{classs21_1_1ChangeItemTypeCommand}{ChangeItemTypeCommand}} : \textcolor{keyword}{public} \mbox{\hyperlink{classICommand}{ICommand}}}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{9 \textcolor{keyword}{public}:}
+\DoxyCodeLine{10     \mbox{\hyperlink{classs21_1_1ChangeItemTypeCommand}{ChangeItemTypeCommand}}(\mbox{\hyperlink{classs21_1_1GlCanvas}{GlCanvas}}* canvas, QString mode);}
+\DoxyCodeLine{11     \textcolor{keywordtype}{void} execute() \textcolor{keyword}{override};}
+\DoxyCodeLine{12 \textcolor{keyword}{private}:}
+\DoxyCodeLine{13     \mbox{\hyperlink{classs21_1_1GlCanvas}{GlCanvas}}* canvas\_ = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{14     QString mode\_;}
+\DoxyCodeLine{15 \};}
+\DoxyCodeLine{16 \}  \textcolor{comment}{// namespace s21}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// CHANGE\_ITEM\_TYPE\_COMMAND\_H}}
+
+\end{DoxyCode}

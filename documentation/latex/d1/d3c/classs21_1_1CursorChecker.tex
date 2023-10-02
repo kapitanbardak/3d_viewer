@@ -1,0 +1,160 @@
+\hypertarget{classs21_1_1CursorChecker}{}\doxysection{s21\+::Cursor\+Checker Class Reference}
+\label{classs21_1_1CursorChecker}\index{s21::CursorChecker@{s21::CursorChecker}}
+
+
+The \mbox{\hyperlink{classs21_1_1CursorChecker}{Cursor\+Checker}} class is responsible for checking cursor positions and handling model rotations.  
+
+
+
+
+{\ttfamily \#include $<$cursorchecker.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classs21_1_1CursorChecker_a2983bb73d361d84fdae00ac1b4b84694}{Cursor\+Checker}} (QOpen\+GLWidget $\ast$canvas)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classs21_1_1CursorChecker}{Cursor\+Checker}} object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classs21_1_1CursorChecker_a4bd5253de77d2e9009b057ac22d889c4}{Is\+Canvas\+Area}} (const double x\+Press\+Point, const double y\+Press\+Point)
+\begin{DoxyCompactList}\small\item\em Checks if the cursor is within the canvas area. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1CursorChecker_a5deb5c6b18cec95a049a6d33e402f6a1}{Calculate\+Model\+Rotation}} (QVector4D \&coords)
+\begin{DoxyCompactList}\small\item\em Calculates the model rotation based on cursor movement. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classs21_1_1CursorChecker_a7ad19e10621ff2a36c4088b2c836c39d}{x}} () const
+\begin{DoxyCompactList}\small\item\em Get the current x rotation value. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classs21_1_1CursorChecker_ab181814349ccd49a3ea9f6f1eb9b8b23}{y}} () const
+\begin{DoxyCompactList}\small\item\em Get the current y rotation value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1CursorChecker_a4f6f33b949861e753a6d8634121233f6}{Set\+Sensetivity}} (const float value)
+\begin{DoxyCompactList}\small\item\em Sets the sensetivity value for rotation calculate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classs21_1_1CursorChecker}{Cursor\+Checker}} class is responsible for checking cursor positions and handling model rotations. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classs21_1_1CursorChecker_a2983bb73d361d84fdae00ac1b4b84694}\label{classs21_1_1CursorChecker_a2983bb73d361d84fdae00ac1b4b84694}} 
+\index{s21::CursorChecker@{s21::CursorChecker}!CursorChecker@{CursorChecker}}
+\index{CursorChecker@{CursorChecker}!s21::CursorChecker@{s21::CursorChecker}}
+\doxysubsubsection{\texorpdfstring{CursorChecker()}{CursorChecker()}}
+{\footnotesize\ttfamily s21\+::\+Cursor\+Checker\+::\+Cursor\+Checker (\begin{DoxyParamCaption}\item[{QOpen\+GLWidget $\ast$}]{canvas }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classs21_1_1CursorChecker}{Cursor\+Checker}} object. 
+
+Constructor for the \mbox{\hyperlink{classs21_1_1CursorChecker}{Cursor\+Checker}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em canvas} & The QOpen\+GLWidget representing the canvas. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classs21_1_1CursorChecker_a5deb5c6b18cec95a049a6d33e402f6a1}\label{classs21_1_1CursorChecker_a5deb5c6b18cec95a049a6d33e402f6a1}} 
+\index{s21::CursorChecker@{s21::CursorChecker}!CalculateModelRotation@{CalculateModelRotation}}
+\index{CalculateModelRotation@{CalculateModelRotation}!s21::CursorChecker@{s21::CursorChecker}}
+\doxysubsubsection{\texorpdfstring{CalculateModelRotation()}{CalculateModelRotation()}}
+{\footnotesize\ttfamily void s21\+::\+Cursor\+Checker\+::\+Calculate\+Model\+Rotation (\begin{DoxyParamCaption}\item[{QVector4D \&}]{coords }\end{DoxyParamCaption})}
+
+
+
+Calculates the model rotation based on cursor movement. 
+
+Calculate model rotation based on cursor movement.
+
+
+\begin{DoxyParams}{Parameters}
+{\em coords} & A QVector4D containing cursor coordinates and rotation sensitivity values.\\
+\hline
+{\em coords} & Vector containing cursor and rotation values. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1CursorChecker_a4bd5253de77d2e9009b057ac22d889c4}\label{classs21_1_1CursorChecker_a4bd5253de77d2e9009b057ac22d889c4}} 
+\index{s21::CursorChecker@{s21::CursorChecker}!IsCanvasArea@{IsCanvasArea}}
+\index{IsCanvasArea@{IsCanvasArea}!s21::CursorChecker@{s21::CursorChecker}}
+\doxysubsubsection{\texorpdfstring{IsCanvasArea()}{IsCanvasArea()}}
+{\footnotesize\ttfamily bool s21\+::\+Cursor\+Checker\+::\+Is\+Canvas\+Area (\begin{DoxyParamCaption}\item[{const double}]{x\+\_\+press\+\_\+point,  }\item[{const double}]{y\+\_\+press\+\_\+point }\end{DoxyParamCaption})}
+
+
+
+Checks if the cursor is within the canvas area. 
+
+Check if the cursor is within the canvas area.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+Press\+Point} & The x-\/coordinate of the cursor. \\
+\hline
+{\em y\+Press\+Point} & The y-\/coordinate of the cursor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the cursor is within the canvas area, false otherwise.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em canvas} & Reference to the QOpen\+GLWidget representing the canvas. \\
+\hline
+{\em x\+\_\+press\+\_\+point} & X-\/coordinate of the cursor. \\
+\hline
+{\em y\+\_\+press\+\_\+point} & Y-\/coordinate of the cursor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the cursor is within the canvas area, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1CursorChecker_a4f6f33b949861e753a6d8634121233f6}\label{classs21_1_1CursorChecker_a4f6f33b949861e753a6d8634121233f6}} 
+\index{s21::CursorChecker@{s21::CursorChecker}!SetSensetivity@{SetSensetivity}}
+\index{SetSensetivity@{SetSensetivity}!s21::CursorChecker@{s21::CursorChecker}}
+\doxysubsubsection{\texorpdfstring{SetSensetivity()}{SetSensetivity()}}
+{\footnotesize\ttfamily void s21\+::\+Cursor\+Checker\+::\+Set\+Sensetivity (\begin{DoxyParamCaption}\item[{const float}]{value }\end{DoxyParamCaption})}
+
+
+
+Sets the sensetivity value for rotation calculate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & sensetivity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1CursorChecker_a7ad19e10621ff2a36c4088b2c836c39d}\label{classs21_1_1CursorChecker_a7ad19e10621ff2a36c4088b2c836c39d}} 
+\index{s21::CursorChecker@{s21::CursorChecker}!x@{x}}
+\index{x@{x}!s21::CursorChecker@{s21::CursorChecker}}
+\doxysubsubsection{\texorpdfstring{x()}{x()}}
+{\footnotesize\ttfamily double s21\+::\+Cursor\+Checker\+::x (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the current x rotation value. 
+
+Get the current x-\/value.
+
+\begin{DoxyReturn}{Returns}
+The x rotation value.
+
+The current x-\/value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1CursorChecker_ab181814349ccd49a3ea9f6f1eb9b8b23}\label{classs21_1_1CursorChecker_ab181814349ccd49a3ea9f6f1eb9b8b23}} 
+\index{s21::CursorChecker@{s21::CursorChecker}!y@{y}}
+\index{y@{y}!s21::CursorChecker@{s21::CursorChecker}}
+\doxysubsubsection{\texorpdfstring{y()}{y()}}
+{\footnotesize\ttfamily double s21\+::\+Cursor\+Checker\+::y (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the current y rotation value. 
+
+Get the current y-\/value.
+
+\begin{DoxyReturn}{Returns}
+The y rotation value.
+
+The current y-\/value. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+3d\+\_\+viewer\+\_\+v2/controller/cursorchecker.\+h\item 
+3d\+\_\+viewer\+\_\+v2/controller/cursorchecker.\+cc\end{DoxyCompactItemize}

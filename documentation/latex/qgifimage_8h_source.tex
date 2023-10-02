@@ -1,0 +1,85 @@
+\hypertarget{qgifimage_8h_source}{}\doxysection{qgifimage.\+h}
+\label{qgifimage_8h_source}\index{3d\_viewer\_v2/qt-\/gif-\/image-\/master/src/gifimage/qgifimage.h@{3d\_viewer\_v2/qt-\/gif-\/image-\/master/src/gifimage/qgifimage.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/****************************************************************************}}
+\DoxyCodeLine{2 \textcolor{comment}{** Copyright (c) 2013 Debao Zhang <hello@debao.me>}}
+\DoxyCodeLine{3 \textcolor{comment}{** All right reserved.}}
+\DoxyCodeLine{4 \textcolor{comment}{**}}
+\DoxyCodeLine{5 \textcolor{comment}{** Permission is hereby granted, free of charge, to any person obtaining}}
+\DoxyCodeLine{6 \textcolor{comment}{** a copy of this software and associated documentation files (the}}
+\DoxyCodeLine{7 \textcolor{comment}{** "{}Software"{}), to deal in the Software without restriction, including}}
+\DoxyCodeLine{8 \textcolor{comment}{** without limitation the rights to use, copy, modify, merge, publish,}}
+\DoxyCodeLine{9 \textcolor{comment}{** distribute, sublicense, and/or sell copies of the Software, and to}}
+\DoxyCodeLine{10 \textcolor{comment}{** permit persons to whom the Software is furnished to do so, subject to}}
+\DoxyCodeLine{11 \textcolor{comment}{** the following conditions:}}
+\DoxyCodeLine{12 \textcolor{comment}{**}}
+\DoxyCodeLine{13 \textcolor{comment}{** The above copyright notice and this permission notice shall be}}
+\DoxyCodeLine{14 \textcolor{comment}{** included in all copies or substantial portions of the Software.}}
+\DoxyCodeLine{15 \textcolor{comment}{**}}
+\DoxyCodeLine{16 \textcolor{comment}{** THE SOFTWARE IS PROVIDED "{}AS IS"{}, WITHOUT WARRANTY OF ANY KIND,}}
+\DoxyCodeLine{17 \textcolor{comment}{** EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF}}
+\DoxyCodeLine{18 \textcolor{comment}{** MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND}}
+\DoxyCodeLine{19 \textcolor{comment}{** NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE}}
+\DoxyCodeLine{20 \textcolor{comment}{** LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION}}
+\DoxyCodeLine{21 \textcolor{comment}{** OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION}}
+\DoxyCodeLine{22 \textcolor{comment}{** WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.}}
+\DoxyCodeLine{23 \textcolor{comment}{**}}
+\DoxyCodeLine{24 \textcolor{comment}{****************************************************************************/}}
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#ifndef QGIFIMAGE\_H}}
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#define QGIFIMAGE\_H}}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#include "{}qgifglobal.h"{}}}
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#include <QImage>}}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#include <QColor>}}
+\DoxyCodeLine{31 \textcolor{preprocessor}{\#include <QList>}}
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#include <QVector>}}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 \textcolor{keyword}{class }\mbox{\hyperlink{classQGifImagePrivate}{QGifImagePrivate}};}
+\DoxyCodeLine{35 \textcolor{keyword}{class }Q\_GIFIMAGE\_EXPORT \mbox{\hyperlink{classQGifImage}{QGifImage}}}
+\DoxyCodeLine{36 \{}
+\DoxyCodeLine{37     Q\_DECLARE\_PRIVATE(\mbox{\hyperlink{classQGifImage}{QGifImage}})}
+\DoxyCodeLine{38 \textcolor{keyword}{public}:}
+\DoxyCodeLine{39     \mbox{\hyperlink{classQGifImage}{QGifImage}}();}
+\DoxyCodeLine{40     \mbox{\hyperlink{classQGifImage}{QGifImage}}(\textcolor{keyword}{const} QString \&fileName);}
+\DoxyCodeLine{41     \mbox{\hyperlink{classQGifImage}{QGifImage}}(\textcolor{keyword}{const} QSize \&size);}
+\DoxyCodeLine{42     \mbox{\hyperlink{classQGifImage}{\string~QGifImage}}();}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44     QVector<QRgb> globalColorTable() \textcolor{keyword}{const};}
+\DoxyCodeLine{45     QColor backgroundColor() \textcolor{keyword}{const};}
+\DoxyCodeLine{46     \textcolor{keywordtype}{void} setGlobalColorTable(\textcolor{keyword}{const} QVector<QRgb> \&colors, \textcolor{keyword}{const} QColor \&bgColor = QColor());}
+\DoxyCodeLine{47     \textcolor{keywordtype}{int} defaultDelay() \textcolor{keyword}{const};}
+\DoxyCodeLine{48     \textcolor{keywordtype}{void} setDefaultDelay(\textcolor{keywordtype}{int} internal);}
+\DoxyCodeLine{49     QColor defaultTransparentColor() \textcolor{keyword}{const};}
+\DoxyCodeLine{50     \textcolor{keywordtype}{void} setDefaultTransparentColor(\textcolor{keyword}{const} QColor \&color);}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52     \textcolor{keywordtype}{int} loopCount() \textcolor{keyword}{const};}
+\DoxyCodeLine{53     \textcolor{keywordtype}{void} setLoopCount(\textcolor{keywordtype}{int} loop);}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55     \textcolor{keywordtype}{int} frameCount() \textcolor{keyword}{const};}
+\DoxyCodeLine{56     QImage frame(\textcolor{keywordtype}{int} index) \textcolor{keyword}{const};}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58     \textcolor{keywordtype}{void} addFrame(\textcolor{keyword}{const} QImage \&frame, \textcolor{keywordtype}{int} delay=-\/1);}
+\DoxyCodeLine{59     \textcolor{keywordtype}{void} addFrame(\textcolor{keyword}{const} QImage \&frame, \textcolor{keyword}{const} QPoint \&offset, \textcolor{keywordtype}{int} delay=-\/1);}
+\DoxyCodeLine{60     \textcolor{keywordtype}{void} insertFrame(\textcolor{keywordtype}{int} index, \textcolor{keyword}{const} QImage \&frame, \textcolor{keywordtype}{int} delay=-\/1);}
+\DoxyCodeLine{61     \textcolor{keywordtype}{void} insertFrame(\textcolor{keywordtype}{int} index, \textcolor{keyword}{const} QImage \&frame, \textcolor{keyword}{const} QPoint \&offset, \textcolor{keywordtype}{int} delay=-\/1);}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63     QPoint frameOffset(\textcolor{keywordtype}{int} index) \textcolor{keyword}{const};}
+\DoxyCodeLine{64     \textcolor{keywordtype}{void} setFrameOffset(\textcolor{keywordtype}{int} index, \textcolor{keyword}{const} QPoint \&offset);}
+\DoxyCodeLine{65     \textcolor{keywordtype}{int} frameDelay(\textcolor{keywordtype}{int} index) \textcolor{keyword}{const};}
+\DoxyCodeLine{66     \textcolor{keywordtype}{void} setFrameDelay(\textcolor{keywordtype}{int} index, \textcolor{keywordtype}{int} delay);}
+\DoxyCodeLine{67     QColor frameTransparentColor(\textcolor{keywordtype}{int} index) \textcolor{keyword}{const};}
+\DoxyCodeLine{68     \textcolor{keywordtype}{void} setFrameTransparentColor(\textcolor{keywordtype}{int} index, \textcolor{keyword}{const} QColor \&color);}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70     \textcolor{keywordtype}{bool} load(QIODevice *device);}
+\DoxyCodeLine{71     \textcolor{keywordtype}{bool} load(\textcolor{keyword}{const} QString \&fileName);}
+\DoxyCodeLine{72     \textcolor{keywordtype}{bool} save(QIODevice *device) \textcolor{keyword}{const};}
+\DoxyCodeLine{73     \textcolor{keywordtype}{bool} save(\textcolor{keyword}{const} QString \&fileName) \textcolor{keyword}{const};}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75 \textcolor{keyword}{private}:}
+\DoxyCodeLine{76     \mbox{\hyperlink{classQGifImagePrivate}{QGifImagePrivate}} * \textcolor{keyword}{const} d\_ptr;}
+\DoxyCodeLine{77 \};}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// QGIFIMAGE\_H}}
+
+\end{DoxyCode}

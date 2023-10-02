@@ -1,0 +1,79 @@
+\hypertarget{classs21_1_1SaveGifCommand}{}\doxysection{s21\+::Save\+Gif\+Command Class Reference}
+\label{classs21_1_1SaveGifCommand}\index{s21::SaveGifCommand@{s21::SaveGifCommand}}
+
+
+A command to save a GIF animation from the \mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}}.  
+
+
+
+
+{\ttfamily \#include $<$save\+\_\+gif\+\_\+command.\+h$>$}
+
+
+
+Inheritance diagram for s21\+::Save\+Gif\+Command\+:
+% FIG 0
+
+
+Collaboration diagram for s21\+::Save\+Gif\+Command\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classs21_1_1SaveGifCommand_ac724b040216a23df0b32316334cc5fde}{Save\+Gif\+Command}} (\mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} $\ast$canvas)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classs21_1_1SaveGifCommand}{Save\+Gif\+Command}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classs21_1_1SaveGifCommand_a0eaf820fae26c214a35a3fc53a51e8b6}\label{classs21_1_1SaveGifCommand_a0eaf820fae26c214a35a3fc53a51e8b6}} 
+\mbox{\hyperlink{classs21_1_1SaveGifCommand_a0eaf820fae26c214a35a3fc53a51e8b6}{$\sim$\+Save\+Gif\+Command}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classs21_1_1SaveGifCommand}{Save\+Gif\+Command}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1SaveGifCommand_a1e38e9754192a036aaf1a1c771a32e01}{execute}} () override
+\begin{DoxyCompactList}\small\item\em Executes the command, capturing frames and saving as a GIF. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A command to save a GIF animation from the \mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classs21_1_1SaveGifCommand_ac724b040216a23df0b32316334cc5fde}\label{classs21_1_1SaveGifCommand_ac724b040216a23df0b32316334cc5fde}} 
+\index{s21::SaveGifCommand@{s21::SaveGifCommand}!SaveGifCommand@{SaveGifCommand}}
+\index{SaveGifCommand@{SaveGifCommand}!s21::SaveGifCommand@{s21::SaveGifCommand}}
+\doxysubsubsection{\texorpdfstring{SaveGifCommand()}{SaveGifCommand()}}
+{\footnotesize\ttfamily s21\+::\+Save\+Gif\+Command\+::\+Save\+Gif\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} $\ast$}]{canvas }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classs21_1_1SaveGifCommand}{Save\+Gif\+Command}}. 
+
+Constructor for the \mbox{\hyperlink{classs21_1_1SaveGifCommand}{Save\+Gif\+Command}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em canvas} & A pointer to the \mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}}.\\
+\hline
+{\em canvas} & Pointer to the \mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} object. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classs21_1_1SaveGifCommand_a1e38e9754192a036aaf1a1c771a32e01}\label{classs21_1_1SaveGifCommand_a1e38e9754192a036aaf1a1c771a32e01}} 
+\index{s21::SaveGifCommand@{s21::SaveGifCommand}!execute@{execute}}
+\index{execute@{execute}!s21::SaveGifCommand@{s21::SaveGifCommand}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void s21\+::\+Save\+Gif\+Command\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Executes the command, capturing frames and saving as a GIF. 
+
+Execute the GIF saving command.
+
+This method starts a timer that captures frames from the \mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} and adds them to the GIF image until the specified number of frames is reached. 
+
+Implements \mbox{\hyperlink{classICommand_ace81beb0beea968f876f292446bf1120}{ICommand}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+3d\+\_\+viewer\+\_\+v2/controller/commands/save\+\_\+gif\+\_\+command.\+h\item 
+3d\+\_\+viewer\+\_\+v2/controller/commands/save\+\_\+gif\+\_\+command.\+cc\end{DoxyCompactItemize}

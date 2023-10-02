@@ -1,0 +1,62 @@
+\hypertarget{classICommand}{}\doxysection{ICommand Class Reference}
+\label{classICommand}\index{ICommand@{ICommand}}
+
+
+An interface for controller commands.  
+
+
+
+
+{\ttfamily \#include $<$interface\+\_\+controller\+\_\+command.\+h$>$}
+
+
+
+Inheritance diagram for ICommand\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classICommand_a0e0226af93b945e84b58405e9d5343b1}{$\sim$\+ICommand}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classICommand_ace81beb0beea968f876f292446bf1120}{execute}} ()=0
+\begin{DoxyCompactList}\small\item\em Executes the command. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An interface for controller commands. 
+
+This interface defines the common structure for controller commands. Controller commands are used to encapsulate actions or operations that can be executed by a controller in an application. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classICommand_a0e0226af93b945e84b58405e9d5343b1}\label{classICommand_a0e0226af93b945e84b58405e9d5343b1}} 
+\index{ICommand@{ICommand}!````~ICommand@{$\sim$ICommand}}
+\index{````~ICommand@{$\sim$ICommand}!ICommand@{ICommand}}
+\doxysubsubsection{\texorpdfstring{$\sim$ICommand()}{~ICommand()}}
+{\footnotesize\ttfamily virtual ICommand\+::$\sim$\+ICommand (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Virtual destructor. 
+
+This virtual destructor ensures proper cleanup when objects implementing this interface are destroyed. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classICommand_ace81beb0beea968f876f292446bf1120}\label{classICommand_ace81beb0beea968f876f292446bf1120}} 
+\index{ICommand@{ICommand}!execute@{execute}}
+\index{execute@{execute}!ICommand@{ICommand}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily virtual void ICommand\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Executes the command. 
+
+This pure virtual function must be implemented by derived classes. It defines the action or operation that the command performs when executed. 
+
+Implemented in \mbox{\hyperlink{classs21_1_1SaveImgCommand_a5376ef9bae4af6346a26c9f34c2defd1}{s21\+::\+Save\+Img\+Command}}, \mbox{\hyperlink{classs21_1_1SaveGifCommand_a1e38e9754192a036aaf1a1c771a32e01}{s21\+::\+Save\+Gif\+Command}}, \mbox{\hyperlink{classs21_1_1ResetPosition_add63cd01ccca9f50f014cd714708ef0b}{s21\+::\+Reset\+Position}}, \mbox{\hyperlink{classs21_1_1OpenFileCommand_ad1fad51bd82391ea4bba485b7a1df107}{s21\+::\+Open\+File\+Command}}, \mbox{\hyperlink{classs21_1_1ItemsSizeCommand_ac8935d415b12f696520b439d206ae5ee}{s21\+::\+Items\+Size\+Command}}, \mbox{\hyperlink{classs21_1_1ChangeProjectionModeCommand_a4018746c7a2ec3a8a10743a3f52649c5}{s21\+::\+Change\+Projection\+Mode\+Command}}, \mbox{\hyperlink{classs21_1_1ChangeModelCommand_a2aa64ad18d8b3d172c2da21ab7eb703e}{s21\+::\+Change\+Model\+Command}}, \mbox{\hyperlink{classs21_1_1ChangeItemTypeCommand_a3fd8f33edb69452e86aca9fce29496a8}{s21\+::\+Change\+Item\+Type\+Command}}, and \mbox{\hyperlink{classs21_1_1ChangeItemColorCommand_a68cbe21d80cd162faf3405415bd2eddd}{s21\+::\+Change\+Item\+Color\+Command}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+3d\+\_\+viewer\+\_\+v2/controller/commands/interface\+\_\+controller\+\_\+command.\+h\end{DoxyCompactItemize}

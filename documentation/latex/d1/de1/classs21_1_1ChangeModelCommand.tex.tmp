@@ -1,0 +1,86 @@
+\hypertarget{classs21_1_1ChangeModelCommand}{}\doxysection{s21\+::Change\+Model\+Command Class Reference}
+\label{classs21_1_1ChangeModelCommand}\index{s21::ChangeModelCommand@{s21::ChangeModelCommand}}
+
+
+Command for changing the model\textquotesingle{}s position or rotation in the \mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}}.  
+
+
+
+
+{\ttfamily \#include $<$change\+\_\+model\+\_\+command.\+h$>$}
+
+
+
+Inheritance diagram for s21\+::Change\+Model\+Command\+:
+% FIG 0
+
+
+Collaboration diagram for s21\+::Change\+Model\+Command\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classs21_1_1ChangeModelCommand_ae5926095d612665362f0863eab21f40e}{Change\+Model\+Command}} (\mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} $\ast$canvas, const QVector3D \&rotation, const QVector3D \&movement, float scale)
+\begin{DoxyCompactList}\small\item\em Constructor for creating a command to change the model\textquotesingle{}s position or rotation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1ChangeModelCommand_a2aa64ad18d8b3d172c2da21ab7eb703e}{execute}} () override
+\begin{DoxyCompactList}\small\item\em Executes the command to change the model\textquotesingle{}s position or rotation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Command for changing the model\textquotesingle{}s position or rotation in the \mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classs21_1_1ChangeModelCommand_ae5926095d612665362f0863eab21f40e}\label{classs21_1_1ChangeModelCommand_ae5926095d612665362f0863eab21f40e}} 
+\index{s21::ChangeModelCommand@{s21::ChangeModelCommand}!ChangeModelCommand@{ChangeModelCommand}}
+\index{ChangeModelCommand@{ChangeModelCommand}!s21::ChangeModelCommand@{s21::ChangeModelCommand}}
+\doxysubsubsection{\texorpdfstring{ChangeModelCommand()}{ChangeModelCommand()}}
+{\footnotesize\ttfamily s21\+::\+Change\+Model\+Command\+::\+Change\+Model\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} $\ast$}]{canvas,  }\item[{const QVector3D \&}]{rotation,  }\item[{const QVector3D \&}]{movement,  }\item[{float}]{scale }\end{DoxyParamCaption})}
+
+
+
+Constructor for creating a command to change the model\textquotesingle{}s position or rotation. 
+
+Constructor for the \mbox{\hyperlink{classs21_1_1ChangeModelCommand}{Change\+Model\+Command}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em canvas} & A pointer to the \mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} object. \\
+\hline
+{\em rotation} & The coordinates for the change rotation angels. \\
+\hline
+{\em movement} & The coordinates for the change translation. \\
+\hline
+{\em scale} & The value for the change scale.\\
+\hline
+{\em canvas} & Pointer to the \mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} object. \\
+\hline
+{\em rotation} & The coordinates for the transformation. \\
+\hline
+{\em rotation} & The movement for the transformation. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classs21_1_1ChangeModelCommand_a2aa64ad18d8b3d172c2da21ab7eb703e}\label{classs21_1_1ChangeModelCommand_a2aa64ad18d8b3d172c2da21ab7eb703e}} 
+\index{s21::ChangeModelCommand@{s21::ChangeModelCommand}!execute@{execute}}
+\index{execute@{execute}!s21::ChangeModelCommand@{s21::ChangeModelCommand}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void s21\+::\+Change\+Model\+Command\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Executes the command to change the model\textquotesingle{}s position or rotation. 
+
+Execute the model transformation command.
+
+This method applies a transformation to the \mbox{\hyperlink{classs21_1_1DataModel}{Data\+Model}} object. It then triggers a repaint of the canvas. 
+
+Implements \mbox{\hyperlink{classICommand_ace81beb0beea968f876f292446bf1120}{ICommand}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+3d\+\_\+viewer\+\_\+v2/controller/commands/change\+\_\+model\+\_\+command.\+h\item 
+3d\+\_\+viewer\+\_\+v2/controller/commands/change\+\_\+model\+\_\+command.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,27 @@
+\hypertarget{change__item__color__command_8h_source}{}\doxysection{change\+\_\+item\+\_\+color\+\_\+command.\+h}
+\label{change__item__color__command_8h_source}\index{3d\_viewer\_v2/controller/commands/change\_item\_color\_command.h@{3d\_viewer\_v2/controller/commands/change\_item\_color\_command.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CHANGE\_ITEM\_COLOR\_COMMAND\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CHANGE\_ITEM\_COLOR\_COMMAND\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <string.h>}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}../../core/glcanvas.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}interface\_controller\_command.h"{}}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{keyword}{namespace }s21 \{}
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{classs21_1_1ChangeItemColorCommand}{ChangeItemColorCommand}} : \textcolor{keyword}{public} \mbox{\hyperlink{classICommand}{ICommand}} \{}
+\DoxyCodeLine{10  \textcolor{keyword}{public}:}
+\DoxyCodeLine{11   \mbox{\hyperlink{classs21_1_1ChangeItemColorCommand}{ChangeItemColorCommand}}(\mbox{\hyperlink{classs21_1_1GlCanvas}{GlCanvas}} *, QColor color, \textcolor{keyword}{const} QString \&);}
+\DoxyCodeLine{12   \textcolor{keywordtype}{void} execute() \textcolor{keyword}{override};}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14  \textcolor{keyword}{private}:}
+\DoxyCodeLine{15   \mbox{\hyperlink{classs21_1_1GlCanvas}{GlCanvas}} *canvas\_ = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{16   QColor color\_ = Qt::white;}
+\DoxyCodeLine{17   QString mode\_;}
+\DoxyCodeLine{18 \};}
+\DoxyCodeLine{19 \}  \textcolor{comment}{// namespace s21}}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// CHANGE\_ITEM\_COLOR\_COMMAND\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,25 @@
+digraph "ICommand"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="ICommand",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="s21::ChangeItemColorCommand",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$classs21_1_1ChangeItemColorCommand.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="s21::ChangeItemTypeCommand",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$classs21_1_1ChangeItemTypeCommand.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="s21::ChangeModelCommand",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$classs21_1_1ChangeModelCommand.html",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="steelblue1",style="solid"];
+  Node5 [label="s21::ItemsSizeCommand",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$classs21_1_1ItemsSizeCommand.html",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="steelblue1",style="solid"];
+  Node6 [label="s21::OpenFileCommand",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$classs21_1_1OpenFileCommand.html",tooltip=" "];
+  Node1 -> Node7 [dir="back",color="steelblue1",style="solid"];
+  Node7 [label="s21::ResetPosition",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$classs21_1_1ResetPosition.html",tooltip=" "];
+  Node1 -> Node8 [dir="back",color="steelblue1",style="solid"];
+  Node8 [label="s21::SaveGifCommand",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$classs21_1_1SaveGifCommand.html",tooltip=" "];
+  Node1 -> Node9 [dir="back",color="steelblue1",style="solid"];
+  Node9 [label="s21::SaveImgCommand",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$classs21_1_1SaveImgCommand.html",tooltip=" "];
+}

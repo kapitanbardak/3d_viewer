@@ -1,0 +1,40 @@
+\hypertarget{cursorchecker_8h_source}{}\doxysection{cursorchecker.\+h}
+\label{cursorchecker_8h_source}\index{3d\_viewer\_v2/controller/cursorchecker.h@{3d\_viewer\_v2/controller/cursorchecker.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CURSORCHECKER\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CURSORCHECKER\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QVector4D>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QOpenGLWidget>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{namespace }s21 \{}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{12     \textcolor{keyword}{class }\mbox{\hyperlink{classs21_1_1CursorChecker}{CursorChecker}}}
+\DoxyCodeLine{13     \{}
+\DoxyCodeLine{14     \textcolor{keyword}{public}:}
+\DoxyCodeLine{18         \mbox{\hyperlink{classs21_1_1CursorChecker_a2748570b7f2613a609166ff00fa14c11}{CursorChecker}}();}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{27         \textcolor{keywordtype}{bool} \mbox{\hyperlink{classs21_1_1CursorChecker_ac095e435e5d410837bd645a26d8b6743}{isCanvasArea}}(QOpenGLWidget\& canvas, \textcolor{keyword}{const} \textcolor{keywordtype}{double} xPressPoint, \textcolor{keyword}{const} \textcolor{keywordtype}{double} yPressPoint);}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{33         \textcolor{keywordtype}{void} \mbox{\hyperlink{classs21_1_1CursorChecker_ad06f822394ebbdff65e2233f314aacb8}{calculateModelRotation}}(QVector4D\& coords);}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{39         \textcolor{keywordtype}{double} \mbox{\hyperlink{classs21_1_1CursorChecker_a7ad19e10621ff2a36c4088b2c836c39d}{x}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{45         \textcolor{keywordtype}{double} \mbox{\hyperlink{classs21_1_1CursorChecker_ab181814349ccd49a3ea9f6f1eb9b8b23}{y}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47     \textcolor{keyword}{private}:}
+\DoxyCodeLine{48         \textcolor{keywordtype}{float} x\_previous\_mouse\_ = 0;}
+\DoxyCodeLine{49         \textcolor{keywordtype}{float} y\_previous\_mouse\_ = 0;}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51         \textcolor{keywordtype}{double} xValue\_ = 0;}
+\DoxyCodeLine{52         \textcolor{keywordtype}{double} yValue\_ = 0;}
+\DoxyCodeLine{53         \textcolor{keywordtype}{double} xSens\_ = 0.1;}
+\DoxyCodeLine{54         \textcolor{keywordtype}{double} ySens\_ = 0.1;}
+\DoxyCodeLine{55     \};}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57 \}  \textcolor{comment}{// namespace s21}}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// CURSORCHECKER\_H}}
+
+\end{DoxyCode}

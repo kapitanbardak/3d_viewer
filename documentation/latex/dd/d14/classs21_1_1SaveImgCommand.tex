@@ -1,0 +1,76 @@
+\hypertarget{classs21_1_1SaveImgCommand}{}\doxysection{s21\+::Save\+Img\+Command Class Reference}
+\label{classs21_1_1SaveImgCommand}\index{s21::SaveImgCommand@{s21::SaveImgCommand}}
+
+
+A command to save an image snapshot from the \mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}}.  
+
+
+
+
+{\ttfamily \#include $<$save\+\_\+img\+\_\+command.\+h$>$}
+
+
+
+Inheritance diagram for s21\+::Save\+Img\+Command\+:
+% FIG 0
+
+
+Collaboration diagram for s21\+::Save\+Img\+Command\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classs21_1_1SaveImgCommand_abdcabcb1fd362e83ae46385c19319fb1}{Save\+Img\+Command}} (\mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} $\ast$canvas)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classs21_1_1SaveImgCommand}{Save\+Img\+Command}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1SaveImgCommand_a5376ef9bae4af6346a26c9f34c2defd1}{execute}} () override
+\begin{DoxyCompactList}\small\item\em Executes the command, capturing and saving the image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A command to save an image snapshot from the \mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classs21_1_1SaveImgCommand_abdcabcb1fd362e83ae46385c19319fb1}\label{classs21_1_1SaveImgCommand_abdcabcb1fd362e83ae46385c19319fb1}} 
+\index{s21::SaveImgCommand@{s21::SaveImgCommand}!SaveImgCommand@{SaveImgCommand}}
+\index{SaveImgCommand@{SaveImgCommand}!s21::SaveImgCommand@{s21::SaveImgCommand}}
+\doxysubsubsection{\texorpdfstring{SaveImgCommand()}{SaveImgCommand()}}
+{\footnotesize\ttfamily s21\+::\+Save\+Img\+Command\+::\+Save\+Img\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} $\ast$}]{canvas }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classs21_1_1SaveImgCommand}{Save\+Img\+Command}}. 
+
+Constructor for the \mbox{\hyperlink{classs21_1_1SaveImgCommand}{Save\+Img\+Command}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em canvas} & A pointer to the \mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}}.\\
+\hline
+{\em canvas} & Pointer to the \mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} object. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classs21_1_1SaveImgCommand_a5376ef9bae4af6346a26c9f34c2defd1}\label{classs21_1_1SaveImgCommand_a5376ef9bae4af6346a26c9f34c2defd1}} 
+\index{s21::SaveImgCommand@{s21::SaveImgCommand}!execute@{execute}}
+\index{execute@{execute}!s21::SaveImgCommand@{s21::SaveImgCommand}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void s21\+::\+Save\+Img\+Command\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Executes the command, capturing and saving the image. 
+
+Execute the image saving command.
+
+This method captures the current frame from the \mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} and prompts the user to save it as an image file (BMP or JPEG). 
+
+Implements \mbox{\hyperlink{classICommand_ace81beb0beea968f876f292446bf1120}{ICommand}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+3d\+\_\+viewer\+\_\+v2/controller/commands/save\+\_\+img\+\_\+command.\+h\item 
+3d\+\_\+viewer\+\_\+v2/controller/commands/save\+\_\+img\+\_\+command.\+cc\end{DoxyCompactItemize}

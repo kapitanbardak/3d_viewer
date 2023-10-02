@@ -1,0 +1,45 @@
+\hypertarget{mainwindow_8h_source}{}\doxysection{mainwindow.\+h}
+\label{mainwindow_8h_source}\index{3d\_viewer\_v2/view/mainwindow.h@{3d\_viewer\_v2/view/mainwindow.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef MAINWINDOW\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define MAINWINDOW\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QMainWindow>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QPushButton>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <QDoubleSpinBox>}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}../controller/controller.h"{}}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{11 \textcolor{keyword}{namespace }Ui \{}
+\DoxyCodeLine{12     \textcolor{keyword}{class }\mbox{\hyperlink{classMainWindow}{MainWindow}};}
+\DoxyCodeLine{13 \}}
+\DoxyCodeLine{14 QT\_END\_NAMESPACE}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{19 \textcolor{keyword}{class }\mbox{\hyperlink{classMainWindow}{MainWindow}} : \textcolor{keyword}{public} QMainWindow \{}
+\DoxyCodeLine{20     Q\_OBJECT}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{keyword}{public}:}
+\DoxyCodeLine{27     \mbox{\hyperlink{classMainWindow}{MainWindow}}(QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{32     \mbox{\hyperlink{classMainWindow_ae98d00a93bc118200eeef9f9bba1dba7}{\string~MainWindow}}();}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{39     \textcolor{keywordtype}{void} \mbox{\hyperlink{classMainWindow_ad0b8855f15cc7c8d1f87f28a4c1dc0e1}{mouseMoveEvent}}(QMouseEvent *e) \textcolor{keyword}{override};}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{45     \textcolor{keywordtype}{void} \mbox{\hyperlink{classMainWindow_aacc349041057b6b31a3bbde5b0f5fe49}{resizeEvent}}(QResizeEvent* e) \textcolor{keyword}{override};}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47 \textcolor{keyword}{private}:}
+\DoxyCodeLine{51     \textcolor{keywordtype}{void} ConnectButtonsAndSpinBoxes\_();}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53     Ui::MainWindow *ui; }
+\DoxyCodeLine{54     \mbox{\hyperlink{classs21_1_1Controller}{s21::Controller}} *controller\_; }
+\DoxyCodeLine{56 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{60             \textcolor{keywordtype}{void} ButtonClickSlot();}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{65     \textcolor{keywordtype}{void} SpinBoxSlot();}
+\DoxyCodeLine{66 \};}
+\DoxyCodeLine{67 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// MAINWINDOW\_H}}
+
+\end{DoxyCode}

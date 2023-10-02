@@ -1,0 +1,84 @@
+\hypertarget{classs21_1_1ChangeItemColorCommand}{}\doxysection{s21\+::Change\+Item\+Color\+Command Class Reference}
+\label{classs21_1_1ChangeItemColorCommand}\index{s21::ChangeItemColorCommand@{s21::ChangeItemColorCommand}}
+
+
+Command for changing the color of an item on the canvas.  
+
+
+
+
+{\ttfamily \#include $<$change\+\_\+item\+\_\+color\+\_\+command.\+h$>$}
+
+
+
+Inheritance diagram for s21\+::Change\+Item\+Color\+Command\+:
+% FIG 0
+
+
+Collaboration diagram for s21\+::Change\+Item\+Color\+Command\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classs21_1_1ChangeItemColorCommand_ae63bc8ae76670e81006a58e0fd7daafd}{Change\+Item\+Color\+Command}} (\mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} $\ast$canvas, Functions\+Mode, \mbox{\hyperlink{classs21_1_1ItemsPropertyController}{Items\+Property\+Controller}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Constructor for creating a command to change the color of an item. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1ChangeItemColorCommand_a68cbe21d80cd162faf3405415bd2eddd}{execute}} () override
+\begin{DoxyCompactList}\small\item\em Executes the command to change the color of an item. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Command for changing the color of an item on the canvas. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classs21_1_1ChangeItemColorCommand_ae63bc8ae76670e81006a58e0fd7daafd}\label{classs21_1_1ChangeItemColorCommand_ae63bc8ae76670e81006a58e0fd7daafd}} 
+\index{s21::ChangeItemColorCommand@{s21::ChangeItemColorCommand}!ChangeItemColorCommand@{ChangeItemColorCommand}}
+\index{ChangeItemColorCommand@{ChangeItemColorCommand}!s21::ChangeItemColorCommand@{s21::ChangeItemColorCommand}}
+\doxysubsubsection{\texorpdfstring{ChangeItemColorCommand()}{ChangeItemColorCommand()}}
+{\footnotesize\ttfamily s21\+::\+Change\+Item\+Color\+Command\+::\+Change\+Item\+Color\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} $\ast$}]{canvas,  }\item[{Functions\+Mode}]{mode,  }\item[{\mbox{\hyperlink{classs21_1_1ItemsPropertyController}{Items\+Property\+Controller}} $\ast$}]{ui\+\_\+changer }\end{DoxyParamCaption})}
+
+
+
+Constructor for creating a command to change the color of an item. 
+
+Constructor for the \mbox{\hyperlink{classs21_1_1ChangeItemColorCommand}{Change\+Item\+Color\+Command}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em canvas} & A pointer to the \mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} object. \\
+\hline
+{\em mode} & The mode of color change (e.\+g., k\+Background, k\+Ribs, or k\+Vertex). \\
+\hline
+{\em ui\+\_\+changer} & The UI controller.\\
+\hline
+{\em canvas} & Pointer to the \mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} object. \\
+\hline
+{\em color} & New color to be applied. \\
+\hline
+{\em mode} & The mode in which to change the color. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classs21_1_1ChangeItemColorCommand_a68cbe21d80cd162faf3405415bd2eddd}\label{classs21_1_1ChangeItemColorCommand_a68cbe21d80cd162faf3405415bd2eddd}} 
+\index{s21::ChangeItemColorCommand@{s21::ChangeItemColorCommand}!execute@{execute}}
+\index{execute@{execute}!s21::ChangeItemColorCommand@{s21::ChangeItemColorCommand}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void s21\+::\+Change\+Item\+Color\+Command\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Executes the command to change the color of an item. 
+
+Execute the color change command.
+
+This method applies the new color to the \mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} object and triggers a repaint. 
+
+Implements \mbox{\hyperlink{classICommand_ace81beb0beea968f876f292446bf1120}{ICommand}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+3d\+\_\+viewer\+\_\+v2/controller/commands/change\+\_\+item\+\_\+color\+\_\+command.\+h\item 
+3d\+\_\+viewer\+\_\+v2/controller/commands/change\+\_\+item\+\_\+color\+\_\+command.\+cc\end{DoxyCompactItemize}

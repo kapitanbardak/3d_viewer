@@ -1,0 +1,326 @@
+\hypertarget{classs21_1_1ItemsPropertyController}{}\doxysection{s21\+::Items\+Property\+Controller Class Reference}
+\label{classs21_1_1ItemsPropertyController}\index{s21::ItemsPropertyController@{s21::ItemsPropertyController}}
+
+
+The \mbox{\hyperlink{classs21_1_1ItemsPropertyController}{Items\+Property\+Controller}} class is responsible for managing the properties of the form objects.  
+
+
+
+
+{\ttfamily \#include $<$items\+\_\+property\+\_\+controller.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classs21_1_1ItemsPropertyController_a6e90475ca4dc04994cfdca3fdc58bf68}{Items\+Property\+Controller}} (QMain\+Window $\ast$window, Ui\+\_\+\+Main\+Window $\ast$item\+\_\+container, \mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} $\ast$canvas)
+\begin{DoxyCompactList}\small\item\em Constructs \mbox{\hyperlink{classs21_1_1ItemsPropertyController}{Items\+Property\+Controller}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1ItemsPropertyController_a107ef7b9e72de5a81e0364326befd82d}{Set\+Items\+Activity}} (bool mode)
+\begin{DoxyCompactList}\small\item\em Sets the eneabled value of buttons and spinboxes to mode, ignoring buttons from the exclusion list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1ItemsPropertyController_a8ec3d03df47658fc70d0272367547b70}{Set\+Model\+Info\+Text}} (string path, string name, int vertex, int ribs)
+\begin{DoxyCompactList}\small\item\em Sets the text to the model information label. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1ItemsPropertyController_a6cf595575947ee4e0ec5d28714100e02}{Set\+Object\+Text}} (QString text, Functions\+Mode mode)
+\begin{DoxyCompactList}\small\item\em Sets the text to the object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classs21_1_1ItemsPropertyController_a8c728be38efb454117d856f29f80aeb5}\label{classs21_1_1ItemsPropertyController_a8c728be38efb454117d856f29f80aeb5}} 
+void \mbox{\hyperlink{classs21_1_1ItemsPropertyController_a8c728be38efb454117d856f29f80aeb5}{Set\+Projection\+Button}} ()
+\begin{DoxyCompactList}\small\item\em Sets the pressed and unpressed states for projections buttons deffined by the settings. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classs21_1_1ItemsPropertyController_a010a2b95203b164084b265307108efce}\label{classs21_1_1ItemsPropertyController_a010a2b95203b164084b265307108efce}} 
+void \mbox{\hyperlink{classs21_1_1ItemsPropertyController_a010a2b95203b164084b265307108efce}{Set\+Button\+Icons}} ()
+\begin{DoxyCompactList}\small\item\em Sets the color iconst for colorizing buttons defined by the settings. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1ItemsPropertyController_ada64ba487bc5044d3648f8880f9ea477}{Set\+XRotation\+Box\+Value}} (float value)
+\begin{DoxyCompactList}\small\item\em Sets the value of x rotation spinbox. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1ItemsPropertyController_a69e7b7151c3b2ec827287ee2272b924c}{Set\+YRotation\+Box\+Value}} (float value)
+\begin{DoxyCompactList}\small\item\em Sets the value of y rotation spinbox. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1ItemsPropertyController_a5eda105a5d57da81e8d37a80a7aace43}{Set\+Scale\+Box\+Value}} (float value)
+\begin{DoxyCompactList}\small\item\em Sets the value of scale spinbox. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classs21_1_1ItemsPropertyController_abfbf5e2288329c554e0a06774d578d0a}{Get\+XRotation\+Box\+Value}} () const
+\begin{DoxyCompactList}\small\item\em Gets the value of x rotation spinbox. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classs21_1_1ItemsPropertyController_a582ee8147c997a66139c309288893e00}{Get\+YRotation\+Box\+Value}} () const
+\begin{DoxyCompactList}\small\item\em Gets the value of y rotation spinbox. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classs21_1_1ItemsPropertyController_ac09b16915ddd363a6e6217274419b1d3}{Get\+Scale\+Box\+Value}} () const
+\begin{DoxyCompactList}\small\item\em Gets the value of scale spinbox. \end{DoxyCompactList}\item 
+QVector3D \mbox{\hyperlink{classs21_1_1ItemsPropertyController_a5c5a1161de786a94dc410ae7e4fe0c18}{Get\+Rotation\+Values}} ()
+\begin{DoxyCompactList}\small\item\em Gets rotation values ​​on all three axes. \end{DoxyCompactList}\item 
+QVector3D \mbox{\hyperlink{classs21_1_1ItemsPropertyController_aa4b0f1e484389f2d290b8b875e67e56d}{Get\+Movement\+Values}} ()
+\begin{DoxyCompactList}\small\item\em Gets movement values ​​on all three axes. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classs21_1_1ItemsPropertyController_abcf42de1b6426a36b251cf4c269772f3}{Get\+Slider\+Value}} () const
+\begin{DoxyCompactList}\small\item\em Gets value of sensitivity slider. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classs21_1_1ItemsPropertyController_afb7b0afc4ec1f0db63b9f93d6e9ef9f7}{Is\+Allowed\+To\+Change\+Values}} ()
+\begin{DoxyCompactList}\small\item\em Indicates whether changing the values ​​in the boxes is allowed. \end{DoxyCompactList}\item 
+QString\+List \& \mbox{\hyperlink{classs21_1_1ItemsPropertyController_a088397f7b275543eea9baa6e0441c0a6}{Get\+All\+Object\+Names\+From\+Window}} ()
+\begin{DoxyCompactList}\small\item\em Gets a list of buttons placed on the form. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classs21_1_1ItemsPropertyController_a15762df7c173f487823a0b9bc8333827}\label{classs21_1_1ItemsPropertyController_a15762df7c173f487823a0b9bc8333827}} 
+void \mbox{\hyperlink{classs21_1_1ItemsPropertyController_a15762df7c173f487823a0b9bc8333827}{Place\+Gl\+Window}} ()
+\begin{DoxyCompactList}\small\item\em Places a window on an Opengl form. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classs21_1_1ItemsPropertyController_a9153926ccaa0d89508c3fa8dd8aa1020}\label{classs21_1_1ItemsPropertyController_a9153926ccaa0d89508c3fa8dd8aa1020}} 
+void \mbox{\hyperlink{classs21_1_1ItemsPropertyController_a9153926ccaa0d89508c3fa8dd8aa1020}{Reset\+Boxes\+Values}} ()
+\begin{DoxyCompactList}\small\item\em Resets the box values ​​to 0. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classs21_1_1ItemsPropertyController}{Items\+Property\+Controller}} class is responsible for managing the properties of the form objects. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classs21_1_1ItemsPropertyController_a6e90475ca4dc04994cfdca3fdc58bf68}\label{classs21_1_1ItemsPropertyController_a6e90475ca4dc04994cfdca3fdc58bf68}} 
+\index{s21::ItemsPropertyController@{s21::ItemsPropertyController}!ItemsPropertyController@{ItemsPropertyController}}
+\index{ItemsPropertyController@{ItemsPropertyController}!s21::ItemsPropertyController@{s21::ItemsPropertyController}}
+\doxysubsubsection{\texorpdfstring{ItemsPropertyController()}{ItemsPropertyController()}}
+{\footnotesize\ttfamily s21\+::\+Items\+Property\+Controller\+::\+Items\+Property\+Controller (\begin{DoxyParamCaption}\item[{QMain\+Window $\ast$}]{window,  }\item[{Ui\+\_\+\+Main\+Window $\ast$}]{item\+\_\+container,  }\item[{\mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} $\ast$}]{canvas }\end{DoxyParamCaption})}
+
+
+
+Constructs \mbox{\hyperlink{classs21_1_1ItemsPropertyController}{Items\+Property\+Controller}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & A pointer to the main window object. \\
+\hline
+{\em item\+\_\+container} & A pointer to the main window UI. \\
+\hline
+{\em canvas} & A pointer to the \mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} object. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classs21_1_1ItemsPropertyController_a088397f7b275543eea9baa6e0441c0a6}\label{classs21_1_1ItemsPropertyController_a088397f7b275543eea9baa6e0441c0a6}} 
+\index{s21::ItemsPropertyController@{s21::ItemsPropertyController}!GetAllObjectNamesFromWindow@{GetAllObjectNamesFromWindow}}
+\index{GetAllObjectNamesFromWindow@{GetAllObjectNamesFromWindow}!s21::ItemsPropertyController@{s21::ItemsPropertyController}}
+\doxysubsubsection{\texorpdfstring{GetAllObjectNamesFromWindow()}{GetAllObjectNamesFromWindow()}}
+{\footnotesize\ttfamily QString\+List \& s21\+::\+Items\+Property\+Controller\+::\+Get\+All\+Object\+Names\+From\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets a list of buttons placed on the form. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1ItemsPropertyController_aa4b0f1e484389f2d290b8b875e67e56d}\label{classs21_1_1ItemsPropertyController_aa4b0f1e484389f2d290b8b875e67e56d}} 
+\index{s21::ItemsPropertyController@{s21::ItemsPropertyController}!GetMovementValues@{GetMovementValues}}
+\index{GetMovementValues@{GetMovementValues}!s21::ItemsPropertyController@{s21::ItemsPropertyController}}
+\doxysubsubsection{\texorpdfstring{GetMovementValues()}{GetMovementValues()}}
+{\footnotesize\ttfamily QVector3D s21\+::\+Items\+Property\+Controller\+::\+Get\+Movement\+Values (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets movement values ​​on all three axes. 
+
+\begin{DoxyReturn}{Returns}
+QVector3D object which contains movement values. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1ItemsPropertyController_a5c5a1161de786a94dc410ae7e4fe0c18}\label{classs21_1_1ItemsPropertyController_a5c5a1161de786a94dc410ae7e4fe0c18}} 
+\index{s21::ItemsPropertyController@{s21::ItemsPropertyController}!GetRotationValues@{GetRotationValues}}
+\index{GetRotationValues@{GetRotationValues}!s21::ItemsPropertyController@{s21::ItemsPropertyController}}
+\doxysubsubsection{\texorpdfstring{GetRotationValues()}{GetRotationValues()}}
+{\footnotesize\ttfamily QVector3D s21\+::\+Items\+Property\+Controller\+::\+Get\+Rotation\+Values (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets rotation values ​​on all three axes. 
+
+\begin{DoxyReturn}{Returns}
+QVector3D object which contains rotation values. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1ItemsPropertyController_ac09b16915ddd363a6e6217274419b1d3}\label{classs21_1_1ItemsPropertyController_ac09b16915ddd363a6e6217274419b1d3}} 
+\index{s21::ItemsPropertyController@{s21::ItemsPropertyController}!GetScaleBoxValue@{GetScaleBoxValue}}
+\index{GetScaleBoxValue@{GetScaleBoxValue}!s21::ItemsPropertyController@{s21::ItemsPropertyController}}
+\doxysubsubsection{\texorpdfstring{GetScaleBoxValue()}{GetScaleBoxValue()}}
+{\footnotesize\ttfamily float s21\+::\+Items\+Property\+Controller\+::\+Get\+Scale\+Box\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the value of scale spinbox. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & scale. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1ItemsPropertyController_abcf42de1b6426a36b251cf4c269772f3}\label{classs21_1_1ItemsPropertyController_abcf42de1b6426a36b251cf4c269772f3}} 
+\index{s21::ItemsPropertyController@{s21::ItemsPropertyController}!GetSliderValue@{GetSliderValue}}
+\index{GetSliderValue@{GetSliderValue}!s21::ItemsPropertyController@{s21::ItemsPropertyController}}
+\doxysubsubsection{\texorpdfstring{GetSliderValue()}{GetSliderValue()}}
+{\footnotesize\ttfamily float s21\+::\+Items\+Property\+Controller\+::\+Get\+Slider\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets value of sensitivity slider. 
+
+\begin{DoxyReturn}{Returns}
+value of sensitivity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1ItemsPropertyController_abfbf5e2288329c554e0a06774d578d0a}\label{classs21_1_1ItemsPropertyController_abfbf5e2288329c554e0a06774d578d0a}} 
+\index{s21::ItemsPropertyController@{s21::ItemsPropertyController}!GetXRotationBoxValue@{GetXRotationBoxValue}}
+\index{GetXRotationBoxValue@{GetXRotationBoxValue}!s21::ItemsPropertyController@{s21::ItemsPropertyController}}
+\doxysubsubsection{\texorpdfstring{GetXRotationBoxValue()}{GetXRotationBoxValue()}}
+{\footnotesize\ttfamily float s21\+::\+Items\+Property\+Controller\+::\+Get\+XRotation\+Box\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the value of x rotation spinbox. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & rotation. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1ItemsPropertyController_a582ee8147c997a66139c309288893e00}\label{classs21_1_1ItemsPropertyController_a582ee8147c997a66139c309288893e00}} 
+\index{s21::ItemsPropertyController@{s21::ItemsPropertyController}!GetYRotationBoxValue@{GetYRotationBoxValue}}
+\index{GetYRotationBoxValue@{GetYRotationBoxValue}!s21::ItemsPropertyController@{s21::ItemsPropertyController}}
+\doxysubsubsection{\texorpdfstring{GetYRotationBoxValue()}{GetYRotationBoxValue()}}
+{\footnotesize\ttfamily float s21\+::\+Items\+Property\+Controller\+::\+Get\+YRotation\+Box\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the value of y rotation spinbox. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & rotation. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1ItemsPropertyController_afb7b0afc4ec1f0db63b9f93d6e9ef9f7}\label{classs21_1_1ItemsPropertyController_afb7b0afc4ec1f0db63b9f93d6e9ef9f7}} 
+\index{s21::ItemsPropertyController@{s21::ItemsPropertyController}!IsAllowedToChangeValues@{IsAllowedToChangeValues}}
+\index{IsAllowedToChangeValues@{IsAllowedToChangeValues}!s21::ItemsPropertyController@{s21::ItemsPropertyController}}
+\doxysubsubsection{\texorpdfstring{IsAllowedToChangeValues()}{IsAllowedToChangeValues()}}
+{\footnotesize\ttfamily bool s21\+::\+Items\+Property\+Controller\+::\+Is\+Allowed\+To\+Change\+Values (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Indicates whether changing the values ​​in the boxes is allowed. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1ItemsPropertyController_a107ef7b9e72de5a81e0364326befd82d}\label{classs21_1_1ItemsPropertyController_a107ef7b9e72de5a81e0364326befd82d}} 
+\index{s21::ItemsPropertyController@{s21::ItemsPropertyController}!SetItemsActivity@{SetItemsActivity}}
+\index{SetItemsActivity@{SetItemsActivity}!s21::ItemsPropertyController@{s21::ItemsPropertyController}}
+\doxysubsubsection{\texorpdfstring{SetItemsActivity()}{SetItemsActivity()}}
+{\footnotesize\ttfamily void s21\+::\+Items\+Property\+Controller\+::\+Set\+Items\+Activity (\begin{DoxyParamCaption}\item[{bool}]{mode }\end{DoxyParamCaption})}
+
+
+
+Sets the eneabled value of buttons and spinboxes to mode, ignoring buttons from the exclusion list. 
+
+Iterates through all the buttons and boxes on the form, changing their availability.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & Value ​​for the enabled flag.\\
+\hline
+{\em mode} & True -\/ buttons are active, False -\/ buttons are blocked. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1ItemsPropertyController_a8ec3d03df47658fc70d0272367547b70}\label{classs21_1_1ItemsPropertyController_a8ec3d03df47658fc70d0272367547b70}} 
+\index{s21::ItemsPropertyController@{s21::ItemsPropertyController}!SetModelInfoText@{SetModelInfoText}}
+\index{SetModelInfoText@{SetModelInfoText}!s21::ItemsPropertyController@{s21::ItemsPropertyController}}
+\doxysubsubsection{\texorpdfstring{SetModelInfoText()}{SetModelInfoText()}}
+{\footnotesize\ttfamily void s21\+::\+Items\+Property\+Controller\+::\+Set\+Model\+Info\+Text (\begin{DoxyParamCaption}\item[{string}]{path,  }\item[{string}]{name,  }\item[{int}]{vertex,  }\item[{int}]{ribs }\end{DoxyParamCaption})}
+
+
+
+Sets the text to the model information label. 
+
+Sets the model information text on the UI.
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Model path. \\
+\hline
+{\em name} & Model name. \\
+\hline
+{\em vertex} & Number of vertices. \\
+\hline
+{\em ribs} & Number of ribs.\\
+\hline
+{\em path} & The path to the model. \\
+\hline
+{\em name} & The name of the model. \\
+\hline
+{\em vertex} & The count of vertices. \\
+\hline
+{\em ribs} & The count of ribs. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1ItemsPropertyController_a6cf595575947ee4e0ec5d28714100e02}\label{classs21_1_1ItemsPropertyController_a6cf595575947ee4e0ec5d28714100e02}} 
+\index{s21::ItemsPropertyController@{s21::ItemsPropertyController}!SetObjectText@{SetObjectText}}
+\index{SetObjectText@{SetObjectText}!s21::ItemsPropertyController@{s21::ItemsPropertyController}}
+\doxysubsubsection{\texorpdfstring{SetObjectText()}{SetObjectText()}}
+{\footnotesize\ttfamily void s21\+::\+Items\+Property\+Controller\+::\+Set\+Object\+Text (\begin{DoxyParamCaption}\item[{QString}]{text,  }\item[{Functions\+Mode}]{mode }\end{DoxyParamCaption})}
+
+
+
+Sets the text to the object. 
+
+Sets the text for vertex or ribs objects on the UI.
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & \\
+\hline
+{\em mode} & \\
+\hline
+{\em text} & The text to set. \\
+\hline
+{\em mode} & The mode (vertex or ribs). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1ItemsPropertyController_a5eda105a5d57da81e8d37a80a7aace43}\label{classs21_1_1ItemsPropertyController_a5eda105a5d57da81e8d37a80a7aace43}} 
+\index{s21::ItemsPropertyController@{s21::ItemsPropertyController}!SetScaleBoxValue@{SetScaleBoxValue}}
+\index{SetScaleBoxValue@{SetScaleBoxValue}!s21::ItemsPropertyController@{s21::ItemsPropertyController}}
+\doxysubsubsection{\texorpdfstring{SetScaleBoxValue()}{SetScaleBoxValue()}}
+{\footnotesize\ttfamily void s21\+::\+Items\+Property\+Controller\+::\+Set\+Scale\+Box\+Value (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})}
+
+
+
+Sets the value of scale spinbox. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & scale. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1ItemsPropertyController_ada64ba487bc5044d3648f8880f9ea477}\label{classs21_1_1ItemsPropertyController_ada64ba487bc5044d3648f8880f9ea477}} 
+\index{s21::ItemsPropertyController@{s21::ItemsPropertyController}!SetXRotationBoxValue@{SetXRotationBoxValue}}
+\index{SetXRotationBoxValue@{SetXRotationBoxValue}!s21::ItemsPropertyController@{s21::ItemsPropertyController}}
+\doxysubsubsection{\texorpdfstring{SetXRotationBoxValue()}{SetXRotationBoxValue()}}
+{\footnotesize\ttfamily void s21\+::\+Items\+Property\+Controller\+::\+Set\+XRotation\+Box\+Value (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})}
+
+
+
+Sets the value of x rotation spinbox. 
+
+Sets the value of the X rotation box on the UI.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & rotation.\\
+\hline
+{\em value} & The value to set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1ItemsPropertyController_a69e7b7151c3b2ec827287ee2272b924c}\label{classs21_1_1ItemsPropertyController_a69e7b7151c3b2ec827287ee2272b924c}} 
+\index{s21::ItemsPropertyController@{s21::ItemsPropertyController}!SetYRotationBoxValue@{SetYRotationBoxValue}}
+\index{SetYRotationBoxValue@{SetYRotationBoxValue}!s21::ItemsPropertyController@{s21::ItemsPropertyController}}
+\doxysubsubsection{\texorpdfstring{SetYRotationBoxValue()}{SetYRotationBoxValue()}}
+{\footnotesize\ttfamily void s21\+::\+Items\+Property\+Controller\+::\+Set\+YRotation\+Box\+Value (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})}
+
+
+
+Sets the value of y rotation spinbox. 
+
+Sets the value of the Y rotation box on the UI.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & rotation.\\
+\hline
+{\em value} & The value to set. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+3d\+\_\+viewer\+\_\+v2/controller/items\+\_\+property\+\_\+controller.\+h\item 
+3d\+\_\+viewer\+\_\+v2/controller/items\+\_\+property\+\_\+controller.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,74 @@
+\hypertarget{classs21_1_1IObjectTransformationStrategy}{}\doxysection{s21\+::IObject\+Transformation\+Strategy Class Reference}
+\label{classs21_1_1IObjectTransformationStrategy}\index{s21::IObjectTransformationStrategy@{s21::IObjectTransformationStrategy}}
+
+
+The \mbox{\hyperlink{classs21_1_1IObjectTransformationStrategy}{IObject\+Transformation\+Strategy}} class is an interface for object transformation strategies.  
+
+
+
+
+{\ttfamily \#include $<$interface\+\_\+object\+\_\+transformation\+\_\+strategy.\+h$>$}
+
+
+
+Inheritance diagram for s21\+::IObject\+Transformation\+Strategy\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classs21_1_1IObjectTransformationStrategy_a6aeba673f38b60d50784ff7aac0a306c}\label{classs21_1_1IObjectTransformationStrategy_a6aeba673f38b60d50784ff7aac0a306c}} 
+virtual \mbox{\hyperlink{classs21_1_1IObjectTransformationStrategy_a6aeba673f38b60d50784ff7aac0a306c}{$\sim$\+IObject\+Transformation\+Strategy}} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for \mbox{\hyperlink{classs21_1_1IObjectTransformationStrategy}{IObject\+Transformation\+Strategy}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classs21_1_1IObjectTransformationStrategy_afca06532f92f2274baa956ad4293ee79}{transform}} (const float)
+\begin{DoxyCompactList}\small\item\em Transform the object with a single float parameter. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classs21_1_1IObjectTransformationStrategy_ac66bf05a9804759db196279a7c20e6bb}{transform}} (const std\+::array$<$ float, 3 $>$ \&)
+\begin{DoxyCompactList}\small\item\em Transform the object with a std\+::array of three float parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classs21_1_1IObjectTransformationStrategy}{IObject\+Transformation\+Strategy}} class is an interface for object transformation strategies. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classs21_1_1IObjectTransformationStrategy_afca06532f92f2274baa956ad4293ee79}\label{classs21_1_1IObjectTransformationStrategy_afca06532f92f2274baa956ad4293ee79}} 
+\index{s21::IObjectTransformationStrategy@{s21::IObjectTransformationStrategy}!transform@{transform}}
+\index{transform@{transform}!s21::IObjectTransformationStrategy@{s21::IObjectTransformationStrategy}}
+\doxysubsubsection{\texorpdfstring{transform()}{transform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void s21\+::\+IObject\+Transformation\+Strategy\+::transform (\begin{DoxyParamCaption}\item[{const float}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Transform the object with a single float parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scale\+\_\+value} & The scale value for the transformation. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classs21_1_1ScaleStrategy_ac7ce16a8afeed5c3eddf385b7ec15e3a}{s21\+::\+Scale\+Strategy}}.
+
+\mbox{\Hypertarget{classs21_1_1IObjectTransformationStrategy_ac66bf05a9804759db196279a7c20e6bb}\label{classs21_1_1IObjectTransformationStrategy_ac66bf05a9804759db196279a7c20e6bb}} 
+\index{s21::IObjectTransformationStrategy@{s21::IObjectTransformationStrategy}!transform@{transform}}
+\index{transform@{transform}!s21::IObjectTransformationStrategy@{s21::IObjectTransformationStrategy}}
+\doxysubsubsection{\texorpdfstring{transform()}{transform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void s21\+::\+IObject\+Transformation\+Strategy\+::transform (\begin{DoxyParamCaption}\item[{const std\+::array$<$ float, 3 $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Transform the object with a std\+::array of three float parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & An array of three float parameters for the transformation. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classs21_1_1RotateStrategy_a111c66d5dde04def0f8de6ff9676de49}{s21\+::\+Rotate\+Strategy}}, and \mbox{\hyperlink{classs21_1_1MoveStrategy_adc7f9bcdfe9942c6aaaef216b62e98bb}{s21\+::\+Move\+Strategy}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+3d\+\_\+viewer\+\_\+v2/model/strategy/interface\+\_\+object\+\_\+transformation\+\_\+strategy.\+h\end{DoxyCompactItemize}

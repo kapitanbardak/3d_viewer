@@ -1,0 +1,34 @@
+\hypertarget{save__img__command_8h_source}{}\doxysection{save\+\_\+img\+\_\+command.\+h}
+\label{save__img__command_8h_source}\index{3d\_viewer\_v2/controller/commands/save\_img\_command.h@{3d\_viewer\_v2/controller/commands/save\_img\_command.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#include "{}../../core/glcanvas.h"{}}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}interface\_controller\_command.h"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}../../model/object\_3d.h"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QString>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <QImage>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <QDir>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <QFileDialog>}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#ifndef INC\_3DVIEWER\_V2\_0\_SRC\_3D\_VIEWER\_V2\_CONTROLLER\_COMMANDS\_SAVE\_IMG\_COMMAND\_H\_}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#define INC\_3DVIEWER\_V2\_0\_SRC\_3D\_VIEWER\_V2\_CONTROLLER\_COMMANDS\_SAVE\_IMG\_COMMAND\_H\_}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{keyword}{namespace }s21 \{}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{18     \textcolor{keyword}{class }\mbox{\hyperlink{classs21_1_1SaveImgCommand}{SaveImgCommand}} : \textcolor{keyword}{public} \mbox{\hyperlink{classICommand}{ICommand}} \{}
+\DoxyCodeLine{19     \textcolor{keyword}{public}:}
+\DoxyCodeLine{24         \mbox{\hyperlink{classs21_1_1SaveImgCommand}{SaveImgCommand}}(\mbox{\hyperlink{classs21_1_1GlCanvas}{GlCanvas}} *canvas);}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{29         \textcolor{keywordtype}{void} \mbox{\hyperlink{classs21_1_1SaveImgCommand_a5376ef9bae4af6346a26c9f34c2defd1}{execute}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31     \textcolor{keyword}{private}:}
+\DoxyCodeLine{32         \mbox{\hyperlink{classs21_1_1GlCanvas}{GlCanvas}} *canvas\_ = \textcolor{keyword}{nullptr};  }
+\DoxyCodeLine{33         QString file\_location\_;  }
+\DoxyCodeLine{34     \};}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 \} \textcolor{comment}{// namespace s21}}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// INC\_3DVIEWER\_V2\_0\_SRC\_3D\_VIEWER\_V2\_CONTROLLER\_COMMANDS\_SAVE\_IMG\_COMMAND\_H\_}}
+
+\end{DoxyCode}

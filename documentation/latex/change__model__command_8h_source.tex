@@ -1,0 +1,27 @@
+\hypertarget{change__model__command_8h_source}{}\doxysection{change\+\_\+model\+\_\+command.\+h}
+\label{change__model__command_8h_source}\index{3d\_viewer\_v2/controller/commands/change\_model\_command.h@{3d\_viewer\_v2/controller/commands/change\_model\_command.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CHANGE\_MODEL\_COMMAND\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CHANGE\_MODEL\_COMMAND\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}interface\_controller\_command.h"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}model/interface/data\_model.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}core/glcanvas.h"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{namespace }s21 \{}
+\DoxyCodeLine{8 \textcolor{keyword}{class }\mbox{\hyperlink{classs21_1_1ChangeModelCommand}{ChangeModelCommand}} : \textcolor{keyword}{public} \mbox{\hyperlink{classICommand}{ICommand}} \{}
+\DoxyCodeLine{9  \textcolor{keyword}{public}:}
+\DoxyCodeLine{10     \mbox{\hyperlink{classs21_1_1ChangeModelCommand}{ChangeModelCommand}}(\mbox{\hyperlink{classs21_1_1GlCanvas}{GlCanvas}} *canvas,\textcolor{keyword}{const} QString mode,\textcolor{keyword}{const} QVector3D\& coords);}
+\DoxyCodeLine{11     \textcolor{keywordtype}{void} execute() \textcolor{keyword}{override};}
+\DoxyCodeLine{12  \textcolor{keyword}{private}:}
+\DoxyCodeLine{13   \mbox{\hyperlink{classs21_1_1DataModel}{DataModel}} *object\_ = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{14   \mbox{\hyperlink{classs21_1_1GlCanvas}{GlCanvas}} *canvas\_ = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{15   QString mode\_;}
+\DoxyCodeLine{16   QVector3D coords\_;}
+\DoxyCodeLine{17 \};}
+\DoxyCodeLine{18 \}  \textcolor{comment}{// namespace s21}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// CHANGE\_MODEL\_COMMAND\_H}}
+
+\end{DoxyCode}

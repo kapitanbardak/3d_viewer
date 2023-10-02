@@ -1,0 +1,8 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="s21::Settings",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d51/classs21_1_1Settings.html",tooltip="A class that stores settings for an OpenGl window. Implements saving of some parameters between appli..."];
+}

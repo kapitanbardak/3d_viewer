@@ -1,0 +1,30 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="ICommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/da2/classICommand.html",tooltip="An interface for controller commands."];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="s21::ChangeItemColorCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/df3/classs21_1_1ChangeItemColorCommand.html",tooltip="Command for changing the color of an item on the canvas."];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="s21::ChangeItemTypeCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d87/classs21_1_1ChangeItemTypeCommand.html",tooltip="Command for changing the type of an item (e.g., vertex or ribs) on the canvas."];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="s21::ChangeModelCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/de1/classs21_1_1ChangeModelCommand.html",tooltip="Command for changing the model's position or rotation in the GlCanvas."];
+  Node0 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="s21::ChangeProjectionMode\lCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d03/classs21_1_1ChangeProjectionModeCommand.html",tooltip="Command for changing the projection mode of an item on the canvas."];
+  Node0 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="s21::ItemsSizeCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/de3/classs21_1_1ItemsSizeCommand.html",tooltip="A command for changing the size of items in the canvas."];
+  Node0 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="s21::OpenFileCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/da1/classs21_1_1OpenFileCommand.html",tooltip="A command for opening a 3D model file."];
+  Node0 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="s21::ResetPosition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/d95/classs21_1_1ResetPosition.html",tooltip="A command to reset the position of a 3D model."];
+  Node0 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="s21::SaveGifCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/df4/classs21_1_1SaveGifCommand.html",tooltip="A command to save a GIF animation from the GlCanvas."];
+  Node0 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="s21::SaveImgCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d14/classs21_1_1SaveImgCommand.html",tooltip="A command to save an image snapshot from the GlCanvas."];
+  Node22 [label="QObject",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node22 -> Node23 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="s21::Controller",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d13/classs21_1_1Controller.html",tooltip="Controller class responsible for handling user input and interactions."];
+  Node22 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

@@ -1,0 +1,64 @@
+\hypertarget{classs21_1_1Parser}{}\doxysection{s21\+::Parser Class Reference}
+\label{classs21_1_1Parser}\index{s21::Parser@{s21::Parser}}
+
+
+The \mbox{\hyperlink{classs21_1_1Parser}{Parser}} class is responsible for parsing 3D object data from a file and populating the \mbox{\hyperlink{classs21_1_1Object3D}{Object3D}} instance.  
+
+
+
+
+{\ttfamily \#include $<$parser.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classs21_1_1Parser_aa28c68d0be9207fd86fc6cb2c2f78c56}{Parser}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classs21_1_1Parser}{Parser}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1Parser_aab4652bd85fb45149e4b7f8bfde9bd91}{Read\+Object}} (std\+::string const \&file\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Read the 3D object data from the specified file and populate the \mbox{\hyperlink{classs21_1_1Object3D}{Object3D}} instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classs21_1_1Parser}{Parser}} class is responsible for parsing 3D object data from a file and populating the \mbox{\hyperlink{classs21_1_1Object3D}{Object3D}} instance. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classs21_1_1Parser_aa28c68d0be9207fd86fc6cb2c2f78c56}\label{classs21_1_1Parser_aa28c68d0be9207fd86fc6cb2c2f78c56}} 
+\index{s21::Parser@{s21::Parser}!Parser@{Parser}}
+\index{Parser@{Parser}!s21::Parser@{s21::Parser}}
+\doxysubsubsection{\texorpdfstring{Parser()}{Parser()}}
+{\footnotesize\ttfamily s21\+::\+Parser\+::\+Parser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classs21_1_1Parser}{Parser}} class. 
+
+Construct a new \mbox{\hyperlink{classs21_1_1Parser}{Parser}}\+:\+: \mbox{\hyperlink{classs21_1_1Parser}{Parser}} object.
+
+Initializes the parser with the 3D data model instance. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classs21_1_1Parser_aab4652bd85fb45149e4b7f8bfde9bd91}\label{classs21_1_1Parser_aab4652bd85fb45149e4b7f8bfde9bd91}} 
+\index{s21::Parser@{s21::Parser}!ReadObject@{ReadObject}}
+\index{ReadObject@{ReadObject}!s21::Parser@{s21::Parser}}
+\doxysubsubsection{\texorpdfstring{ReadObject()}{ReadObject()}}
+{\footnotesize\ttfamily void s21\+::\+Parser\+::\+Read\+Object (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{file\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+Read the 3D object data from the specified file and populate the \mbox{\hyperlink{classs21_1_1Object3D}{Object3D}} instance. 
+
+Read and parse a 3D object from a file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+name} & The name of the file to read the object data from.\\
+\hline
+{\em file\+\_\+name} & The name of the file containing the 3D object data. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+3d\+\_\+viewer\+\_\+v2/model/parser.\+h\item 
+3d\+\_\+viewer\+\_\+v2/model/parser.\+cc\end{DoxyCompactItemize}

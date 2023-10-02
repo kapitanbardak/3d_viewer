@@ -1,0 +1,84 @@
+\hypertarget{classs21_1_1ResetPosition}{}\doxysection{s21\+::Reset\+Position Class Reference}
+\label{classs21_1_1ResetPosition}\index{s21::ResetPosition@{s21::ResetPosition}}
+
+
+A command to reset the position of a 3D model.  
+
+
+
+
+{\ttfamily \#include $<$reset\+\_\+position\+\_\+command.\+h$>$}
+
+
+
+Inheritance diagram for s21\+::Reset\+Position\+:
+% FIG 0
+
+
+Collaboration diagram for s21\+::Reset\+Position\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classs21_1_1ResetPosition_aaec3467256ba8a40d78a257d91f1361b}{Reset\+Position}} (\mbox{\hyperlink{classs21_1_1DataModel}{Data\+Model}} $\ast$model, \mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} $\ast$canvas, \mbox{\hyperlink{classs21_1_1ItemsPropertyController}{Items\+Property\+Controller}} $\ast$item\+\_\+controller)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classs21_1_1ResetPosition}{Reset\+Position}} command. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1ResetPosition_add63cd01ccca9f50f014cd714708ef0b}{execute}} () override
+\begin{DoxyCompactList}\small\item\em Executes the command, resetting the model\textquotesingle{}s position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A command to reset the position of a 3D model. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classs21_1_1ResetPosition_aaec3467256ba8a40d78a257d91f1361b}\label{classs21_1_1ResetPosition_aaec3467256ba8a40d78a257d91f1361b}} 
+\index{s21::ResetPosition@{s21::ResetPosition}!ResetPosition@{ResetPosition}}
+\index{ResetPosition@{ResetPosition}!s21::ResetPosition@{s21::ResetPosition}}
+\doxysubsubsection{\texorpdfstring{ResetPosition()}{ResetPosition()}}
+{\footnotesize\ttfamily s21\+::\+Reset\+Position\+::\+Reset\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classs21_1_1DataModel}{Data\+Model}} $\ast$}]{model,  }\item[{\mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} $\ast$}]{canvas,  }\item[{\mbox{\hyperlink{classs21_1_1ItemsPropertyController}{Items\+Property\+Controller}} $\ast$}]{item\+\_\+contorller }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classs21_1_1ResetPosition}{Reset\+Position}} command. 
+
+Constructor for the \mbox{\hyperlink{classs21_1_1ResetPosition}{Reset\+Position}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & A pointer to the \mbox{\hyperlink{classs21_1_1DataModel}{Data\+Model}}. \\
+\hline
+{\em canvas} & A pointer to the \mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}}. \\
+\hline
+{\em window} & A pointer to the Ui\+\_\+\+Main\+Window.\\
+\hline
+{\em model} & Pointer to the \mbox{\hyperlink{classs21_1_1DataModel}{Data\+Model}} object. \\
+\hline
+{\em canvas} & Pointer to the \mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} object. \\
+\hline
+{\em window} & Pointer to the application\textquotesingle{}s main window. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classs21_1_1ResetPosition_add63cd01ccca9f50f014cd714708ef0b}\label{classs21_1_1ResetPosition_add63cd01ccca9f50f014cd714708ef0b}} 
+\index{s21::ResetPosition@{s21::ResetPosition}!execute@{execute}}
+\index{execute@{execute}!s21::ResetPosition@{s21::ResetPosition}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void s21\+::\+Reset\+Position\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Executes the command, resetting the model\textquotesingle{}s position. 
+
+Execute the reset position command.
+
+This method resets the position of the 3D model, initializes the \mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} with the updated data, and resets the values in the user interface input boxes. It then triggers a repaint of the canvas. 
+
+Implements \mbox{\hyperlink{classICommand_ace81beb0beea968f876f292446bf1120}{ICommand}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+3d\+\_\+viewer\+\_\+v2/controller/commands/reset\+\_\+position\+\_\+command.\+h\item 
+3d\+\_\+viewer\+\_\+v2/controller/commands/reset\+\_\+position\+\_\+command.\+cc\end{DoxyCompactItemize}

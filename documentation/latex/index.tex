@@ -1,0 +1,42 @@
+\label{index_md_documentation_main_page}%
+\Hypertarget{index_md_documentation_main_page}%
+ \hypertarget{index_autotoc_md1}{}\doxysection{Overview}\label{index_autotoc_md1}
+This C++ program is designed to visualize 3D wireframe models. It follows the Google C++ Style Guide and adheres to the C++17 standard. The code is organized in the {\ttfamily src} folder and includes a Makefile with standard GNU-\/program targets.\hypertarget{index_autotoc_md2}{}\doxysection{Program Features}\label{index_autotoc_md2}
+
+\begin{DoxyItemize}
+\item Load a wireframe model from an obj file (vertices and surfaces list support only).
+\item Translate the model by a given distance along the X, Y, and Z axes.
+\item Rotate the model by a given angle around its X, Y, and Z axes.
+\item Scale the model by a given value.
+\item Supports the display of model details such as file name, number of vertices, and edges.
+\item The program is designed for Linux and can use GUI libraries like GTK+, CEF, Qt, JUCE, SFML, Nanogui, or Nngui.
+\end{DoxyItemize}\hypertarget{index_autotoc_md3}{}\doxysection{Program Structure}\label{index_autotoc_md3}
+The program follows object-\/oriented programming principles and is implemented using the Model-\/\+View-\/\+Controller (MVC) pattern. Here are some key aspects of the program\textquotesingle{}s structure\+:
+
+
+\begin{DoxyItemize}
+\item Business logic is separated from the view code.
+\item The interface code is isolated from both the controller and the model.
+\item Controllers are kept thin, focusing on handling user input and interacting with the model.
+\end{DoxyItemize}\hypertarget{index_autotoc_md4}{}\doxysection{Design Patterns}\label{index_autotoc_md4}
+The program incorporates three different design patterns\+:
+
+
+\begin{DoxyEnumerate}
+\item {\bfseries{Singleton Pattern}}\+: A Singleton pattern is used to ensure that only one instance of the main application exists. This prevents multiple instances from conflicting with each other.
+\item {\bfseries{Strategy Pattern}}\+: The program employs a strategy pattern to allow for various affine transformations, such as translation, rotation, and scaling. Different strategies can be applied based on user input.
+\item {\bfseries{Command Pattern}}\+: Each transformation action is encapsulated in a command object, allowing for easy execution and reversal.
+\end{DoxyEnumerate}\hypertarget{index_autotoc_md5}{}\doxysection{Unit Testing}\label{index_autotoc_md5}
+The program includes comprehensive unit tests that cover modules related to model loading and affine transformations. This ensures the reliability and correctness of the program.\hypertarget{index_autotoc_md6}{}\doxysection{Performance}\label{index_autotoc_md6}
+The program is optimized to handle wireframe models with varying levels of detail, ranging from 100 vertices to 1,000,000 vertices. It ensures smooth user interactions without freezing (defined as inactivity of more than 0.\+5 seconds).\hypertarget{index_autotoc_md7}{}\doxysection{Installation}\label{index_autotoc_md7}
+
+\begin{DoxyItemize}
+\item The program can be built using the provided Makefile.
+\item The installation directory can be chosen arbitrarily, excluding the build directory.
+\end{DoxyItemize}\hypertarget{index_autotoc_md8}{}\doxysection{Namespace}\label{index_autotoc_md8}
+All classes and components are implemented within the {\ttfamily s21} namespace as required.
+
+\DoxyHorRuler{0}
+
+
+With these specifications, the program provides a robust and user-\/friendly interface for visualizing 3D wireframe models while adhering to best practices in software design and architecture. 

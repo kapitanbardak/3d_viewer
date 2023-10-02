@@ -1,0 +1,29 @@
+\hypertarget{reset__position__command_8h_source}{}\doxysection{reset\+\_\+position\+\_\+command.\+h}
+\label{reset__position__command_8h_source}\index{3d\_viewer\_v2/controller/commands/reset\_position\_command.h@{3d\_viewer\_v2/controller/commands/reset\_position\_command.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef RESET\_POSITION\_COMMAND\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define RESET\_POSITION\_COMMAND\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}interface\_controller\_command.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}../../model/interface/data\_model.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}../../core/glcanvas.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}ui\_mainwindow.h"{}}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{namespace }s21\{}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{class }\mbox{\hyperlink{classs21_1_1ResetPosition}{ResetPosition}}: \textcolor{keyword}{public} \mbox{\hyperlink{classICommand}{ICommand}}}
+\DoxyCodeLine{12 \{}
+\DoxyCodeLine{13 \textcolor{keyword}{public}:}
+\DoxyCodeLine{14     \mbox{\hyperlink{classs21_1_1ResetPosition}{ResetPosition}}(\mbox{\hyperlink{classs21_1_1DataModel}{DataModel}}* model, \mbox{\hyperlink{classs21_1_1GlCanvas}{GlCanvas}}* canvas, Ui\_MainWindow* window);}
+\DoxyCodeLine{15     \textcolor{keywordtype}{void} execute() \textcolor{keyword}{override};}
+\DoxyCodeLine{16 \textcolor{keyword}{private}:}
+\DoxyCodeLine{17     \textcolor{keywordtype}{void} resetBoxesValues();}
+\DoxyCodeLine{18     \mbox{\hyperlink{classs21_1_1DataModel}{DataModel}}* model\_ = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{19     \mbox{\hyperlink{classs21_1_1GlCanvas}{GlCanvas}}* canvas\_ = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{20     Ui\_MainWindow* window\_ = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{21 \};}
+\DoxyCodeLine{22 \}  \textcolor{comment}{//namespace s21}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// RESET\_POSITION\_COMMAND\_H}}
+
+\end{DoxyCode}

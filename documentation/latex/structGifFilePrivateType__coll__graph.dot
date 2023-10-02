@@ -1,0 +1,25 @@
+digraph "GifFilePrivateType"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="GifFilePrivateType",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" Read\nWrite" ];
+  Node2 [label="GifFileType",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$structGifFileType.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="darkorchid3",style="dashed",label=" SColorMap" ];
+  Node3 [label="ColorMapObject",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$structColorMapObject.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="darkorchid3",style="dashed",label=" Colors" ];
+  Node4 [label="GifColorType",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$structGifColorType.html",tooltip=" "];
+  Node5 -> Node2 [dir="back",color="darkorchid3",style="dashed",label=" Image" ];
+  Node5 [label="GifImageDesc",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$structGifImageDesc.html",tooltip=" "];
+  Node3 -> Node5 [dir="back",color="darkorchid3",style="dashed",label=" ColorMap" ];
+  Node6 -> Node2 [dir="back",color="darkorchid3",style="dashed",label=" SavedImages" ];
+  Node6 [label="SavedImage",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$structSavedImage.html",tooltip=" "];
+  Node5 -> Node6 [dir="back",color="darkorchid3",style="dashed",label=" ImageDesc" ];
+  Node7 -> Node6 [dir="back",color="darkorchid3",style="dashed",label=" ExtensionBlocks" ];
+  Node7 [label="ExtensionBlock",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$structExtensionBlock.html",tooltip=" "];
+  Node7 -> Node2 [dir="back",color="darkorchid3",style="dashed",label=" ExtensionBlocks" ];
+  Node8 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" HashTable" ];
+  Node8 [label="GifHashTableType",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",URL="$structGifHashTableType.html",tooltip=" "];
+}

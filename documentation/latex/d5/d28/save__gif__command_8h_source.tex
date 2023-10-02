@@ -1,0 +1,43 @@
+\hypertarget{save__gif__command_8h_source}{}\doxysection{save\+\_\+gif\+\_\+command.\+h}
+\label{save__gif__command_8h_source}\index{3d\_viewer\_v2/controller/commands/save\_gif\_command.h@{3d\_viewer\_v2/controller/commands/save\_gif\_command.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#include "{}../../core/glcanvas.h"{}}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}interface\_controller\_command.h"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}qgifimage.h"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}../../model/object\_3d.h"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <QString>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <QObject>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <QImage>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <QDir>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <QFileDialog>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <QTimer>}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#ifndef INC\_3DVIEWER\_V2\_0\_SRC\_3D\_VIEWER\_V2\_CONTROLLER\_COMMANDS\_SAVE\_GIF\_COMMAND\_H\_}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#define INC\_3DVIEWER\_V2\_0\_SRC\_3D\_VIEWER\_V2\_CONTROLLER\_COMMANDS\_SAVE\_GIF\_COMMAND\_H\_}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{namespace }s21 \{}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{21     \textcolor{keyword}{class }\mbox{\hyperlink{classs21_1_1SaveGifCommand}{SaveGifCommand}} : \textcolor{keyword}{public} QObject, \textcolor{keyword}{public} \mbox{\hyperlink{classICommand}{ICommand}} \{}
+\DoxyCodeLine{22         Q\_OBJECT}
+\DoxyCodeLine{23     \textcolor{keyword}{public}:}
+\DoxyCodeLine{28         \mbox{\hyperlink{classs21_1_1SaveGifCommand}{SaveGifCommand}}(\mbox{\hyperlink{classs21_1_1GlCanvas}{GlCanvas}} *canvas);}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{33         \textcolor{keywordtype}{void} \mbox{\hyperlink{classs21_1_1SaveGifCommand_a1e38e9754192a036aaf1a1c771a32e01}{execute}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35     \textcolor{keyword}{private}:}
+\DoxyCodeLine{36         \textcolor{keywordtype}{int} frames\_number\_;  }
+\DoxyCodeLine{37         \mbox{\hyperlink{classs21_1_1GlCanvas}{GlCanvas}} *canvas\_ = \textcolor{keyword}{nullptr};  }
+\DoxyCodeLine{38         QGifImage *gif\_image\_;  }
+\DoxyCodeLine{39         QString file\_location\_;  }
+\DoxyCodeLine{40         QTimer *watch\_dog\_;  }
+\DoxyCodeLine{42     \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{46                 \textcolor{keywordtype}{void} AddFrameToGif\_();}
+\DoxyCodeLine{47     \};}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49 \} \textcolor{comment}{// namespace s21}}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// INC\_3DVIEWER\_V2\_0\_SRC\_3D\_VIEWER\_V2\_CONTROLLER\_COMMANDS\_SAVE\_GIF\_COMMAND\_H\_}}
+
+\end{DoxyCode}

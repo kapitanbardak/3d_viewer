@@ -1,0 +1,78 @@
+Documentation\+: \href{http://qtgifimage.debao.me}{\texttt{ http\+://qtgifimage.\+debao.\+me}}
+
+Qt Gif Image is a Qt library that can read and write Gif files.\hypertarget{md_3d_viewer_v2_qt_gif_image_master_README_autotoc_md0}{}\doxysubsection{Getting Started}\label{md_3d_viewer_v2_qt_gif_image_master_README_autotoc_md0}
+\hypertarget{md_3d_viewer_v2_qt_gif_image_master_README_autotoc_md1}{}\doxysubsubsection{Usage(1)\+: Use Qt Gif Image as Qt5\textquotesingle{}s addon module}\label{md_3d_viewer_v2_qt_gif_image_master_README_autotoc_md1}
+
+\begin{DoxyItemize}
+\item Download the source code.
+\item Put the source code in any directory you like. At the toplevel directory run
+\end{DoxyItemize}
+
+{\bfseries{Note}}\+: Perl is needed.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{qmake}
+\DoxyCodeLine{make}
+\DoxyCodeLine{make install}
+
+\end{DoxyCode}
+
+
+The library, the header files, and others will be installed to your system.
+
+
+\begin{DoxyItemize}
+\item Add following line to your qmake\textquotesingle{}s project file\+:
+\end{DoxyItemize}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{QT += gifimage}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyItemize}
+\item Then, using Qt Gif Image in your code
+\end{DoxyItemize}\hypertarget{md_3d_viewer_v2_qt_gif_image_master_README_autotoc_md2}{}\doxysubsubsection{Usage(2)\+: Use source code directly}\label{md_3d_viewer_v2_qt_gif_image_master_README_autotoc_md2}
+The package contains a {\bfseries{qtgifimage.\+pri}} file that allows you to integrate the component into applications that use qmake for the build step.
+
+
+\begin{DoxyItemize}
+\item Download the source code.
+\item Put the source code in any directory you like. For example, 3rdparty\+:
+\end{DoxyItemize}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{|-\/-\/ project.pro}
+\DoxyCodeLine{|-\/-\/ ....}
+\DoxyCodeLine{|-\/-\/ 3rdparty\(\backslash\)}
+\DoxyCodeLine{|     |-\/-\/ qtgifimage\(\backslash\)}
+\DoxyCodeLine{|     |}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyItemize}
+\item Add following line to your qmake project file\+:
+\end{DoxyItemize}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{include(3rdparty/qtgifimage/src/gifimage/qtgifimage.pri)}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyItemize}
+\item Then, using Qt Gif Image in your code
+\end{DoxyItemize}\hypertarget{md_3d_viewer_v2_qt_gif_image_master_README_autotoc_md3}{}\doxysubsection{References}\label{md_3d_viewer_v2_qt_gif_image_master_README_autotoc_md3}
+
+\begin{DoxyItemize}
+\item \href{http://giflib.sourceforge.net/intro.html}{\texttt{ http\+://giflib.\+sourceforge.\+net/intro.\+html}} 
+\end{DoxyItemize}

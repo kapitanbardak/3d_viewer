@@ -1,0 +1,322 @@
+\hypertarget{gif__lib_8h_source}{}\doxysection{gif\+\_\+lib.\+h}
+\label{gif__lib_8h_source}\index{3d\_viewer\_v2/qt-\/gif-\/image-\/master/src/3rdParty/giflib/gif\_lib.h@{3d\_viewer\_v2/qt-\/gif-\/image-\/master/src/3rdParty/giflib/gif\_lib.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{2 \textcolor{comment}{ }}
+\DoxyCodeLine{3 \textcolor{comment}{gif\_lib.h -\/ service library for decoding and encoding GIF images}}
+\DoxyCodeLine{4 \textcolor{comment}{                                                                             }}
+\DoxyCodeLine{5 \textcolor{comment}{*****************************************************************************/}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#ifndef \_GIF\_LIB\_H\_}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define \_GIF\_LIB\_H\_ 1}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#ifdef \_\_cplusplus}}
+\DoxyCodeLine{11 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} \{}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* \_\_cplusplus */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#define GIFLIB\_MAJOR 5}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#define GIFLIB\_MINOR 0}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#define GIFLIB\_RELEASE 5}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#define GIF\_ERROR   0}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#define GIF\_OK      1}}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include <stddef.h>}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#ifdef \_MSC\_VER}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#define BOOL int}}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#define TRUE 1}}
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#define FALSE 0}}
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#include <stdbool.h>}}
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#define BOOL \_Bool}}
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#define TRUE 1}}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#define FALSE 0}}
+\DoxyCodeLine{31 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#define GIF\_STAMP "{}GIFVER"{}}          \textcolor{comment}{/* First chars in file -\/ GIF stamp.  */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#define GIF\_STAMP\_LEN sizeof(GIF\_STAMP) -\/ 1}}
+\DoxyCodeLine{35 \textcolor{preprocessor}{\#define GIF\_VERSION\_POS 3           }\textcolor{comment}{/* Version first character in stamp. */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{36 \textcolor{preprocessor}{\#define GIF87\_STAMP "{}GIF87a"{}}        \textcolor{comment}{/* First chars in file -\/ GIF stamp.  */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{37 \textcolor{preprocessor}{\#define GIF89\_STAMP "{}GIF89a"{}}        \textcolor{comment}{/* First chars in file -\/ GIF stamp.  */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39 \textcolor{keyword}{typedef} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} GifPixelType;}
+\DoxyCodeLine{40 \textcolor{keyword}{typedef} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} *GifRowType;}
+\DoxyCodeLine{41 \textcolor{keyword}{typedef} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} GifByteType;}
+\DoxyCodeLine{42 \textcolor{keyword}{typedef} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} GifPrefixType;}
+\DoxyCodeLine{43 \textcolor{keyword}{typedef} \textcolor{keywordtype}{int} GifWord;}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{structGifColorType}{GifColorType}} \{}
+\DoxyCodeLine{46     GifByteType Red, Green, Blue;}
+\DoxyCodeLine{47 \} \mbox{\hyperlink{structGifColorType}{GifColorType}};}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{structColorMapObject}{ColorMapObject}} \{}
+\DoxyCodeLine{50     \textcolor{keywordtype}{int} ColorCount;}
+\DoxyCodeLine{51     \textcolor{keywordtype}{int} BitsPerPixel;}
+\DoxyCodeLine{52     BOOL SortFlag;}
+\DoxyCodeLine{53     \mbox{\hyperlink{structGifColorType}{GifColorType}} *Colors;    \textcolor{comment}{/* on malloc(3) heap */}}
+\DoxyCodeLine{54 \} \mbox{\hyperlink{structColorMapObject}{ColorMapObject}};}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{structGifImageDesc}{GifImageDesc}} \{}
+\DoxyCodeLine{57     GifWord Left, Top, Width, Height;   \textcolor{comment}{/* Current image dimensions. */}}
+\DoxyCodeLine{58     BOOL Interlace;                     \textcolor{comment}{/* Sequential/Interlaced lines. */}}
+\DoxyCodeLine{59     \mbox{\hyperlink{structColorMapObject}{ColorMapObject}} *ColorMap;           \textcolor{comment}{/* The local color map */}}
+\DoxyCodeLine{60 \} \mbox{\hyperlink{structGifImageDesc}{GifImageDesc}};}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{structExtensionBlock}{ExtensionBlock}} \{}
+\DoxyCodeLine{63     \textcolor{keywordtype}{int} ByteCount;}
+\DoxyCodeLine{64     GifByteType *Bytes; \textcolor{comment}{/* on malloc(3) heap */}}
+\DoxyCodeLine{65     \textcolor{keywordtype}{int} Function;       \textcolor{comment}{/* The block function code */}}
+\DoxyCodeLine{66 \textcolor{preprocessor}{\#define CONTINUE\_EXT\_FUNC\_CODE    0x00    }\textcolor{comment}{/* continuation subblock */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{67 \textcolor{preprocessor}{\#define COMMENT\_EXT\_FUNC\_CODE     0xfe    }\textcolor{comment}{/* comment */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{68 \textcolor{preprocessor}{\#define GRAPHICS\_EXT\_FUNC\_CODE    0xf9    }\textcolor{comment}{/* graphics control (GIF89) */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{69 \textcolor{preprocessor}{\#define PLAINTEXT\_EXT\_FUNC\_CODE   0x01    }\textcolor{comment}{/* plaintext */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{70 \textcolor{preprocessor}{\#define APPLICATION\_EXT\_FUNC\_CODE 0xff    }\textcolor{comment}{/* application block */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{71 \} \mbox{\hyperlink{structExtensionBlock}{ExtensionBlock}};}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{structSavedImage}{SavedImage}} \{}
+\DoxyCodeLine{74     \mbox{\hyperlink{structGifImageDesc}{GifImageDesc}} ImageDesc;}
+\DoxyCodeLine{75     GifByteType *RasterBits;         \textcolor{comment}{/* on malloc(3) heap */}}
+\DoxyCodeLine{76     \textcolor{keywordtype}{int} ExtensionBlockCount;         \textcolor{comment}{/* Count of extensions before image */}    }
+\DoxyCodeLine{77     \mbox{\hyperlink{structExtensionBlock}{ExtensionBlock}} *ExtensionBlocks; \textcolor{comment}{/* Extensions before image */}    }
+\DoxyCodeLine{78 \} \mbox{\hyperlink{structSavedImage}{SavedImage}};}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{80 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{structGifFileType}{GifFileType}} \{}
+\DoxyCodeLine{81     GifWord SWidth, SHeight;         \textcolor{comment}{/* Size of virtual canvas */}}
+\DoxyCodeLine{82     GifWord SColorResolution;        \textcolor{comment}{/* How many colors can we generate? */}}
+\DoxyCodeLine{83     GifWord SBackGroundColor;        \textcolor{comment}{/* Background color for virtual canvas */}}
+\DoxyCodeLine{84     GifByteType AspectByte;      \textcolor{comment}{/* Used to compute pixel aspect ratio */}}
+\DoxyCodeLine{85     \mbox{\hyperlink{structColorMapObject}{ColorMapObject}} *SColorMap;       \textcolor{comment}{/* Global colormap, NULL if nonexistent. */}}
+\DoxyCodeLine{86     \textcolor{keywordtype}{int} ImageCount;                  \textcolor{comment}{/* Number of current image (both APIs) */}}
+\DoxyCodeLine{87     \mbox{\hyperlink{structGifImageDesc}{GifImageDesc}} Image;              \textcolor{comment}{/* Current image (low-\/level API) */}}
+\DoxyCodeLine{88     \mbox{\hyperlink{structSavedImage}{SavedImage}} *SavedImages;         \textcolor{comment}{/* Image sequence (high-\/level API) */}}
+\DoxyCodeLine{89     \textcolor{keywordtype}{int} ExtensionBlockCount;         \textcolor{comment}{/* Count extensions past last image */}}
+\DoxyCodeLine{90     \mbox{\hyperlink{structExtensionBlock}{ExtensionBlock}} *ExtensionBlocks; \textcolor{comment}{/* Extensions past last image */}    }
+\DoxyCodeLine{91     \textcolor{keywordtype}{int} Error;               \textcolor{comment}{/* Last error condition reported */}}
+\DoxyCodeLine{92     \textcolor{keywordtype}{void} *UserData;                  \textcolor{comment}{/* hook to attach user data (TVT) */}}
+\DoxyCodeLine{93     \textcolor{keywordtype}{void} *Private;                   \textcolor{comment}{/* Don't mess with this! */}}
+\DoxyCodeLine{94 \} \mbox{\hyperlink{structGifFileType}{GifFileType}};}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{96 \textcolor{preprocessor}{\#define GIF\_ASPECT\_RATIO(n) ((n)+15.0/64.0)}}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98 \textcolor{keyword}{typedef} \textcolor{keyword}{enum} \{}
+\DoxyCodeLine{99     UNDEFINED\_RECORD\_TYPE,}
+\DoxyCodeLine{100     SCREEN\_DESC\_RECORD\_TYPE,}
+\DoxyCodeLine{101     IMAGE\_DESC\_RECORD\_TYPE, \textcolor{comment}{/* Begin with ',' */}}
+\DoxyCodeLine{102     EXTENSION\_RECORD\_TYPE,  \textcolor{comment}{/* Begin with '!' */}}
+\DoxyCodeLine{103     TERMINATE\_RECORD\_TYPE   \textcolor{comment}{/* Begin with ';' */}}
+\DoxyCodeLine{104 \} GifRecordType;}
+\DoxyCodeLine{105 }
+\DoxyCodeLine{106 \textcolor{comment}{/* func type to read gif data from arbitrary sources (TVT) */}}
+\DoxyCodeLine{107 \textcolor{keyword}{typedef} int (*InputFunc) (\mbox{\hyperlink{structGifFileType}{GifFileType}} *, GifByteType *, int);}
+\DoxyCodeLine{108 }
+\DoxyCodeLine{109 \textcolor{comment}{/* func type to write gif data to arbitrary targets.}}
+\DoxyCodeLine{110 \textcolor{comment}{ * Returns count of bytes written. (MRB)}}
+\DoxyCodeLine{111 \textcolor{comment}{ */}}
+\DoxyCodeLine{112 \textcolor{keyword}{typedef} int (*OutputFunc) (\mbox{\hyperlink{structGifFileType}{GifFileType}} *, \textcolor{keyword}{const} GifByteType *, int);}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{114 \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{115 \textcolor{comment}{ GIF89 structures}}
+\DoxyCodeLine{116 \textcolor{comment}{******************************************************************************/}}
+\DoxyCodeLine{117 }
+\DoxyCodeLine{118 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{structGraphicsControlBlock}{GraphicsControlBlock}} \{}
+\DoxyCodeLine{119     \textcolor{keywordtype}{int} DisposalMode;}
+\DoxyCodeLine{120 \textcolor{preprocessor}{\#define DISPOSAL\_UNSPECIFIED      0       }\textcolor{comment}{/* No disposal specified. */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{121 \textcolor{preprocessor}{\#define DISPOSE\_DO\_NOT            1       }\textcolor{comment}{/* Leave image in place */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{122 \textcolor{preprocessor}{\#define DISPOSE\_BACKGROUND        2       }\textcolor{comment}{/* Set area too background color */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{123 \textcolor{preprocessor}{\#define DISPOSE\_PREVIOUS          3       }\textcolor{comment}{/* Restore to previous content */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{124     BOOL UserInputFlag;      \textcolor{comment}{/* User confirmation required before disposal */}}
+\DoxyCodeLine{125     \textcolor{keywordtype}{int} DelayTime;           \textcolor{comment}{/* pre-\/display delay in 0.01sec units */}}
+\DoxyCodeLine{126     \textcolor{keywordtype}{int} TransparentColor;    \textcolor{comment}{/* Palette index for transparency, -\/1 if none */}}
+\DoxyCodeLine{127 \textcolor{preprocessor}{\#define NO\_TRANSPARENT\_COLOR    -\/1}}
+\DoxyCodeLine{128 \} \mbox{\hyperlink{structGraphicsControlBlock}{GraphicsControlBlock}};}
+\DoxyCodeLine{129 }
+\DoxyCodeLine{130 \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{131 \textcolor{comment}{ GIF encoding routines}}
+\DoxyCodeLine{132 \textcolor{comment}{******************************************************************************/}}
+\DoxyCodeLine{133 }
+\DoxyCodeLine{134 \textcolor{comment}{/* Main entry points */}}
+\DoxyCodeLine{135 \mbox{\hyperlink{structGifFileType}{GifFileType}} *EGifOpenFileName(\textcolor{keyword}{const} \textcolor{keywordtype}{char} *GifFileName,}
+\DoxyCodeLine{136                               \textcolor{keyword}{const} BOOL GifTestExistence, \textcolor{keywordtype}{int} *Error);}
+\DoxyCodeLine{137 \mbox{\hyperlink{structGifFileType}{GifFileType}} *EGifOpenFileHandle(\textcolor{keyword}{const} \textcolor{keywordtype}{int} GifFileHandle, \textcolor{keywordtype}{int} *Error);}
+\DoxyCodeLine{138 \mbox{\hyperlink{structGifFileType}{GifFileType}} *EGifOpen(\textcolor{keywordtype}{void} *userPtr, OutputFunc writeFunc, \textcolor{keywordtype}{int} *Error);}
+\DoxyCodeLine{139 \textcolor{keywordtype}{int} EGifSpew(\mbox{\hyperlink{structGifFileType}{GifFileType}} * GifFile);}
+\DoxyCodeLine{140 \textcolor{keywordtype}{char} *EGifGetGifVersion(\mbox{\hyperlink{structGifFileType}{GifFileType}} *GifFile); \textcolor{comment}{/* new in 5.x */}}
+\DoxyCodeLine{141 \textcolor{keywordtype}{int} EGifCloseFile(\mbox{\hyperlink{structGifFileType}{GifFileType}} * GifFile);}
+\DoxyCodeLine{142 }
+\DoxyCodeLine{143 \textcolor{preprocessor}{\#define E\_GIF\_ERR\_OPEN\_FAILED    1    }\textcolor{comment}{/* And EGif possible errors. */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{144 \textcolor{preprocessor}{\#define E\_GIF\_ERR\_WRITE\_FAILED   2}}
+\DoxyCodeLine{145 \textcolor{preprocessor}{\#define E\_GIF\_ERR\_HAS\_SCRN\_DSCR  3}}
+\DoxyCodeLine{146 \textcolor{preprocessor}{\#define E\_GIF\_ERR\_HAS\_IMAG\_DSCR  4}}
+\DoxyCodeLine{147 \textcolor{preprocessor}{\#define E\_GIF\_ERR\_NO\_COLOR\_MAP   5}}
+\DoxyCodeLine{148 \textcolor{preprocessor}{\#define E\_GIF\_ERR\_DATA\_TOO\_BIG   6}}
+\DoxyCodeLine{149 \textcolor{preprocessor}{\#define E\_GIF\_ERR\_NOT\_ENOUGH\_MEM 7}}
+\DoxyCodeLine{150 \textcolor{preprocessor}{\#define E\_GIF\_ERR\_DISK\_IS\_FULL   8}}
+\DoxyCodeLine{151 \textcolor{preprocessor}{\#define E\_GIF\_ERR\_CLOSE\_FAILED   9}}
+\DoxyCodeLine{152 \textcolor{preprocessor}{\#define E\_GIF\_ERR\_NOT\_WRITEABLE  10}}
+\DoxyCodeLine{153 }
+\DoxyCodeLine{154 \textcolor{comment}{/* These are legacy.  You probably do not want to call them directly */}}
+\DoxyCodeLine{155 \textcolor{keywordtype}{int} EGifPutScreenDesc(\mbox{\hyperlink{structGifFileType}{GifFileType}} *GifFile,}
+\DoxyCodeLine{156                       \textcolor{keyword}{const} \textcolor{keywordtype}{int} GifWidth, \textcolor{keyword}{const} \textcolor{keywordtype}{int} GifHeight, }
+\DoxyCodeLine{157               \textcolor{keyword}{const} \textcolor{keywordtype}{int} GifColorRes,}
+\DoxyCodeLine{158                       \textcolor{keyword}{const} \textcolor{keywordtype}{int} GifBackGround,}
+\DoxyCodeLine{159                       \textcolor{keyword}{const} \mbox{\hyperlink{structColorMapObject}{ColorMapObject}} *GifColorMap);}
+\DoxyCodeLine{160 \textcolor{keywordtype}{int} EGifPutImageDesc(\mbox{\hyperlink{structGifFileType}{GifFileType}} *GifFile, }
+\DoxyCodeLine{161              \textcolor{keyword}{const} \textcolor{keywordtype}{int} GifLeft, \textcolor{keyword}{const} \textcolor{keywordtype}{int} GifTop,}
+\DoxyCodeLine{162                      \textcolor{keyword}{const} \textcolor{keywordtype}{int} GifWidth, \textcolor{keyword}{const} \textcolor{keywordtype}{int} GifHeight, }
+\DoxyCodeLine{163              \textcolor{keyword}{const} BOOL GifInterlace,}
+\DoxyCodeLine{164                      \textcolor{keyword}{const} \mbox{\hyperlink{structColorMapObject}{ColorMapObject}} *GifColorMap);}
+\DoxyCodeLine{165 \textcolor{keywordtype}{void} EGifSetGifVersion(\mbox{\hyperlink{structGifFileType}{GifFileType}} *GifFile, \textcolor{keyword}{const} BOOL gif89);}
+\DoxyCodeLine{166 \textcolor{keywordtype}{int} EGifPutLine(\mbox{\hyperlink{structGifFileType}{GifFileType}} *GifFile, GifPixelType *GifLine,}
+\DoxyCodeLine{167                 \textcolor{keywordtype}{int} GifLineLen);}
+\DoxyCodeLine{168 \textcolor{keywordtype}{int} EGifPutPixel(\mbox{\hyperlink{structGifFileType}{GifFileType}} *GifFile, \textcolor{keyword}{const} GifPixelType GifPixel);}
+\DoxyCodeLine{169 \textcolor{keywordtype}{int} EGifPutComment(\mbox{\hyperlink{structGifFileType}{GifFileType}} *GifFile, \textcolor{keyword}{const} \textcolor{keywordtype}{char} *GifComment);}
+\DoxyCodeLine{170 \textcolor{keywordtype}{int} EGifPutExtensionLeader(\mbox{\hyperlink{structGifFileType}{GifFileType}} *GifFile, \textcolor{keyword}{const} \textcolor{keywordtype}{int} GifExtCode);}
+\DoxyCodeLine{171 \textcolor{keywordtype}{int} EGifPutExtensionBlock(\mbox{\hyperlink{structGifFileType}{GifFileType}} *GifFile,}
+\DoxyCodeLine{172                          \textcolor{keyword}{const} \textcolor{keywordtype}{int} GifExtLen, \textcolor{keyword}{const} \textcolor{keywordtype}{void} *GifExtension);}
+\DoxyCodeLine{173 \textcolor{keywordtype}{int} EGifPutExtensionTrailer(\mbox{\hyperlink{structGifFileType}{GifFileType}} *GifFile);}
+\DoxyCodeLine{174 \textcolor{keywordtype}{int} EGifPutExtension(\mbox{\hyperlink{structGifFileType}{GifFileType}} *GifFile, \textcolor{keyword}{const} \textcolor{keywordtype}{int} GifExtCode, }
+\DoxyCodeLine{175              \textcolor{keyword}{const} \textcolor{keywordtype}{int} GifExtLen,}
+\DoxyCodeLine{176                      \textcolor{keyword}{const} \textcolor{keywordtype}{void} *GifExtension);}
+\DoxyCodeLine{177 \textcolor{keywordtype}{int} EGifPutCode(\mbox{\hyperlink{structGifFileType}{GifFileType}} *GifFile, \textcolor{keywordtype}{int} GifCodeSize,}
+\DoxyCodeLine{178                 \textcolor{keyword}{const} GifByteType *GifCodeBlock);}
+\DoxyCodeLine{179 \textcolor{keywordtype}{int} EGifPutCodeNext(\mbox{\hyperlink{structGifFileType}{GifFileType}} *GifFile,}
+\DoxyCodeLine{180                     \textcolor{keyword}{const} GifByteType *GifCodeBlock);}
+\DoxyCodeLine{181 }
+\DoxyCodeLine{182 \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{183 \textcolor{comment}{ GIF decoding routines}}
+\DoxyCodeLine{184 \textcolor{comment}{******************************************************************************/}}
+\DoxyCodeLine{185 }
+\DoxyCodeLine{186 \textcolor{comment}{/* Main entry points */}}
+\DoxyCodeLine{187 \mbox{\hyperlink{structGifFileType}{GifFileType}} *DGifOpenFileName(\textcolor{keyword}{const} \textcolor{keywordtype}{char} *GifFileName, \textcolor{keywordtype}{int} *Error);}
+\DoxyCodeLine{188 \mbox{\hyperlink{structGifFileType}{GifFileType}} *DGifOpenFileHandle(\textcolor{keywordtype}{int} GifFileHandle, \textcolor{keywordtype}{int} *Error);}
+\DoxyCodeLine{189 \textcolor{keywordtype}{int} DGifSlurp(\mbox{\hyperlink{structGifFileType}{GifFileType}} * GifFile);}
+\DoxyCodeLine{190 \mbox{\hyperlink{structGifFileType}{GifFileType}} *DGifOpen(\textcolor{keywordtype}{void} *userPtr, InputFunc readFunc, \textcolor{keywordtype}{int} *Error);    \textcolor{comment}{/* new one (TVT) */}}
+\DoxyCodeLine{191 \textcolor{keywordtype}{int} DGifCloseFile(\mbox{\hyperlink{structGifFileType}{GifFileType}} * GifFile);}
+\DoxyCodeLine{192 }
+\DoxyCodeLine{193 \textcolor{preprocessor}{\#define D\_GIF\_ERR\_OPEN\_FAILED    101    }\textcolor{comment}{/* And DGif possible errors. */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{194 \textcolor{preprocessor}{\#define D\_GIF\_ERR\_READ\_FAILED    102}}
+\DoxyCodeLine{195 \textcolor{preprocessor}{\#define D\_GIF\_ERR\_NOT\_GIF\_FILE   103}}
+\DoxyCodeLine{196 \textcolor{preprocessor}{\#define D\_GIF\_ERR\_NO\_SCRN\_DSCR   104}}
+\DoxyCodeLine{197 \textcolor{preprocessor}{\#define D\_GIF\_ERR\_NO\_IMAG\_DSCR   105}}
+\DoxyCodeLine{198 \textcolor{preprocessor}{\#define D\_GIF\_ERR\_NO\_COLOR\_MAP   106}}
+\DoxyCodeLine{199 \textcolor{preprocessor}{\#define D\_GIF\_ERR\_WRONG\_RECORD   107}}
+\DoxyCodeLine{200 \textcolor{preprocessor}{\#define D\_GIF\_ERR\_DATA\_TOO\_BIG   108}}
+\DoxyCodeLine{201 \textcolor{preprocessor}{\#define D\_GIF\_ERR\_NOT\_ENOUGH\_MEM 109}}
+\DoxyCodeLine{202 \textcolor{preprocessor}{\#define D\_GIF\_ERR\_CLOSE\_FAILED   110}}
+\DoxyCodeLine{203 \textcolor{preprocessor}{\#define D\_GIF\_ERR\_NOT\_READABLE   111}}
+\DoxyCodeLine{204 \textcolor{preprocessor}{\#define D\_GIF\_ERR\_IMAGE\_DEFECT   112}}
+\DoxyCodeLine{205 \textcolor{preprocessor}{\#define D\_GIF\_ERR\_EOF\_TOO\_SOON   113}}
+\DoxyCodeLine{206 }
+\DoxyCodeLine{207 \textcolor{comment}{/* These are legacy.  You probably do not want to call them directly */}}
+\DoxyCodeLine{208 \textcolor{keywordtype}{int} DGifGetScreenDesc(\mbox{\hyperlink{structGifFileType}{GifFileType}} *GifFile);}
+\DoxyCodeLine{209 \textcolor{keywordtype}{int} DGifGetRecordType(\mbox{\hyperlink{structGifFileType}{GifFileType}} *GifFile, GifRecordType *GifType);}
+\DoxyCodeLine{210 \textcolor{keywordtype}{int} DGifGetImageDesc(\mbox{\hyperlink{structGifFileType}{GifFileType}} *GifFile);}
+\DoxyCodeLine{211 \textcolor{keywordtype}{int} DGifGetLine(\mbox{\hyperlink{structGifFileType}{GifFileType}} *GifFile, GifPixelType *GifLine, \textcolor{keywordtype}{int} GifLineLen);}
+\DoxyCodeLine{212 \textcolor{keywordtype}{int} DGifGetPixel(\mbox{\hyperlink{structGifFileType}{GifFileType}} *GifFile, GifPixelType GifPixel);}
+\DoxyCodeLine{213 \textcolor{keywordtype}{int} DGifGetComment(\mbox{\hyperlink{structGifFileType}{GifFileType}} *GifFile, \textcolor{keywordtype}{char} *GifComment);}
+\DoxyCodeLine{214 \textcolor{keywordtype}{int} DGifGetExtension(\mbox{\hyperlink{structGifFileType}{GifFileType}} *GifFile, \textcolor{keywordtype}{int} *GifExtCode,}
+\DoxyCodeLine{215                      GifByteType **GifExtension);}
+\DoxyCodeLine{216 \textcolor{keywordtype}{int} DGifGetExtensionNext(\mbox{\hyperlink{structGifFileType}{GifFileType}} *GifFile, GifByteType **GifExtension);}
+\DoxyCodeLine{217 \textcolor{keywordtype}{int} DGifGetCode(\mbox{\hyperlink{structGifFileType}{GifFileType}} *GifFile, \textcolor{keywordtype}{int} *GifCodeSize,}
+\DoxyCodeLine{218                 GifByteType **GifCodeBlock);}
+\DoxyCodeLine{219 \textcolor{keywordtype}{int} DGifGetCodeNext(\mbox{\hyperlink{structGifFileType}{GifFileType}} *GifFile, GifByteType **GifCodeBlock);}
+\DoxyCodeLine{220 \textcolor{keywordtype}{int} DGifGetLZCodes(\mbox{\hyperlink{structGifFileType}{GifFileType}} *GifFile, \textcolor{keywordtype}{int} *GifCode);}
+\DoxyCodeLine{221 }
+\DoxyCodeLine{222 }
+\DoxyCodeLine{223 \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{224 \textcolor{comment}{ Color table quantization (deprecated)}}
+\DoxyCodeLine{225 \textcolor{comment}{******************************************************************************/}}
+\DoxyCodeLine{226 \textcolor{keywordtype}{int} GifQuantizeBuffer(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} Width, \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} Height,}
+\DoxyCodeLine{227                    \textcolor{keywordtype}{int} *ColorMapSize, GifByteType * RedInput,}
+\DoxyCodeLine{228                    GifByteType * GreenInput, GifByteType * BlueInput,}
+\DoxyCodeLine{229                    GifByteType * OutputBuffer,}
+\DoxyCodeLine{230                    \mbox{\hyperlink{structGifColorType}{GifColorType}} * OutputColorMap);}
+\DoxyCodeLine{231 }
+\DoxyCodeLine{232 \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{233 \textcolor{comment}{ Error handling and reporting.}}
+\DoxyCodeLine{234 \textcolor{comment}{******************************************************************************/}}
+\DoxyCodeLine{235 \textcolor{keyword}{extern} \textcolor{keywordtype}{char} *GifErrorString(\textcolor{keywordtype}{int} ErrorCode);     \textcolor{comment}{/* new in 2012 -\/ ESR */}}
+\DoxyCodeLine{236 }
+\DoxyCodeLine{237 \textcolor{comment}{/*****************************************************************************}}
+\DoxyCodeLine{238 \textcolor{comment}{ Everything below this point is new after version 1.2, supporting `slurp}}
+\DoxyCodeLine{239 \textcolor{comment}{ mode' for doing I/O in two big belts with all the image-\/bashing in core.}}
+\DoxyCodeLine{240 \textcolor{comment}{******************************************************************************/}}
+\DoxyCodeLine{241 }
+\DoxyCodeLine{242 \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{243 \textcolor{comment}{ Color map handling from gif\_alloc.c}}
+\DoxyCodeLine{244 \textcolor{comment}{******************************************************************************/}}
+\DoxyCodeLine{245 }
+\DoxyCodeLine{246 \textcolor{keyword}{extern} \mbox{\hyperlink{structColorMapObject}{ColorMapObject}} *GifMakeMapObject(\textcolor{keywordtype}{int} ColorCount,}
+\DoxyCodeLine{247                                      \textcolor{keyword}{const} \mbox{\hyperlink{structGifColorType}{GifColorType}} *ColorMap);}
+\DoxyCodeLine{248 \textcolor{keyword}{extern} \textcolor{keywordtype}{void} GifFreeMapObject(\mbox{\hyperlink{structColorMapObject}{ColorMapObject}} *Object);}
+\DoxyCodeLine{249 \textcolor{keyword}{extern} \mbox{\hyperlink{structColorMapObject}{ColorMapObject}} *GifUnionColorMap(\textcolor{keyword}{const} \mbox{\hyperlink{structColorMapObject}{ColorMapObject}} *ColorIn1,}
+\DoxyCodeLine{250                                      \textcolor{keyword}{const} \mbox{\hyperlink{structColorMapObject}{ColorMapObject}} *ColorIn2,}
+\DoxyCodeLine{251                                      GifPixelType ColorTransIn2[]);}
+\DoxyCodeLine{252 \textcolor{keyword}{extern} \textcolor{keywordtype}{int} GifBitSize(\textcolor{keywordtype}{int} n);}
+\DoxyCodeLine{253 }
+\DoxyCodeLine{254 \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{255 \textcolor{comment}{ Support for the in-\/core structures allocation (slurp mode).              }}
+\DoxyCodeLine{256 \textcolor{comment}{******************************************************************************/}}
+\DoxyCodeLine{257 }
+\DoxyCodeLine{258 \textcolor{keyword}{extern} \textcolor{keywordtype}{void} GifApplyTranslation(\mbox{\hyperlink{structSavedImage}{SavedImage}} *Image, GifPixelType Translation[]);}
+\DoxyCodeLine{259 \textcolor{keyword}{extern} \textcolor{keywordtype}{int} GifAddExtensionBlock(\textcolor{keywordtype}{int} *ExtensionBlock\_Count,}
+\DoxyCodeLine{260                 \mbox{\hyperlink{structExtensionBlock}{ExtensionBlock}} **ExtensionBlocks, }
+\DoxyCodeLine{261                 \textcolor{keywordtype}{int} Function, }
+\DoxyCodeLine{262                 \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} Len, \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} ExtData[]);}
+\DoxyCodeLine{263 \textcolor{keyword}{extern} \textcolor{keywordtype}{void} GifFreeExtensions(\textcolor{keywordtype}{int} *ExtensionBlock\_Count,}
+\DoxyCodeLine{264                   \mbox{\hyperlink{structExtensionBlock}{ExtensionBlock}} **ExtensionBlocks);}
+\DoxyCodeLine{265 \textcolor{keyword}{extern} \mbox{\hyperlink{structSavedImage}{SavedImage}} *GifMakeSavedImage(\mbox{\hyperlink{structGifFileType}{GifFileType}} *GifFile,}
+\DoxyCodeLine{266                                   \textcolor{keyword}{const} \mbox{\hyperlink{structSavedImage}{SavedImage}} *CopyFrom);}
+\DoxyCodeLine{267 \textcolor{keyword}{extern} \textcolor{keywordtype}{void} GifFreeSavedImages(\mbox{\hyperlink{structGifFileType}{GifFileType}} *GifFile);}
+\DoxyCodeLine{268 }
+\DoxyCodeLine{269 \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{270 \textcolor{comment}{ 5.x functions for GIF89 graphics control blocks}}
+\DoxyCodeLine{271 \textcolor{comment}{******************************************************************************/}}
+\DoxyCodeLine{272 }
+\DoxyCodeLine{273 \textcolor{keywordtype}{int} DGifExtensionToGCB(\textcolor{keyword}{const} \textcolor{keywordtype}{size\_t} GifExtensionLength,}
+\DoxyCodeLine{274                \textcolor{keyword}{const} GifByteType *GifExtension,}
+\DoxyCodeLine{275                \mbox{\hyperlink{structGraphicsControlBlock}{GraphicsControlBlock}} *GCB);}
+\DoxyCodeLine{276 \textcolor{keywordtype}{size\_t} EGifGCBToExtension(\textcolor{keyword}{const} \mbox{\hyperlink{structGraphicsControlBlock}{GraphicsControlBlock}} *GCB,}
+\DoxyCodeLine{277                GifByteType *GifExtension);}
+\DoxyCodeLine{278 }
+\DoxyCodeLine{279 \textcolor{keywordtype}{int} DGifSavedExtensionToGCB(\mbox{\hyperlink{structGifFileType}{GifFileType}} *GifFile, }
+\DoxyCodeLine{280                 \textcolor{keywordtype}{int} ImageIndex, }
+\DoxyCodeLine{281                 \mbox{\hyperlink{structGraphicsControlBlock}{GraphicsControlBlock}} *GCB);}
+\DoxyCodeLine{282 \textcolor{keywordtype}{int} EGifGCBToSavedExtension(\textcolor{keyword}{const} \mbox{\hyperlink{structGraphicsControlBlock}{GraphicsControlBlock}} *GCB, }
+\DoxyCodeLine{283                 \mbox{\hyperlink{structGifFileType}{GifFileType}} *GifFile, }
+\DoxyCodeLine{284                 \textcolor{keywordtype}{int} ImageIndex);}
+\DoxyCodeLine{285 }
+\DoxyCodeLine{286 \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{287 \textcolor{comment}{ The library's internal utility font                          }}
+\DoxyCodeLine{288 \textcolor{comment}{******************************************************************************/}}
+\DoxyCodeLine{289 }
+\DoxyCodeLine{290 \textcolor{preprocessor}{\#define GIF\_FONT\_WIDTH  8}}
+\DoxyCodeLine{291 \textcolor{preprocessor}{\#define GIF\_FONT\_HEIGHT 8}}
+\DoxyCodeLine{292 \textcolor{keyword}{extern} \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} GifAsciiTable8x8[][GIF\_FONT\_WIDTH];}
+\DoxyCodeLine{293 }
+\DoxyCodeLine{294 \textcolor{keyword}{extern} \textcolor{keywordtype}{void} GifDrawText8x8(\mbox{\hyperlink{structSavedImage}{SavedImage}} *Image,}
+\DoxyCodeLine{295                      \textcolor{keyword}{const} \textcolor{keywordtype}{int} x, \textcolor{keyword}{const} \textcolor{keywordtype}{int} y,}
+\DoxyCodeLine{296                      \textcolor{keyword}{const} \textcolor{keywordtype}{char} *legend, \textcolor{keyword}{const} \textcolor{keywordtype}{int} color);}
+\DoxyCodeLine{297 }
+\DoxyCodeLine{298 \textcolor{keyword}{extern} \textcolor{keywordtype}{void} GifDrawBox(\mbox{\hyperlink{structSavedImage}{SavedImage}} *Image,}
+\DoxyCodeLine{299                     \textcolor{keyword}{const} \textcolor{keywordtype}{int} x, \textcolor{keyword}{const} \textcolor{keywordtype}{int} y,}
+\DoxyCodeLine{300                     \textcolor{keyword}{const} \textcolor{keywordtype}{int} w, \textcolor{keyword}{const} \textcolor{keywordtype}{int} d, \textcolor{keyword}{const} \textcolor{keywordtype}{int} color);}
+\DoxyCodeLine{301 }
+\DoxyCodeLine{302 \textcolor{keyword}{extern} \textcolor{keywordtype}{void} GifDrawRectangle(\mbox{\hyperlink{structSavedImage}{SavedImage}} *Image,}
+\DoxyCodeLine{303                    \textcolor{keyword}{const} \textcolor{keywordtype}{int} x, \textcolor{keyword}{const} \textcolor{keywordtype}{int} y,}
+\DoxyCodeLine{304                    \textcolor{keyword}{const} \textcolor{keywordtype}{int} w, \textcolor{keyword}{const} \textcolor{keywordtype}{int} d, \textcolor{keyword}{const} \textcolor{keywordtype}{int} color);}
+\DoxyCodeLine{305 }
+\DoxyCodeLine{306 \textcolor{keyword}{extern} \textcolor{keywordtype}{void} GifDrawBoxedText8x8(\mbox{\hyperlink{structSavedImage}{SavedImage}} *Image,}
+\DoxyCodeLine{307                           \textcolor{keyword}{const} \textcolor{keywordtype}{int} x, \textcolor{keyword}{const} \textcolor{keywordtype}{int} y,}
+\DoxyCodeLine{308                           \textcolor{keyword}{const} \textcolor{keywordtype}{char} *legend,}
+\DoxyCodeLine{309                           \textcolor{keyword}{const} \textcolor{keywordtype}{int} border, \textcolor{keyword}{const} \textcolor{keywordtype}{int} bg, \textcolor{keyword}{const} \textcolor{keywordtype}{int} fg);}
+\DoxyCodeLine{310 }
+\DoxyCodeLine{311 \textcolor{preprocessor}{\#ifdef \_\_cplusplus}}
+\DoxyCodeLine{312 \}}
+\DoxyCodeLine{313 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* \_\_cplusplus */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{314 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* \_GIF\_LIB\_H */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{315 }
+\DoxyCodeLine{316 \textcolor{comment}{/* end */}}
+
+\end{DoxyCode}

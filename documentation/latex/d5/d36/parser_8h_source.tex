@@ -1,0 +1,34 @@
+\hypertarget{parser_8h_source}{}\doxysection{parser.\+h}
+\label{parser_8h_source}\index{3d\_viewer\_v2/model/parser.h@{3d\_viewer\_v2/model/parser.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef INC\_3DVIEWER\_V2\_0\_SRC\_PARSER\_H\_}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define INC\_3DVIEWER\_V2\_0\_SRC\_PARSER\_H\_}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <stdexcept>}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}object\_3d.h"{}}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{keyword}{namespace }s21 \{}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{15     \textcolor{keyword}{class }\mbox{\hyperlink{classs21_1_1Parser}{Parser}} \{}
+\DoxyCodeLine{16     \textcolor{keyword}{public}:}
+\DoxyCodeLine{20         \mbox{\hyperlink{classs21_1_1Parser_aa28c68d0be9207fd86fc6cb2c2f78c56}{Parser}}();}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{26         \textcolor{keywordtype}{void} \mbox{\hyperlink{classs21_1_1Parser_aab4652bd85fb45149e4b7f8bfde9bd91}{ReadObject}}(std::string \textcolor{keyword}{const}\& file\_name);}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28     \textcolor{keyword}{private}:}
+\DoxyCodeLine{33         \textcolor{keyword}{inline} \textcolor{keywordtype}{void} PointCaseHandler\_(std::string\& str);}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{39         \textcolor{keyword}{inline} \textcolor{keywordtype}{void} PolygonCaseHandler\_(std::string\& str);}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41         \mbox{\hyperlink{classs21_1_1Object3D}{Object3D}}\& data\_3d\_; }
+\DoxyCodeLine{42     \};}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 \}  \textcolor{comment}{// namespace s21}}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// INC\_3DVIEWER\_V2\_0\_SRC\_PARSER\_H\_}}
+
+\end{DoxyCode}

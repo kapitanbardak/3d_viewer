@@ -1,0 +1,24 @@
+\hypertarget{items__size__command_8h_source}{}\doxysection{items\+\_\+size\+\_\+command.\+h}
+\label{items__size__command_8h_source}\index{3d\_viewer\_v2/controller/commands/items\_size\_command.h@{3d\_viewer\_v2/controller/commands/items\_size\_command.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef ITEMS\_SIZE\_COMMAND\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define ITEMS\_SIZE\_COMMAND\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}interface\_controller\_command.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}../../core/glcanvas.h"{}}}
+\DoxyCodeLine{6 \textcolor{keyword}{namespace }s21 \{}
+\DoxyCodeLine{7 \textcolor{keyword}{class }\mbox{\hyperlink{classs21_1_1ItemsSizeCommand}{ItemsSizeCommand}} : \textcolor{keyword}{public} \mbox{\hyperlink{classICommand}{ICommand}}}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{9 \textcolor{keyword}{public}:}
+\DoxyCodeLine{10     \mbox{\hyperlink{classs21_1_1ItemsSizeCommand}{ItemsSizeCommand}}(\mbox{\hyperlink{classs21_1_1GlCanvas}{GlCanvas}}* canvas, QString mode, \textcolor{keywordtype}{float} size);}
+\DoxyCodeLine{11     \textcolor{keywordtype}{void} execute() \textcolor{keyword}{override};}
+\DoxyCodeLine{12 \textcolor{keyword}{private}:}
+\DoxyCodeLine{13     \mbox{\hyperlink{classs21_1_1GlCanvas}{GlCanvas}}* canvas\_ = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{14     QString mode\_;}
+\DoxyCodeLine{15     \textcolor{keywordtype}{float} size\_ = 0;}
+\DoxyCodeLine{16 \};}
+\DoxyCodeLine{17 \}  \textcolor{comment}{// namespace s21}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// ITEMS\_SIZE\_COMMAND\_H}}
+
+\end{DoxyCode}

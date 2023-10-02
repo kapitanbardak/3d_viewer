@@ -1,0 +1,31 @@
+\hypertarget{reset__position__command_8h_source}{}\doxysection{reset\+\_\+position\+\_\+command.\+h}
+\label{reset__position__command_8h_source}\index{3d\_viewer\_v2/controller/commands/reset\_position\_command.h@{3d\_viewer\_v2/controller/commands/reset\_position\_command.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef RESET\_POSITION\_COMMAND\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define RESET\_POSITION\_COMMAND\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}interface\_controller\_command.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}../../model/interface/data\_model.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}../../core/glcanvas.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}ui\_mainwindow.h"{}}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{namespace }s21 \{}
+\DoxyCodeLine{13     \textcolor{keyword}{class }\mbox{\hyperlink{classs21_1_1ResetPosition}{ResetPosition}} : \textcolor{keyword}{public} \mbox{\hyperlink{classICommand}{ICommand}} \{}
+\DoxyCodeLine{14     \textcolor{keyword}{public}:}
+\DoxyCodeLine{21         \mbox{\hyperlink{classs21_1_1ResetPosition}{ResetPosition}}(\mbox{\hyperlink{classs21_1_1DataModel}{DataModel}}* model, \mbox{\hyperlink{classs21_1_1GlCanvas}{GlCanvas}}* canvas, Ui\_MainWindow* window);}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{26         \textcolor{keywordtype}{void} \mbox{\hyperlink{classs21_1_1ResetPosition_add63cd01ccca9f50f014cd714708ef0b}{execute}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28     \textcolor{keyword}{private}:}
+\DoxyCodeLine{32         \textcolor{keywordtype}{void} ResetBoxesValues\_();}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34         \mbox{\hyperlink{classs21_1_1DataModel}{DataModel}}* model\_ = \textcolor{keyword}{nullptr}; }
+\DoxyCodeLine{35         \mbox{\hyperlink{classs21_1_1GlCanvas}{GlCanvas}}* canvas\_ = \textcolor{keyword}{nullptr}; }
+\DoxyCodeLine{36         Ui\_MainWindow* window\_ = \textcolor{keyword}{nullptr}; }
+\DoxyCodeLine{37     \};}
+\DoxyCodeLine{38 \}  \textcolor{comment}{// namespace s21}}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// RESET\_POSITION\_COMMAND\_H}}
+
+\end{DoxyCode}

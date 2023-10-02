@@ -1,0 +1,84 @@
+\hypertarget{classs21_1_1ItemsSizeCommand}{}\doxysection{s21\+::Items\+Size\+Command Class Reference}
+\label{classs21_1_1ItemsSizeCommand}\index{s21::ItemsSizeCommand@{s21::ItemsSizeCommand}}
+
+
+A command for changing the size of items in the canvas.  
+
+
+
+
+{\ttfamily \#include $<$items\+\_\+size\+\_\+command.\+h$>$}
+
+
+
+Inheritance diagram for s21\+::Items\+Size\+Command\+:
+% FIG 0
+
+
+Collaboration diagram for s21\+::Items\+Size\+Command\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classs21_1_1ItemsSizeCommand_afaf6aec6f55b2c41332cd64abb9f0699}{Items\+Size\+Command}} (\mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} $\ast$canvas, Functions\+Mode mode, float size)
+\begin{DoxyCompactList}\small\item\em Constructs an \mbox{\hyperlink{classs21_1_1ItemsSizeCommand}{Items\+Size\+Command}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1ItemsSizeCommand_ac8935d415b12f696520b439d206ae5ee}{execute}} () override
+\begin{DoxyCompactList}\small\item\em Executes the command, changing the size of the specified items. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A command for changing the size of items in the canvas. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classs21_1_1ItemsSizeCommand_afaf6aec6f55b2c41332cd64abb9f0699}\label{classs21_1_1ItemsSizeCommand_afaf6aec6f55b2c41332cd64abb9f0699}} 
+\index{s21::ItemsSizeCommand@{s21::ItemsSizeCommand}!ItemsSizeCommand@{ItemsSizeCommand}}
+\index{ItemsSizeCommand@{ItemsSizeCommand}!s21::ItemsSizeCommand@{s21::ItemsSizeCommand}}
+\doxysubsubsection{\texorpdfstring{ItemsSizeCommand()}{ItemsSizeCommand()}}
+{\footnotesize\ttfamily s21\+::\+Items\+Size\+Command\+::\+Items\+Size\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} $\ast$}]{canvas,  }\item[{Functions\+Mode}]{mode,  }\item[{float}]{size }\end{DoxyParamCaption})}
+
+
+
+Constructs an \mbox{\hyperlink{classs21_1_1ItemsSizeCommand}{Items\+Size\+Command}}. 
+
+Constructor for the \mbox{\hyperlink{classs21_1_1ItemsSizeCommand}{Items\+Size\+Command}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em canvas} & A pointer to the \mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}}. \\
+\hline
+{\em mode} & The mode specifying which items\textquotesingle{} size to change (e.\+g., k\+Vertex or k\+Ribs). \\
+\hline
+{\em size} & The new size value to set.\\
+\hline
+{\em canvas} & Pointer to the \mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} object. \\
+\hline
+{\em mode} & The mode in which to change item size (vertex or ribs). \\
+\hline
+{\em size} & The new size to be applied. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classs21_1_1ItemsSizeCommand_ac8935d415b12f696520b439d206ae5ee}\label{classs21_1_1ItemsSizeCommand_ac8935d415b12f696520b439d206ae5ee}} 
+\index{s21::ItemsSizeCommand@{s21::ItemsSizeCommand}!execute@{execute}}
+\index{execute@{execute}!s21::ItemsSizeCommand@{s21::ItemsSizeCommand}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void s21\+::\+Items\+Size\+Command\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Executes the command, changing the size of the specified items. 
+
+Execute the item size change command.
+
+This method changes the size of items (vertex or ribs) in the \mbox{\hyperlink{classs21_1_1GlCanvas}{Gl\+Canvas}} object based on the specified mode and the provided size. It then triggers a repaint. 
+
+Implements \mbox{\hyperlink{classICommand_ace81beb0beea968f876f292446bf1120}{ICommand}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+3d\+\_\+viewer\+\_\+v2/controller/commands/items\+\_\+size\+\_\+command.\+h\item 
+3d\+\_\+viewer\+\_\+v2/controller/commands/items\+\_\+size\+\_\+command.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,334 @@
+\hypertarget{classs21_1_1Settings}{}\doxysection{s21\+::Settings Class Reference}
+\label{classs21_1_1Settings}\index{s21::Settings@{s21::Settings}}
+
+
+A class that stores settings for an Open\+Gl window. Implements saving of some parameters between application sessions. It also stores the default settings for the initial launch.  
+
+
+
+
+{\ttfamily \#include $<$settings.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classs21_1_1Settings_aef32bcc92561a9e033d079eccfaa285b}{Settings}} (QSettings $\ast$settings)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classs21_1_1Settings}{Settings}} object. \end{DoxyCompactList}\item 
+QColor \mbox{\hyperlink{classs21_1_1Settings_aba64636b544da44d9c73bef3cc944a5a}{Background\+Color}} () const
+\begin{DoxyCompactList}\small\item\em Returns the background color value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1Settings_ace010db0ac4e470a8eaff44d02505f39}{Set\+Background\+Color}} (QColor color)
+\begin{DoxyCompactList}\small\item\em Sets the background color value. \end{DoxyCompactList}\item 
+QColor \mbox{\hyperlink{classs21_1_1Settings_a8745901a1caf355657522fbd34bcef23}{Vertex\+Color}} () const
+\begin{DoxyCompactList}\small\item\em Returns the vertex color value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1Settings_acdc4503aade0af18775ee5a711b73839}{Set\+Vertex\+Color}} (QColor color)
+\begin{DoxyCompactList}\small\item\em Sets the vertex color value. \end{DoxyCompactList}\item 
+QColor \mbox{\hyperlink{classs21_1_1Settings_a399f9ec3cb3ef75893490993834d44b5}{Ribs\+Color}} () const
+\begin{DoxyCompactList}\small\item\em Returns the ribs color value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1Settings_aec9b548a95fbfe1229afa1989fc00d59}{Set\+Ribs\+Color}} (QColor color)
+\begin{DoxyCompactList}\small\item\em Sets the ribs color value. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classs21_1_1Settings_a90ef21fe1a33fe3aec5f0791d65d10ec}{Vertex\+Size}} () const
+\begin{DoxyCompactList}\small\item\em Returns the vertex size value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1Settings_a0d5c3fe72a89744c667b2e85fe39053f}{Set\+Vertex\+Size}} (float size)
+\begin{DoxyCompactList}\small\item\em Sets the vertex size value. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classs21_1_1Settings_ae2017e45602edcbe792de9626e3056ef}{Ribs\+Width}} () const
+\begin{DoxyCompactList}\small\item\em Returns the ribs width value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1Settings_a0ca385bff24168ebce96385d26a37f74}{Set\+Ribs\+Width}} (float width)
+\begin{DoxyCompactList}\small\item\em Returns the ribs width value. \end{DoxyCompactList}\item 
+enum Vertex\+Type \mbox{\hyperlink{classs21_1_1Settings_a8eb3c4833f7711b43d25dee24ae46c44}{Vertex\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Returns the vertex type value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1Settings_a891f52bc66ab779056669168fa1fd648}{Set\+Vertex\+Type}} (enum \mbox{\hyperlink{classs21_1_1Settings_a8eb3c4833f7711b43d25dee24ae46c44}{Vertex\+Type}} type)
+\begin{DoxyCompactList}\small\item\em Returns the vertex type value. \end{DoxyCompactList}\item 
+enum Ribs\+Type \mbox{\hyperlink{classs21_1_1Settings_a5bbdcda1172fca27334339f12803ab34}{Ribs\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Returns the ribs type value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1Settings_aa49e4f6fa1b2d2b51423e424a126a503}{Set\+Ribs\+Type}} (enum \mbox{\hyperlink{classs21_1_1Settings_a5bbdcda1172fca27334339f12803ab34}{Ribs\+Type}} type)
+\begin{DoxyCompactList}\small\item\em Sets the ribs type value. \end{DoxyCompactList}\item 
+enum Projection\+Type \mbox{\hyperlink{classs21_1_1Settings_a45067293036b82eb2acec661218afe68}{Projection\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Returns the projection type value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1Settings_a3eb3d69f2fd56c958d48f35c14c94e47}{Set\+Projection\+Type}} (enum \mbox{\hyperlink{classs21_1_1Settings_a45067293036b82eb2acec661218afe68}{Projection\+Type}} value)
+\begin{DoxyCompactList}\small\item\em Sets the projection type value. \end{DoxyCompactList}\item 
+QColor \mbox{\hyperlink{classs21_1_1Settings_a0aaf684a055f5e39c8dcf160489ef7a8}{Grid\+Color}} () const
+\begin{DoxyCompactList}\small\item\em Returns the grid color value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1Settings_a96e2326fab179cba3f0eacaec37a3dcf}{Set\+Grid\+Color}} (QColor color)
+\begin{DoxyCompactList}\small\item\em Sets the grid color value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class that stores settings for an Open\+Gl window. Implements saving of some parameters between application sessions. It also stores the default settings for the initial launch. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classs21_1_1Settings_aef32bcc92561a9e033d079eccfaa285b}\label{classs21_1_1Settings_aef32bcc92561a9e033d079eccfaa285b}} 
+\index{s21::Settings@{s21::Settings}!Settings@{Settings}}
+\index{Settings@{Settings}!s21::Settings@{s21::Settings}}
+\doxysubsubsection{\texorpdfstring{Settings()}{Settings()}}
+{\footnotesize\ttfamily s21\+::\+Settings\+::\+Settings (\begin{DoxyParamCaption}\item[{QSettings $\ast$}]{settings }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{classs21_1_1Settings}{Settings}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em settings} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classs21_1_1Settings_aba64636b544da44d9c73bef3cc944a5a}\label{classs21_1_1Settings_aba64636b544da44d9c73bef3cc944a5a}} 
+\index{s21::Settings@{s21::Settings}!BackgroundColor@{BackgroundColor}}
+\index{BackgroundColor@{BackgroundColor}!s21::Settings@{s21::Settings}}
+\doxysubsubsection{\texorpdfstring{BackgroundColor()}{BackgroundColor()}}
+{\footnotesize\ttfamily QColor s21\+::\+Settings\+::\+Background\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the background color value. 
+
+\begin{DoxyReturn}{Returns}
+QColor value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Settings_a0aaf684a055f5e39c8dcf160489ef7a8}\label{classs21_1_1Settings_a0aaf684a055f5e39c8dcf160489ef7a8}} 
+\index{s21::Settings@{s21::Settings}!GridColor@{GridColor}}
+\index{GridColor@{GridColor}!s21::Settings@{s21::Settings}}
+\doxysubsubsection{\texorpdfstring{GridColor()}{GridColor()}}
+{\footnotesize\ttfamily QColor s21\+::\+Settings\+::\+Grid\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the grid color value. 
+
+\begin{DoxyReturn}{Returns}
+QColor value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Settings_a45067293036b82eb2acec661218afe68}\label{classs21_1_1Settings_a45067293036b82eb2acec661218afe68}} 
+\index{s21::Settings@{s21::Settings}!ProjectionType@{ProjectionType}}
+\index{ProjectionType@{ProjectionType}!s21::Settings@{s21::Settings}}
+\doxysubsubsection{\texorpdfstring{ProjectionType()}{ProjectionType()}}
+{\footnotesize\ttfamily Projection\+Type s21\+::\+Settings\+::\+Projection\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the projection type value. 
+
+\begin{DoxyReturn}{Returns}
+projection type enum value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Settings_a399f9ec3cb3ef75893490993834d44b5}\label{classs21_1_1Settings_a399f9ec3cb3ef75893490993834d44b5}} 
+\index{s21::Settings@{s21::Settings}!RibsColor@{RibsColor}}
+\index{RibsColor@{RibsColor}!s21::Settings@{s21::Settings}}
+\doxysubsubsection{\texorpdfstring{RibsColor()}{RibsColor()}}
+{\footnotesize\ttfamily QColor s21\+::\+Settings\+::\+Ribs\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the ribs color value. 
+
+\begin{DoxyReturn}{Returns}
+QColor value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Settings_a5bbdcda1172fca27334339f12803ab34}\label{classs21_1_1Settings_a5bbdcda1172fca27334339f12803ab34}} 
+\index{s21::Settings@{s21::Settings}!RibsType@{RibsType}}
+\index{RibsType@{RibsType}!s21::Settings@{s21::Settings}}
+\doxysubsubsection{\texorpdfstring{RibsType()}{RibsType()}}
+{\footnotesize\ttfamily Ribs\+Type s21\+::\+Settings\+::\+Ribs\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the ribs type value. 
+
+\begin{DoxyReturn}{Returns}
+ribs type enum value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Settings_ae2017e45602edcbe792de9626e3056ef}\label{classs21_1_1Settings_ae2017e45602edcbe792de9626e3056ef}} 
+\index{s21::Settings@{s21::Settings}!RibsWidth@{RibsWidth}}
+\index{RibsWidth@{RibsWidth}!s21::Settings@{s21::Settings}}
+\doxysubsubsection{\texorpdfstring{RibsWidth()}{RibsWidth()}}
+{\footnotesize\ttfamily float s21\+::\+Settings\+::\+Ribs\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the ribs width value. 
+
+\begin{DoxyReturn}{Returns}
+width float value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Settings_ace010db0ac4e470a8eaff44d02505f39}\label{classs21_1_1Settings_ace010db0ac4e470a8eaff44d02505f39}} 
+\index{s21::Settings@{s21::Settings}!SetBackgroundColor@{SetBackgroundColor}}
+\index{SetBackgroundColor@{SetBackgroundColor}!s21::Settings@{s21::Settings}}
+\doxysubsubsection{\texorpdfstring{SetBackgroundColor()}{SetBackgroundColor()}}
+{\footnotesize\ttfamily void s21\+::\+Settings\+::\+Set\+Background\+Color (\begin{DoxyParamCaption}\item[{QColor}]{color }\end{DoxyParamCaption})}
+
+
+
+Sets the background color value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1Settings_a96e2326fab179cba3f0eacaec37a3dcf}\label{classs21_1_1Settings_a96e2326fab179cba3f0eacaec37a3dcf}} 
+\index{s21::Settings@{s21::Settings}!SetGridColor@{SetGridColor}}
+\index{SetGridColor@{SetGridColor}!s21::Settings@{s21::Settings}}
+\doxysubsubsection{\texorpdfstring{SetGridColor()}{SetGridColor()}}
+{\footnotesize\ttfamily void s21\+::\+Settings\+::\+Set\+Grid\+Color (\begin{DoxyParamCaption}\item[{QColor}]{color }\end{DoxyParamCaption})}
+
+
+
+Sets the grid color value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1Settings_a3eb3d69f2fd56c958d48f35c14c94e47}\label{classs21_1_1Settings_a3eb3d69f2fd56c958d48f35c14c94e47}} 
+\index{s21::Settings@{s21::Settings}!SetProjectionType@{SetProjectionType}}
+\index{SetProjectionType@{SetProjectionType}!s21::Settings@{s21::Settings}}
+\doxysubsubsection{\texorpdfstring{SetProjectionType()}{SetProjectionType()}}
+{\footnotesize\ttfamily void s21\+::\+Settings\+::\+Set\+Projection\+Type (\begin{DoxyParamCaption}\item[{enum \mbox{\hyperlink{classs21_1_1Settings_a45067293036b82eb2acec661218afe68}{Projection\+Type}}}]{value }\end{DoxyParamCaption})}
+
+
+
+Sets the projection type value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1Settings_aec9b548a95fbfe1229afa1989fc00d59}\label{classs21_1_1Settings_aec9b548a95fbfe1229afa1989fc00d59}} 
+\index{s21::Settings@{s21::Settings}!SetRibsColor@{SetRibsColor}}
+\index{SetRibsColor@{SetRibsColor}!s21::Settings@{s21::Settings}}
+\doxysubsubsection{\texorpdfstring{SetRibsColor()}{SetRibsColor()}}
+{\footnotesize\ttfamily void s21\+::\+Settings\+::\+Set\+Ribs\+Color (\begin{DoxyParamCaption}\item[{QColor}]{color }\end{DoxyParamCaption})}
+
+
+
+Sets the ribs color value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1Settings_aa49e4f6fa1b2d2b51423e424a126a503}\label{classs21_1_1Settings_aa49e4f6fa1b2d2b51423e424a126a503}} 
+\index{s21::Settings@{s21::Settings}!SetRibsType@{SetRibsType}}
+\index{SetRibsType@{SetRibsType}!s21::Settings@{s21::Settings}}
+\doxysubsubsection{\texorpdfstring{SetRibsType()}{SetRibsType()}}
+{\footnotesize\ttfamily void s21\+::\+Settings\+::\+Set\+Ribs\+Type (\begin{DoxyParamCaption}\item[{enum \mbox{\hyperlink{classs21_1_1Settings_a5bbdcda1172fca27334339f12803ab34}{Ribs\+Type}}}]{type }\end{DoxyParamCaption})}
+
+
+
+Sets the ribs type value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1Settings_a0ca385bff24168ebce96385d26a37f74}\label{classs21_1_1Settings_a0ca385bff24168ebce96385d26a37f74}} 
+\index{s21::Settings@{s21::Settings}!SetRibsWidth@{SetRibsWidth}}
+\index{SetRibsWidth@{SetRibsWidth}!s21::Settings@{s21::Settings}}
+\doxysubsubsection{\texorpdfstring{SetRibsWidth()}{SetRibsWidth()}}
+{\footnotesize\ttfamily void s21\+::\+Settings\+::\+Set\+Ribs\+Width (\begin{DoxyParamCaption}\item[{float}]{width }\end{DoxyParamCaption})}
+
+
+
+Returns the ribs width value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1Settings_acdc4503aade0af18775ee5a711b73839}\label{classs21_1_1Settings_acdc4503aade0af18775ee5a711b73839}} 
+\index{s21::Settings@{s21::Settings}!SetVertexColor@{SetVertexColor}}
+\index{SetVertexColor@{SetVertexColor}!s21::Settings@{s21::Settings}}
+\doxysubsubsection{\texorpdfstring{SetVertexColor()}{SetVertexColor()}}
+{\footnotesize\ttfamily void s21\+::\+Settings\+::\+Set\+Vertex\+Color (\begin{DoxyParamCaption}\item[{QColor}]{color }\end{DoxyParamCaption})}
+
+
+
+Sets the vertex color value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1Settings_a0d5c3fe72a89744c667b2e85fe39053f}\label{classs21_1_1Settings_a0d5c3fe72a89744c667b2e85fe39053f}} 
+\index{s21::Settings@{s21::Settings}!SetVertexSize@{SetVertexSize}}
+\index{SetVertexSize@{SetVertexSize}!s21::Settings@{s21::Settings}}
+\doxysubsubsection{\texorpdfstring{SetVertexSize()}{SetVertexSize()}}
+{\footnotesize\ttfamily void s21\+::\+Settings\+::\+Set\+Vertex\+Size (\begin{DoxyParamCaption}\item[{float}]{size }\end{DoxyParamCaption})}
+
+
+
+Sets the vertex size value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1Settings_a891f52bc66ab779056669168fa1fd648}\label{classs21_1_1Settings_a891f52bc66ab779056669168fa1fd648}} 
+\index{s21::Settings@{s21::Settings}!SetVertexType@{SetVertexType}}
+\index{SetVertexType@{SetVertexType}!s21::Settings@{s21::Settings}}
+\doxysubsubsection{\texorpdfstring{SetVertexType()}{SetVertexType()}}
+{\footnotesize\ttfamily void s21\+::\+Settings\+::\+Set\+Vertex\+Type (\begin{DoxyParamCaption}\item[{enum \mbox{\hyperlink{classs21_1_1Settings_a8eb3c4833f7711b43d25dee24ae46c44}{Vertex\+Type}}}]{type }\end{DoxyParamCaption})}
+
+
+
+Returns the vertex type value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1Settings_a8745901a1caf355657522fbd34bcef23}\label{classs21_1_1Settings_a8745901a1caf355657522fbd34bcef23}} 
+\index{s21::Settings@{s21::Settings}!VertexColor@{VertexColor}}
+\index{VertexColor@{VertexColor}!s21::Settings@{s21::Settings}}
+\doxysubsubsection{\texorpdfstring{VertexColor()}{VertexColor()}}
+{\footnotesize\ttfamily QColor s21\+::\+Settings\+::\+Vertex\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the vertex color value. 
+
+\begin{DoxyReturn}{Returns}
+QColor value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Settings_a90ef21fe1a33fe3aec5f0791d65d10ec}\label{classs21_1_1Settings_a90ef21fe1a33fe3aec5f0791d65d10ec}} 
+\index{s21::Settings@{s21::Settings}!VertexSize@{VertexSize}}
+\index{VertexSize@{VertexSize}!s21::Settings@{s21::Settings}}
+\doxysubsubsection{\texorpdfstring{VertexSize()}{VertexSize()}}
+{\footnotesize\ttfamily float s21\+::\+Settings\+::\+Vertex\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the vertex size value. 
+
+\begin{DoxyReturn}{Returns}
+size float value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Settings_a8eb3c4833f7711b43d25dee24ae46c44}\label{classs21_1_1Settings_a8eb3c4833f7711b43d25dee24ae46c44}} 
+\index{s21::Settings@{s21::Settings}!VertexType@{VertexType}}
+\index{VertexType@{VertexType}!s21::Settings@{s21::Settings}}
+\doxysubsubsection{\texorpdfstring{VertexType()}{VertexType()}}
+{\footnotesize\ttfamily Vertex\+Type s21\+::\+Settings\+::\+Vertex\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the vertex type value. 
+
+\begin{DoxyReturn}{Returns}
+vertex type enum value. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+3d\+\_\+viewer\+\_\+v2/core/settings.\+h\item 
+3d\+\_\+viewer\+\_\+v2/core/settings.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,65 @@
+\hypertarget{gif__lib__private_8h_source}{}\doxysection{gif\+\_\+lib\+\_\+private.\+h}
+\label{gif__lib__private_8h_source}\index{3d\_viewer\_v2/qt-\/gif-\/image-\/master/src/3rdParty/giflib/gif\_lib\_private.h@{3d\_viewer\_v2/qt-\/gif-\/image-\/master/src/3rdParty/giflib/gif\_lib\_private.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/****************************************************************************}}
+\DoxyCodeLine{2 \textcolor{comment}{}}
+\DoxyCodeLine{3 \textcolor{comment}{gif\_lib\_private.h -\/ internal giflib routines and structures}}
+\DoxyCodeLine{4 \textcolor{comment}{}}
+\DoxyCodeLine{5 \textcolor{comment}{****************************************************************************/}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#ifndef \_GIF\_LIB\_PRIVATE\_H}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define \_GIF\_LIB\_PRIVATE\_H}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}gif\_lib.h"{}}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}gif\_hash.h"{}}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define EXTENSION\_INTRODUCER      0x21}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#define DESCRIPTOR\_INTRODUCER     0x2c}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#define TERMINATOR\_INTRODUCER     0x3b}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#define LZ\_MAX\_CODE         4095    }\textcolor{comment}{/* Biggest code possible in 12 bits. */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#define LZ\_BITS             12}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#define FLUSH\_OUTPUT        4096    }\textcolor{comment}{/* Impossible code, to signal flush. */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#define FIRST\_CODE          4097    }\textcolor{comment}{/* Impossible code, to signal first. */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#define NO\_SUCH\_CODE        4098    }\textcolor{comment}{/* Impossible code, to signal empty. */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#define FILE\_STATE\_WRITE    0x01}}
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#define FILE\_STATE\_SCREEN   0x02}}
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#define FILE\_STATE\_IMAGE    0x04}}
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#define FILE\_STATE\_READ     0x08}}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#define IS\_READABLE(Private)    (Private-\/>FileState \& FILE\_STATE\_READ)}}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#define IS\_WRITEABLE(Private)   (Private-\/>FileState \& FILE\_STATE\_WRITE)}}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{structGifFilePrivateType}{GifFilePrivateType}} \{}
+\DoxyCodeLine{33     GifWord FileState, FileHandle,  \textcolor{comment}{/* Where all this data goes to! */}}
+\DoxyCodeLine{34       BitsPerPixel,     \textcolor{comment}{/* Bits per pixel (Codes uses at least this + 1). */}}
+\DoxyCodeLine{35       ClearCode,   \textcolor{comment}{/* The CLEAR LZ code. */}}
+\DoxyCodeLine{36       EOFCode,     \textcolor{comment}{/* The EOF LZ code. */}}
+\DoxyCodeLine{37       RunningCode, \textcolor{comment}{/* The next code algorithm can generate. */}}
+\DoxyCodeLine{38       RunningBits, \textcolor{comment}{/* The number of bits required to represent RunningCode. */}}
+\DoxyCodeLine{39       MaxCode1,    \textcolor{comment}{/* 1 bigger than max. possible code, in RunningBits bits. */}}
+\DoxyCodeLine{40       LastCode,    \textcolor{comment}{/* The code before the current code. */}}
+\DoxyCodeLine{41       CrntCode,    \textcolor{comment}{/* Current algorithm code. */}}
+\DoxyCodeLine{42       StackPtr,    \textcolor{comment}{/* For character stack (see below). */}}
+\DoxyCodeLine{43       CrntShiftState;    \textcolor{comment}{/* Number of bits in CrntShiftDWord. */}}
+\DoxyCodeLine{44     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} CrntShiftDWord;   \textcolor{comment}{/* For bytes decomposition into codes. */}}
+\DoxyCodeLine{45     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} PixelCount;   \textcolor{comment}{/* Number of pixels in image. */}}
+\DoxyCodeLine{46     FILE *File;    \textcolor{comment}{/* File as stream. */}}
+\DoxyCodeLine{47     InputFunc Read;     \textcolor{comment}{/* function to read gif input (TVT) */}}
+\DoxyCodeLine{48     OutputFunc Write;   \textcolor{comment}{/* function to write gif output (MRB) */}}
+\DoxyCodeLine{49     GifByteType Buf[256];   \textcolor{comment}{/* Compressed input is buffered here. */}}
+\DoxyCodeLine{50     GifByteType Stack[LZ\_MAX\_CODE]; \textcolor{comment}{/* Decoded pixels are stacked here. */}}
+\DoxyCodeLine{51     GifByteType Suffix[LZ\_MAX\_CODE + 1];    \textcolor{comment}{/* So we can trace the codes. */}}
+\DoxyCodeLine{52     GifPrefixType Prefix[LZ\_MAX\_CODE + 1];}
+\DoxyCodeLine{53     \mbox{\hyperlink{structGifHashTableType}{GifHashTableType}} *HashTable;}
+\DoxyCodeLine{54     BOOL gif89;}
+\DoxyCodeLine{55 \} \mbox{\hyperlink{structGifFilePrivateType}{GifFilePrivateType}};}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* \_GIF\_LIB\_PRIVATE\_H */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59 \textcolor{comment}{/* end */}}
+
+\end{DoxyCode}

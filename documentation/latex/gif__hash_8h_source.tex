@@ -1,0 +1,47 @@
+\hypertarget{gif__hash_8h_source}{}\doxysection{gif\+\_\+hash.\+h}
+\label{gif__hash_8h_source}\index{3d\_viewer\_v2/qt-\/gif-\/image-\/master/src/3rdParty/giflib/gif\_hash.h@{3d\_viewer\_v2/qt-\/gif-\/image-\/master/src/3rdParty/giflib/gif\_hash.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{2 \textcolor{comment}{}}
+\DoxyCodeLine{3 \textcolor{comment}{gif\_hash.h -\/ magfic constants and declarations for GIF LZW}}
+\DoxyCodeLine{4 \textcolor{comment}{}}
+\DoxyCodeLine{5 \textcolor{comment}{******************************************************************************/}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#ifndef \_GIF\_HASH\_H\_}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define \_GIF\_HASH\_H\_}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#ifndef \_WIN32}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <unistd.h>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <stdint.h>}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#define HT\_SIZE         8192       }\textcolor{comment}{/* 12bits = 4096 or twice as big! */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#define HT\_KEY\_MASK     0x1FFF                }\textcolor{comment}{/* 13bits keys */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#define HT\_KEY\_NUM\_BITS     13                }\textcolor{comment}{/* 13bits keys */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#define HT\_MAX\_KEY      8191    }\textcolor{comment}{/* 13bits -\/ 1, maximal code possible */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#define HT\_MAX\_CODE     4095    }\textcolor{comment}{/* Biggest code possible in 12 bits. */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{comment}{/* The 32 bits of the long are divided into two parts for the key \& code:   */}}
+\DoxyCodeLine{22 \textcolor{comment}{/* 1. The code is 12 bits as our compression algorithm is limited to 12bits */}}
+\DoxyCodeLine{23 \textcolor{comment}{/* 2. The key is 12 bits Prefix code + 8 bit new char or 20 bits.       */}}
+\DoxyCodeLine{24 \textcolor{comment}{/* The key is the upper 20 bits.  The code is the lower 12. */}}
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#define HT\_GET\_KEY(l)   (l >> 12)}}
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#define HT\_GET\_CODE(l)  (l \& 0x0FFF)}}
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#define HT\_PUT\_KEY(l)   (l << 12)}}
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#define HT\_PUT\_CODE(l)  (l \& 0x0FFF)}}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{structGifHashTableType}{GifHashTableType}} \{}
+\DoxyCodeLine{31     uint32\_t HTable[HT\_SIZE];}
+\DoxyCodeLine{32 \} \mbox{\hyperlink{structGifHashTableType}{GifHashTableType}};}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 \mbox{\hyperlink{structGifHashTableType}{GifHashTableType}} *\_InitHashTable(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{35 \textcolor{keywordtype}{void} \_ClearHashTable(\mbox{\hyperlink{structGifHashTableType}{GifHashTableType}} *HashTable);}
+\DoxyCodeLine{36 \textcolor{keywordtype}{void} \_InsertHashTable(\mbox{\hyperlink{structGifHashTableType}{GifHashTableType}} *HashTable, uint32\_t Key, \textcolor{keywordtype}{int} Code);}
+\DoxyCodeLine{37 \textcolor{keywordtype}{int} \_ExistsHashTable(\mbox{\hyperlink{structGifHashTableType}{GifHashTableType}} *HashTable, uint32\_t Key);}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* \_GIF\_HASH\_H\_ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41 \textcolor{comment}{/* end */}}
+
+\end{DoxyCode}
